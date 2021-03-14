@@ -1,3 +1,10 @@
 https://github.com/snathjr/ghost-on-heroku
 
-https://help.heroku.com/XOBUHLKQ/why-do-i-see-a-message-you-appear-to-have-cloned-an-empty-repository-when-using-heroku-git-clone
+"-- setup git - download source code --"
+$ git clone https://github.com/snathjr/ghost-on-heroku
+$ cd ghost-on-heroku
+
+$ heroku git:remote -a YOURAPPNAME
+$ heroku info
+"some changes than"
+$ git push heroku master
