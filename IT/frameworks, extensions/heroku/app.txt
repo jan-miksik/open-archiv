@@ -3,5 +3,8 @@ $ git remote -v
 "connect app"
 $ heroku git:remote -a <app-name>
 
+"or clone heroku app"
+$ heroku git:clone -a <YOUR-APP-NAME>
+
 "show addons"
 $ heroku addons
