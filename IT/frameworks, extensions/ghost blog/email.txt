@@ -1,0 +1,13 @@
+
+https://www.qoncious.com/questions/how-setup-ghost-send-email-using-gmail
+
+mail: {
+  transport: 'SMTP',
+  options: {
+    service: 'Gmail',
+    auth: {
+      user: <email@addrs.com>,
+      pass: <password>
+    }
+  }
+},
