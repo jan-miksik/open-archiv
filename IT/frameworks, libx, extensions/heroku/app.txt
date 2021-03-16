@@ -8,3 +8,6 @@ $ heroku git:clone -a <YOUR-APP-NAME>
 
 "show addons"
 $ heroku addons
+
+"push changes to heroku"
+$ git push heroku master
