@@ -1,0 +1,14 @@
+-- brave 		z webu, deb soubor
+-- FVD synchronizer		chrome addon
+Xtranslate	chrome addon
+-- bitwarden	chrome addon
+-- discord 	z webu deb soubor
+-- Knotes		package installer
+-- mullvad	package installer
+
+-- vscode   	z webu, deb soubor
+-- nodejs   	sudo apt install nodejs
+-- npm 		sudo apt-get install -y npm
+-- yarn		sudo npm install --global yarn
+
+- ruby -- viz languages/ruby
