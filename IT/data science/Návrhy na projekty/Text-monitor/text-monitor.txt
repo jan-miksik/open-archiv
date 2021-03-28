@@ -1,0 +1,26 @@
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+UUUUUUUUUUU Text monitor UUUUUUUUUUUUUUU
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+
+-možnost přepínání mezi různými typy zobrazení
+A - side menu(vertikální) - lepší přehled při malé šířce vrstev
+B - top menu(horizontalní) - lepší přehled při menší hloubce
+C - tagování, auto tagování,
+D - mind mapa - jeden výchozí bod
+
+- struktura napříč obory
+slova
+písmena
+
+- Kategorie podobné napříč obory
+hotové projekty - příklady použití
+lidé
+nástroje - programy
+
+kapitalizace
+knihy
+články
+filmy, videa
+místa
+události
+

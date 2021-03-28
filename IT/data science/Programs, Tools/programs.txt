@@ -1,0 +1,41 @@
+should chooce 1-3 tools rule 80/20
+
+- Spreadsheet Excel
+  ./Spreadsheet
+
+- Tableau
+  tableau.com
+  tableau public
+
+- SPSS (Statistical package for the social sciences)
+  imb.com/spss
+
+- JASP (Just another statistical program)
+  opne source
+  alternative to SPSS
+  jasp-stats.org
+  share with osf.io - open science framework
+
+- Jupyter - web IDE for Python and R 
+  Python with visualization
+
+Numpy 
+Pandas
+Matplotlib & Seaborn
+
++++
+SAS -jmp
+Matlab
+wolfram
+wolframAlpha
+orange
+bigml
+
+RapidMiner
+Hadoop
+Spark
+
+
+Power BI
+
+

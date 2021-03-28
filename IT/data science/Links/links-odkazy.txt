@@ -1,0 +1,19 @@
+Odkazy
+kaggle.com - data science compention
+dataKind.org - altruistic project
+
+- tools
+tableau.com
+
+- open data
+data.gov - US governance open data
+open-data.europa.eu - EU
+unicef.org 
+who.int/gho
+google.com/publicdata
+aws.amazon.com/datasets
+
+- data brokers
+acxiom.com
+nielsen.com -media consumption
+datasift.com

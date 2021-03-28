@@ -1,0 +1,25 @@
+object
+  CRUD (create, read, update, delete)
+
+tag
+  CRUD
+  add to object
+  remove from object
+
+filter tags
+  has tag
+  do not have tag
+
+sort tags
+  amount
+  date
+
+
+multiple UIs
+
+menu
+  side 
+  top
+  map - maind map
+
+framework NextJs? with react? svelte? vue?

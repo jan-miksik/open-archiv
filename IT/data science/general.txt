@@ -1,0 +1,52 @@
+oblasti
+
+Coding
+  Machine Learning
+Math & Statistics
+
+Domain
+
+
+SQL Server Integration Services (SSIS)
+Byznys inteligence (BI)
+
+
+Backward Elimination, Forward Selection, and Bidirectional Elimination
+Cumulative Accuracy Profile (CAP)
+Odds Ratio
+Conditional Splits
+Chi-Squared statistical test
+intuition of multicollinearity
+
+Key Performance Indicators (KPIs)
+  -non financial
+  -tilmely
+  -simple
+  -significant impact
+
+SMART
+  -Scpecific
+  -Measurable
+  -Assignable
+  -Realistic
+  -Time-bounded
+
+
+
+Support Vector Machine (SVM)
+K-Nearest Neighbors (K-NN)
+
+Decision tree classification
+random forest classification
+
+K-Means Clustering
+Hierarchical Clustering
+
+Reinforcement Learning, 
+NLP
+
+
+- Dimensionality Reduction
+Principal component analysis (PCA)
+Linear Discriminant Analysis (LDA)
+Kernel PCA
