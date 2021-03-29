@@ -1,2 +1,3 @@
 https://www.howtoforge.com/linux-dmesg-command/
 $ dmesg|tail
+$ dmesg --level="err"

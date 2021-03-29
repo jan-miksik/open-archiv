@@ -3,4 +3,4 @@ https://stackoverflow.com/questions/39997022/show-all-warnings-and-errors-in-vis
 Go to Command pallet (CTRL + P + SHIFT)
 > tasks run
 Hit Tasks: run Task
-You'll find eslint: lint whole folder
+You'll find "eslint: lint whole folder"
