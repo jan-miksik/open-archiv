@@ -1,0 +1,35 @@
+data types
+  -in house / proprietary
+  -open source / public
+  -third party / purchased
+
+Data as a service (Daas)
+
+- Scraping
+!copyright, privacy
+import.io
+scraperWiki
+Tabula
+Google Sheets (Excel)
+  example (
+    =IMPORTHTML("https://en.wikipedia.org/wiki/Iron_Chef_America"; "table"; 3)
+  )
+
+
+- Make data
+interview
+card sourcing (get intuitive sorting)
+  optimal workshop
+  UserZoom
+  UX Suite
+experimental labrotory
+A/B testing
+Survey
+  -close ended
+  -open ended
+  -online
+  -in person
+  ::SurveyMonkey
+  ::Qualtrics
+  ::Google Forms
+  ::Typeform

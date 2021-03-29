@@ -1,0 +1,9 @@
+Tidy data
+column == variable
+row == case
+one sheet per file
+one level per file
+
+get data
+=IMPORTHTML("https://en.wikipedia.org/wiki/Iron_Chef_America"; "table"; 3)
+=SUM(G:G)

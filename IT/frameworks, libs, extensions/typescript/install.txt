@@ -7,4 +7,5 @@ $ npx tsc --init
 
 "for yarn"
 $ yarn add typescript --dev
-$ yarn tsc
+$ npx tsc --init
+# $ yarn tsc

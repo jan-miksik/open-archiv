@@ -1,0 +1,45 @@
+AAAAAAAAAAAAAAAAAAAAA Hlavni problemy  AAAAAAAAAAAAAAAAAAAAAAAA
+
+moc "x" málo
+moc A "x" moc B
+
+
+
+moc všeobecné "x" příliš konkrétní
+nepřehledná struktura
+
+příliš informací v jedné vrstvě "x" příliš mnoho vrstev
+
+- opakování
+prolínání kategorií
+duplikace dat "x" chybí na ostatních místech 
+nesynchroní záznamy
+
+duplikace projektu
+
+
+
+- psychické
+nejasný cíl
+bezbřehé nadšení
+málo motivace
+
+
+málo sebereflexe "x" moc
+málo kritiky "x" moc
+
+produkce nadbytečného obsahu
+?opravdu ještě někdy využiju záznam, který jsem vytvořil?
+
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+Na co se soustředit
+-test - najít řešení
+-nejobvyklejší řešení
+-test - najdi chybu, udělej opravu
+-nejčastější chyby
+
+začít neměnými částmi + vytvořit několik možných variant uspořádání
+
+

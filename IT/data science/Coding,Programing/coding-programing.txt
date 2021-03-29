@@ -1,0 +1,63 @@
+HTML (hyper text markup language)
+CSS (Casscading style sheet)
+XML (Extensible Markup Language)
+  semi-structured
+
+JSON (JavaScript Object Notation)
+  semi-structured
+  jsonprettyprint.com
+
+R
+  open source
+  vector operations
+  commutnity
+  own IDE (Integrated Development Enviroment)
+  IDE - RStudio.com
+  Packages
+    CRAN (Comprehensive R Archive Network)
+    Crantastic!
+  language of DS (data science)
+
+Python
+  version 2.x 3.x
+  Jupyter/IPython - web IDE
+
+SQL (Structured Query Language)
+  database tool
+  relational databases
+  RDBS (Relational Database Management System)
+  MySQL
+  PostgreSQL
+  GUI (Graphical User Interface)
+    SQL Developer
+    SQL Server Management Studio
+  SELECT, FROM, WHERE, ORDERBY
+
+Bash (Bourne again shell)
+  Linux & Mac
+  CLI (Command Line Interface)
+  Shell = language
+  one-liner
+  Built-ins
+    cat(concatenate)
+    awk(inicials of creators) 
+    grep(global regex print)
+    sed(streem editor)
+    head, tail, sort, uniq, wc(word count), printf
+  Installables
+    jq(json), json2csv, Rio, BigMLer
+
+Regex (regular expression)
+  patter matching
+  ^ at begining
+  $ at end
+  Regex golf - regex.alf.nu
+
+
+
++++++
+C
+C++
+Java
+  Based on C/C++
+  WORA (Write once run anywhere)
