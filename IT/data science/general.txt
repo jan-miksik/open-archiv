@@ -50,3 +50,16 @@ NLP
 Principal component analysis (PCA)
 Linear Discriminant Analysis (LDA)
 Kernel PCA
+
+
+business analytics
+data analytics
+data science
+business inteligence
+machine learning
+
+Analysis vs Analytics
+  quatitative
+  qualitative
+Analysis(focus on past)
+Analytics(focus on future)
