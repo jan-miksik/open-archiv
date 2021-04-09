@@ -1,0 +1,21 @@
+setup custom paste key for super key
+https://askubuntu.com/questions/137172/how-to-remap-superleft-key-to-control-key
+
+##remap Super_L##
+#find Super_L keycode with
+$ xmodmap -pk
+#(probably 133)
+
+$ xmodmap -e "remove mod4 = Super_L"
+#find free keycode with
+$ xev
+#in my case 148
+$ xmodmap -e "keycode 133 = 148"
+
+#setup keys for paste in app "autokey"
+
+#to keep changes after restart, create file
+~/.Xmodmap
+#with content
+remove mod4 = Super_L
+keycode 133 = 148
