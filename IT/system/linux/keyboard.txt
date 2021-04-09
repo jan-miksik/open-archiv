@@ -15,7 +15,11 @@ $ xmodmap -e "keycode 133 = 148"
 #setup keys for paste in app "autokey"
 
 #to keep changes after restart, create file
+#~/ means user home
 ~/.Xmodmap
 #with content
 remove mod4 = Super_L
 keycode 133 = 148
+
+# add to "session and startup"
+# command have to be absolute path like "xmodmap /home/j/.Xmodmap"
