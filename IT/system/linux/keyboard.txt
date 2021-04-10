@@ -14,7 +14,22 @@ $ xmodmap -e "keycode 133 = 148"
 
 #setup keys for paste in app "autokey"
 
+
 #to keep changes after restart, create file
+#create script "xmodmap.sh" with this content
+  #!/bin/bash
+  sleep 10
+
+  xmodmap -e "remove mod4 = Super_L"
+  xmodmap -e "keycode 133 = 148"
+
+
+#make it executable
+$chmod +x xmodmap.sh
+
+
+
+## ???? alternative ???? not working
 #~/ means user home
 ~/.Xmodmap
 #with content
