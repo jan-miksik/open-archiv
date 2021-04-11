@@ -1,3 +1,5 @@
+probability -> statistics -> data science
+
 oblasti
 
 Coding

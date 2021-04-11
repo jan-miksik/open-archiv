@@ -1,0 +1,144 @@
+- Probability
+  from 0 to 1
+  P=target outcome / all outcomes
+  complementary A``
+  frequency
+
+- Combinations
+  permutation 
+    combinations in set of items when all elements are in sample space 
+    `all in`
+    (1,2,3) (1,3,2) (2,3,1) (2,1,3) (3,2,1) (3,1,2)
+    Pn = n!
+    Pn = n * (n-1) * (n- 2) ... 1 = n! = fatorial
+    3! = 1 * 2 * 3
+    n! = (n+1)! / (n+1)
+    repetitve
+    non-repetitve
+  variations
+    total number of ways we can pick and arrange some elements of a given set
+    `only some`
+    7^4
+    repetitve
+    non-repetitve
+      Vp^n = n! / (n-p)!
+  combinations
+    every permutation of a combination is a different variation
+    `ignore order`
+    Cp^n = Vp^n / Pp
+    C4^10 = 10! / 4! 6! = 7 * 8 * 9 * 10 / 1 * 2* 3 *4 = 5040 / 24 = 210
+    symetry
+      Cp^n = C(n-p)^n
+    combinations with separete sample spaces
+      C = n1*n2*n3 ...
+      C = 3*5*3
+    repetitve
+    non-repetitve
+
+- Beyesian inference
+  Event
+    not touch
+    intersection
+      A ∩ B značí množinu, která obsahuje prvky, které jsou množinám A a B společné.
+    subset
+      A ⊆ B #A is fully containet in set B
+    unions
+      A ∪ B značí množinu, která obsahuje prvky, které jsou alespoň v jedné z množin A a B.
+    mutually exclusive
+      two Events without intersection
+    independent events
+      P(A|B) značí pravděpodobnost jevu A za předpokladu, že nastane jev B.
+      P(A|B) = A / B
+    additive law, 
+      P(Union) = P(A) + P(B) - P(Intersection)
+      P(Intersection) = P(A) + P(B) - P(Union)
+    multiplition rule
+      P(A ∩ B) = P(A|B) * P(B)
+    Bayes Rule
+      relation between independent events
+      P(A|B) = P(B|A)*P(A) / P(B)
+
+  x ∈ A # x is part of set A 
+  x ∉ A # x is not part of set A
+  ∀ x: P(x) znamená, že P(x) platí pro všechna x.
+  ∀ x x ∈ A : x is even #for all x in A, such that, x is even
+  https://cs.wikipedia.org/wiki/Matematick%C3%A9_symboly_a_zna%C4%8Dky
+
+  
+- distribution
+  𝑃(𝑌 = 𝑦) is equivalent to p(𝑦)
+  Y = actual outcome
+  E = expected outcome??
+  y = one of the possible outcomes
+  μ = mean = the sum of the values divided by the number of values
+  σ = varience
+  λ = lambda
+  μ = σ^2 = λ
+  ~ = úměrnost = proportion
+  k = degrees of freedom
+  s = scale parameter
+
+  CDF = Cumulative Distribution Function
+  PDF = Probability density function
+
+  population data is equivalent to "all the data"
+
+  #distribution types    
+    - Discrete
+      finite number of outcomes
+      𝑷 𝒀 ≤ 𝒚 = 𝑷 𝒀 < 𝒚 + 𝟏
+      Discrete Uniform Distribution
+      Bernoulli Distribution
+        𝒀~ 𝑩𝒆𝒓𝒏(𝒑)
+        `true / false` one trial
+        𝑬 (𝒀) = 𝒑
+        𝑽𝒂𝒓(𝒀) = 𝒑 × (𝟏 − 𝒑)
+      Binomial Distribution
+        A sequence of identical Bernoulli events 
+        𝒀~ 𝑩(𝒏, 𝒑)
+        P(Y= y) = C(y,n)*p^y* (1-p)^n-y
+      Poisson Distribution
+        Measures the frequency over an interval of time or distance
+        𝒀~ 𝑷𝒐(λ)
+        e = eulers number ≈ 2.72
+        P(Y) = λ^y*e^-λ / y!
+
+    Uniform Distribution
+      𝒀~ 𝑼(𝒂, 𝒃)
+      `same probability for all, ex. rolling a single die`
+    
+    - Continuous
+      Have infinitely many consecutive possible values
+      `smooth`
+      𝑷 (𝒀 < 𝒚) = 𝑷 (𝒀 ≤ 𝒚)
+
+      Standardizing a Normal Distribution
+        mean is 0 => μ = 0
+        variance is 1 => σ = 1
+        z = y - μ / σ
+
+      Normal Distribution
+        most natural events follow
+        bell-shaped curve
+        𝒀~ 𝑵(μ, σ^𝟐)
+        𝑬 𝒀 = μ
+        68, 95, 99.7 law
+          68% of all its values should fall in the interval: (μ − 𝝈, 𝝁 + 𝝈)
+      Students’ T Distribution
+        𝒀~ 𝒕 (𝒌)
+        A small sample size approximation of a Normal Distribution.
+        `symmetric curve`
+      Chi-Squared Distribution
+        𝒀~ 𝝌𝟐(𝒌)
+        Its graph is asymmetric and skewed to the right
+      Exponential Distribution
+        usually observed in events which significantly change early on.
+        Y~ Exp (λ)
+        E(Y) = 1 / λ 
+      Logistic Distribution
+        Often used in sports to anticipate how a player’s or
+        team’s performance can determine the outcome of
+        the match.
+        Y~ Logistic (μ, s)
+        E(Y) = μ
+        Var(Y) = s^2*π^2 / 3
