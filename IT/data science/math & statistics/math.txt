@@ -1,4 +1,4 @@
-- Algebra (restoration/obnovení)
+n- Algebra (restoration/obnovení)
   Elementary algebra
     scalar = single number
     vector = row/column of numbers
@@ -20,6 +20,4 @@
     Best: O(n^2)
     Avg:  O(n)
 
-- Probability
-  from 0 to 1
 
