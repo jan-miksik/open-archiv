@@ -27,6 +27,8 @@ $ xmodmap -e "keycode 133 = 148"
 #make it executable
 $chmod +x xmodmap.sh
 
+# add to "session and startup"
+# command have to be absolute path like "xmodmap /home/j/.Xmodmap"
 
 
 ## ???? alternative ???? not working
@@ -36,5 +38,3 @@ $chmod +x xmodmap.sh
 remove mod4 = Super_L
 keycode 133 = 148
 
-# add to "session and startup"
-# command have to be absolute path like "xmodmap /home/j/.Xmodmap"
