@@ -1,0 +1,70 @@
+- basics
+
+population `all data`
+sample `part of data`
+
+median (hodnota uprostřed seřezených hodnot)
+midrange ((max. val. + min. val.) / 2)
+mean = avarage (sum / n)
+mode (most common)
+range (max - min)
+outlier (separete part)
+cluster (data)
+
+
+data types
+  categorical
+  numerical
+    discrete `finete`
+    continuous `infinete`
+
+leves of mesurement
+  quilitative
+    nominal `winter, spring, summer, autumn`
+    ordinal `rating your meal (disgusting, unappetizing,)`
+  quantitave
+    interval ` degrees Celsius and Fahrenheit`
+    ratio `  have a true zero, degrees Kelvin, length`
+
+graphs
+  frequency distribution tables
+  histogram
+  cross tables `categorical data`
+  bar charts
+  pie chart
+  pareto diagrams
+  scolterplot `numerical`
+    
+skewnes
+  mean > median `right skew` - positive skew
+  mean < median `left skew` - zero skew
+  mean = median `symetrical` - negative skew
+
+---Diagrams---
+venn diagram
+dot plot
+histogram
+box plot (good for median)
+Two-way relative frequency tables
+    C
+  A A/(sum A + B)
+  B B/(sum A + B)
+
+Distribution
+  symetrical
+  skewed
+  unimodel, bimodal
+  U-shaped
+  p-values (simplest method)
+
+1. fundamental statistics
+bar chart, scolterplot,
+
+2. Exploratory statistics
+resampling
+
+descriptive statistics
+  mode () most occurancy
+  median (hodnota uprostřed seřezených hodnot) n + 1 / 2
+  mean (most useful) sum of numbers / amount of numbers
+  

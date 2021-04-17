@@ -1,0 +1,6 @@
+#starts from 0
+Participants = ['Al', 'Kim', 'Steve', 'Bob']
+Participants[1] #Kim
+Participants[-1] #Bob
+Participants[0] = 'Alice' #reasing 'Al'
+del Participants[1] #remove Kim from list
