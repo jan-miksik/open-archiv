@@ -56,5 +56,26 @@ round(num,digits)
 pow() #power
 len() #length of characters
 
+#function vs object
+function
+    can have many parameters
+    exists on its own
+    function()
 
+method `type of function`
+    the object is one of its parameters
+    belongs to a certain class
+    object.method()
 
+#import
+import math   #math is name of module
+
+from math import sqrt
+
+from math import sqrt as s
+
+#import all from module
+from math import *
+
+#info about package
+help(math)

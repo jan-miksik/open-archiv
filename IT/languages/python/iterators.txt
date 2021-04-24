@@ -1,0 +1,48 @@
+#for
+even = [0,2,4,5,6,7,8]
+for n in even:
+    print(n)
+
+#while
+x=0
+while x <= 20:
+    print(x, end= " ")
+    x += 2
+
+#range
+range(start, stop, step) #stop value is mandatory, step defualt is 1
+range(10) #range(0,10)
+list(range(10)) #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#for with range
+for n in range(10):
+    print(2 ** n, end = " ")
+
+#loop through all items
+x = [0,1,2]
+for item in x:
+    print item;
+#or
+for item in range(len(x)):
+    print x[item]
+
+
+prices = {
+    "box_of_spaghetti": 4,
+    "lasagna": 5,
+    "hamburger": 2
+    }
+quantity = {
+    "box_of_spaghetti": 6,
+    "lasagna": 10,
+    "hamburger": 0
+    }
+money_spent = 0
+
+for i in prices:
+    money_spent += prices[i] * quantity[i]
+
+print(money_spent)
+
+[13.2,15.5,5.2]
+
