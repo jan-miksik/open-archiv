@@ -1,0 +1,43 @@
+A - praktické použití
+B - umět popsat jednotlivé části
+C - srovnání různých částí
+D - odvůvodnění - proč
+
+proč, jak, co, kdy, kde, kdo
+
+? = standatní otázka = co je, k čemu se používá, ukázka příkladu
+
+?simple linear regression
+?multiple lirear regression...
+?Multicollinearity
+?regression
+
+
+simple logistic model
+multivariate logistic regression model
+
+?STA
+  `?Scholastic Aptitude Test, Simple past tense and past participle of sit.`
+?GPA
+?p-value
+?std / standard deviation
+?MLE (Maximum likelihood estimation)
+
+?overfitting
+?underfitting
+?Missclassification rate
+?confusion matrix
+
+?log function
+?logit
+?Log-Likelihood
+
+?LL-Null (log likelihood-null)
+?coefficent
+?standard error
+?R-squared
+?pseudo R-squared
+
+?dependent and independent variables
+
+examples -- practice

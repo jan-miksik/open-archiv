@@ -1,0 +1,66 @@
+cluster
+  `data group, goal is maximaze similatiry within a cluster and maximaze the disssimilarity between clusters`
+
+examples 
+  market segmentation
+  image segmentation
+
+cluster analysis 
+  `identify patern`
+
+supervised learning
+  `labelled data, inputs, correct values for outputs`
+
+unsupervised learning
+  `unlabelled data,`
+
+euclidean distance
+  `direct connection between A and B`
+
+centroid
+  `point in center between points`
+
+K-means clustering
+  `K for number of clusters`
+  1. choose number of clusters
+  2. specify the cluster seeds
+  3. assign each point to a centroid
+  4. adjust the centroids
+  - repeat 3 and 4 until done
+
+Elbow method
+  `find point where linear graph is "elbowed" - break`
+
+WCSS
+  `within-cluster sum of squares` - `minimaze WCSS makes perfect clustering solution`
+
+Pros
+  simple to undestand
+  fast to cluster
+  widely available
+  easy to implement
+  always yields result
+
+Cons + `remedies` 
+  we nedd to pick K `the elbow method`
+  sensitive to initalization  `k-means++`
+  sensitive to outliers `remove outliers`
+  produces spherical solution `standatization`
+
+Standardization
+
+Types of analysis
+  exploratory
+    `search for patterns,`
+  confirmatory
+    `confirm a hypothesis, validate previous research, explain a phenomenon`
+
+
+Types of Hierarchical clustering
+  agglomerative `clustering from bottom up`
+    dendrogram
+      pros `shows all the possible linkages between clusters, better data understanding, no need to preset the number of clusters (like with k-means), many methods to perform hierarchical clustering(Ward!)`
+      cons  `scalibility`
+  divisive `top down`
+
+?cluster

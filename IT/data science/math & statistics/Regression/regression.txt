@@ -1,7 +1,0 @@
-- Regression // navraceni, regrese
-Linear regression
-Simple Linear Regression (SLR)
-Multiple linear regression (MLR)
-Logistic Regression
-Polynomial Regression
-Support Vector Regression (SVR)
