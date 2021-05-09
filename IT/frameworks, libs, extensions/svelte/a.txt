@@ -1,0 +1,6 @@
+$ npm i -g degit
+
+#create project
+$ degit sveltejs/template <project name>
+$ npm i
+$ npm run dev

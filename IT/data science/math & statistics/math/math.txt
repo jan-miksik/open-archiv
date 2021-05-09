@@ -21,3 +21,6 @@ n- Algebra (restoration/obnovení)
     Avg:  O(n)
 
 
+
+
+
