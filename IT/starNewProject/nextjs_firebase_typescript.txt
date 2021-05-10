@@ -1,0 +1,7 @@
+$ npx create-next-app <project-name>
+$ touch tsconfig.json
+
+
+$ firebase login
+$ firebase init
+$ firebase deploy
