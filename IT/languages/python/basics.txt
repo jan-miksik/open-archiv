@@ -1,0 +1,81 @@
+- basics
+case sensitive
+x,y = (1,2)
+type(x) #return data type
+int(x) #retyping variable to integer
+str(y) #retyping to string
+float(x)
+True, False #boolean with capital
+'String'
+\
+
+- opretors
+  % - reminder
+  ** - power of
+  +, -, /, *, =
+  comparison
+    ==, !=, <, >, <=, >=
+  logical
+    and, or, not, #1 Not, 2 And, 3 Or
+  identity
+    is, is not #==, !=
+
+#comment
+2*5 +\ #continue on next line
+10
+
+"Word"[3] #returns d
+
+#definition of function
+def five(x):    # x is parameter
+    x = 5
+    return x
+
+print(five(3))  # 3 is argument
+
+- if
+x = 10
+def compare_to_five(x):
+    if x > 5:
+        return "greater"
+    elif x < 5:
+        return "less"
+    else:
+        return "equal"
+
+
+compare_to_five(5)
+compare_to_five(x=5)
+
+- build in function
+max()
+min()
+abs() #returns absolute number
+sum()
+round(num,digits)
+pow() #power
+len() #length of characters
+
+#function vs object
+function
+    can have many parameters
+    exists on its own
+    function()
+
+method `type of function`
+    the object is one of its parameters
+    belongs to a certain class
+    object.method()
+
+#import
+import math   #math is name of module
+
+from math import sqrt
+
+from math import sqrt as s
+
+#import all from module
+from math import *
+
+#info about package
+help(math)

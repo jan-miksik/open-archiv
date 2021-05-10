@@ -1,0 +1,13 @@
+Logistic regression implies that the possible outcomes are not numerical but
+rather categorical.
+
+logit model: log(odds) = β0​+β1 x1​+...+βkxk
+
+Linear regression model: Y=β0​+β1 X1​+...+βkXk+ε
+
+MLE `The bigger likelihood function means better probability` - `bigger is better`
+
+Pseudo R-squared `good is between 0.2 - 0.4`
+McFadden's R-squared
+
+confusion matrix ``

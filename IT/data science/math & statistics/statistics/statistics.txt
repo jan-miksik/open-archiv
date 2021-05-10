@@ -1,0 +1,74 @@
+--Statistics--
+
+variance
+  smaple s^2 =  SUMx=1^n (xi - _x)^2 / n-1
+  population σ^2 =  SUMx=1^N (xi - μ)^2 / N
+
+stabdard deviation `more useful`
+  sample s =  odmocnina(SUMx=1^n (xi - _x)^2 / n-1)
+  population σ =  odmocnina(SUMx=1^N (xi - μ)^2 / N)
+
+coefficent of variation Cv
+
+covariance
+  sample Sxy = SUMx=1^n (xi - _x) * (yi - _y) / n-1
+  population σxy =  SUMx=1^N (xi - μx)* (yi - μy) / N
+
+linear correlation coefficent
+  cov(x,y) / stdev(x) * stdev(y) = cov(y,x) / stdev(y) * stdev(x) `correlation is symetric`
+  0 = independent
+  -1 = perfect negative correlation
+  -1 to 0 = imperfect negative correlation
+
+
+Spread
+  range(min - max)
+  IQR
+  Var/ SD
+
+
+Bayes
+matrix
+Bayes
+Replication
+Holdout
+Cross-validation
+normal distribution => median = mean = mode `no skew` N ~ (μ,σ^2 )
+
+
+- hypothesis `can be tested`
+H0 - null hypothesis - `statement we trying to reject - keep status-quo`
+  include ‘equal’
+H1 - alternative hypothesis `'change or innovation'`
+
+Z-test
+  Z = _x - μ / (s /odmocnina n)
+  standard error = s / odmocnina n
+  sample mean = _x
+  hypothesized mean = μ
+
+z-statistic
+  big samples
+  known varience
+
+t-statistic
+  small samples
+  unknown variance
+
+
+rejection region
+  α/2
+  one-sided test
+  α
+
+Type I error
+  false positive `rejecting H0 that is true`
+Type II error
+  false negative
+
+P-value
+  `if p-value is lower than the level of significance reject H0`
+
+?Z-scores
+?Z-table
+?Jaký je rozdíl mezi Z-table a T-table
