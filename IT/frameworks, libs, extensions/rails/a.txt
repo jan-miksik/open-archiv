@@ -1,0 +1,12 @@
+ruby - programing language
+rails - framework
+
+https://guides.rubyonrails.org/getting_started.html
+
+$ rails new <project name>
+$ bin/rails server
+
+# run second project
+$ rails s -p 3001
+
+Model names are singular

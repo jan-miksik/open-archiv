@@ -46,6 +46,9 @@ $createdb <db name>
 if login access is not correct
 $ rails db:seed
 
+if rbenv: version <2.7.1> is not installed ...
+$rbenv install <x.x.x>
+
 kdyby přihlášení hodně nešlo, do terminálu kde je app, po řádcích spustit
 User.find_or_create_by(email: 'admin@iquest.cz') do |u|
  u.first_name = 'Admin'
