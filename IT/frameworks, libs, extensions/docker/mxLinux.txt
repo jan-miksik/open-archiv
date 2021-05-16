@@ -1,0 +1,15 @@
+https://mxlinux.org/wiki/applications/docker/
+
+# begginer tut video
+https://www.youtube.com/watch?v=fqMOX6JJhGo
+
+$ sudo docker run docker/whalesay cowsay hello-world
+
+$docker --help
+
+$docker run <container>
+$docker stop <container name>
+
+
+$docker ps
+$docker ps -a
