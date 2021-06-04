@@ -10,3 +10,6 @@ $ bin/rails server
 $ rails s -p 3001
 
 Model names are singular
+
+# run with external access to localhost
+bundle exec rails s -b 0.0.0.0
