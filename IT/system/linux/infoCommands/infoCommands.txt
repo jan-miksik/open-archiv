@@ -6,3 +6,7 @@ $ dmesg --level="err"
 Hardware
 $inxi -G  //show graphic card info
 $inxi -Fzv //general info
+
+
+# search
+$find / -type f -name ""
