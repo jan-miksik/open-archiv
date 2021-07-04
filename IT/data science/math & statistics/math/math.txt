@@ -1,0 +1,26 @@
+n- Algebra (restoration/obnovení)
+  Elementary algebra
+    scalar = single number
+    vector = row/column of numbers
+    matrix = many rows & columns
+  Linear algebra
+  system of linear quation
+
+- Calculus
+  differential - calculus of change
+  integral - calculus of accumulation
+  for optimization and buzynes decisions
+
+- Big O
+  speed
+  insertion sort
+    Best: O(n)
+    Avg:  O(n^2)
+  selection sort
+    Best: O(n^2)
+    Avg:  O(n)
+
+
+
+
+

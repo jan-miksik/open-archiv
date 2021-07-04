@@ -17,35 +17,13 @@ $ rbenv global <2.7.2>
 
 $ gem install bundler
 
-$ bundle
-
 $ sudo apt install postgresql-11 libpq-dev
-
 $ sudo -u postgres createuser <myname> -s
-
 $ sudo -u postgres psql
 postgres=# \password <myname>
 
+$ bundle
 
-init run
-----------------------------------------------------
-$ ./bin/setup
-
-if
-An error occurred while installing tiny_tds (2.1.2), and Bundler cannot continue.
-Make sure that `gem install tiny_tds -v '2.1.2' --source 'https://rubygems.org/'` succeeds before bundling.
-
-$ sudo apt-get install freetds-dev
-
-if problem with database
-$ bundle exec rails db:create:all
-$ bundle exec rails db:create:migrate
-
-if db not found
-$createdb <db name>
-
-if login access is not correct
-$ rails db:seed
 
 kdyby přihlášení hodně nešlo, do terminálu kde je app, po řádcích spustit
 User.find_or_create_by(email: 'admin@iquest.cz') do |u|

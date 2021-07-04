@@ -1,0 +1,15 @@
+
+- confidence intervals CI
+[_x - zα/2*σ/odmocnina n, _x + zα/2*σ/odmocnina n]
+_x = sample mean
+z~N(0,1)
+standard error = σ/odmocnina n
+ex. 
+  confidence level = 95%
+  alfa = 5%
+population variance unknown
+_x +- tn-1,α/2*s/odmocnina n
+population variance known
+_x+- zα/2*σ/odmocnina n
+
+t-table `for confidence interval when population unknown`

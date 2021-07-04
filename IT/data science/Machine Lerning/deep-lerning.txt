@@ -1,0 +1,27 @@
+??Artificial neural networks??
+??Conditional neural networks??
+
+- Deep Learning
+??machine learning vs deep learning vs deep neural networks
+
+`has more than one layer`
+
+backpropagation
+
+underfitting
+overfitting `too much trained model` 
+  `to avoid`
+  dataset split into 3 parts 
+    training ?70%
+    validation  ?20%
+    test  ?10%
+
+N-fold cross-validation
+
+Xavier initialization / Glorot initialization
+  `Xavier Glorot`
+  uniform Xavier initialization
+    draw each weight, w, from a random uniform distribution 
+    in [-x,x] for x = odmocnina(6/(inputs + outputs))
+  normal Xavier initialization
+    draw each weight, w, from a normal distribution with a mean of 0, and a standard deviation σ = odmocnina(2/(inputs + outputs))

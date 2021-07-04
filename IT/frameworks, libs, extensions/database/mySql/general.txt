@@ -1,0 +1,8 @@
+#show selected database
+$ SELECT DATABASE();
+
+#### after instalation
+$ sudo mysql -u root
+mysql> SHOW DATABASES;
+mysql> CREATE DATABASE pets;
+mysql> USE pets

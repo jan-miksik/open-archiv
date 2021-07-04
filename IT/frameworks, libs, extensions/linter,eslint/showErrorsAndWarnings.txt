@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/39997022/show-all-warnings-and-errors-in-visual-studio-code
+- Show all warnings and errors in visual studio code (in sidebar)
+Go to Command pallet (CTRL + P + SHIFT)
+> tasks run
+Hit Tasks: run Task
+You'll find "eslint: lint whole folder"

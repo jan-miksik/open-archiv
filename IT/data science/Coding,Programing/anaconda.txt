@@ -1,0 +1,26 @@
+`run anaconda navigator`
+$ anaconda-navigator
+
+
+`already installed environments`
+$ conda info --envs
+
+`install tensorflow 2`
+$ conda create --name py3-TF2.0 python=3
+`swith to new environment`  
+$ conda activate py3-TF2.0
+$ conda install tensorflow
+$ pip install --upgrade tensorflow
+$ pip install ipykernel
+$ python -m ipykernel install --user --name py3-TF2.0
+
+?? if error: `ModuleNotFoundError: No module named 'tensorflow'`
+$ conda install -n base nb_conda_kernels
+$ conda install -n py3-TF2.0 nb_conda_kernels
+??
+`install-update to anaconda-navigator 2.1`
+
+`in jupyter change kernel to py3-TF2.0. Check versoin of tensorflow`
+# in jupyter file
+  import tensorflow as tf
+  print(tf.__version__)

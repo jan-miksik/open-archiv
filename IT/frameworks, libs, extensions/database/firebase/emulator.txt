@@ -1,0 +1,13 @@
+$firebase init
+
+$firebase auth:export auth-users.json --format=JSON
+
+// if project has functions config
+$firebase functions:config:get > .runtimeconfig.json
+
+$firebase emulators:export ./testDataExport
+- users from auth-users.json to accounts.json, 
+- add exported data from firebase
+
+
+$firebase emulators:start --import ./testDataExport

@@ -1,0 +1,11 @@
+$ npm i -g degit
+
+#create project
+$ degit sveltejs/template <project name>
+
+# add typescript
+$cd svelte-typescript-app
+$node scripts/setupTypeScript.js
+
+$ npm i
+$ npm run dev

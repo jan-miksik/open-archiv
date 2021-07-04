@@ -1,0 +1,39 @@
+Machine Learning models
+
+four ingredients 
+  data, 
+  model, 
+  objective function, 
+  optimization algorithm
+
+unsupervised `unlabelled data`
+
+reinforcement `reward - punishment`
+
+`types of machine learning`
+objective function
+  loss functions
+    supervised `clear goal, labelled data`
+      `we have to set inputs and targets, the rest do computer`
+      classification
+        cross-entropy = L(y,t) = -sumi ti Inyi `lower value means better accuracy`
+      regression
+        L2-norm
+  
+  reward functions
+    reinforcement learning
+
+delta = defference between outputs and targets
+data => model => loss => optimization algorithm => data => model ...
+
+gradient descent `optimization of algorithm`
+  f'(x)
+learning rate `eta`
+
+linear model 
+  y = xw + b
+  f(x) = xw + b   
+  f(`input`) = `input`weight + intercept(bias)
+
+
+  

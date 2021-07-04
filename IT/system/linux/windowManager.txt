@@ -1,0 +1,11 @@
+xdotool
+https://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html
+
+example:
+$ xdotool getactivewindow windowsize --usehints 47% 100% windowmove 53% 0 #shift + Right keypad
+
+$ xdotool getactivewindow windowsize --usehints 49% 50% windowmove 3% 47% #shift + end keypad
+
+$ xdotool getactivewindow windowsize --usehints 50% 100% windowmove 100 0 #shift + Left keypad
+
+$ wmctrl -lp

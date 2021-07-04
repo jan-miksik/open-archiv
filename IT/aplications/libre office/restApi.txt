@@ -1,0 +1,13 @@
+https://superuser.com/questions/1049616/can-i-retrieve-and-access-a-simple-json-object-via-http-in-libreoffice-calc
+
+https://github.com/DmytroBazunov/LibreOfficeGetRestPlugin/wiki/How-to-install-plugin
+
+
+call for coinbase historic price 
+https://api.coinbase.com/v2/prices/BTC-USD/spot?date=2020-05-10
+
+
+=TEXTJOIN(" ",TRUE, "Here", "comes", "the", "sun")
+=PARSEJSON(GET("https://api.coinbase.com/v2/prices/BTC-USD/spot"),"data.amount")
+
+=PARSEJSON(GET(TEXTJOIN("",1, "https://api.coinbase.com/v2/prices/", E70, "-USD/spot?date=", E72, "-01")),"data.amount")

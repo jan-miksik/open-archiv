@@ -1,0 +1,40 @@
+#install on mx linux
+https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/
+
+Go to the download page for the MySQL APT repository at https://dev.mysql.com/downloads/repo/apt/. --> install package
+
+$ sudo apt-get update
+$ sudo apt-get install mysql-server
+# check mysql server status
+$ systemctl status mysql
+# Install build dependencies
+$sudo apt-get build-dep mysql-server
+
+##stop service
+$ service mysql stop
+#or
+$ service mysqld stop 
+
+##start service
+$ service mysql start
+
+
+## GUI mySql workbench
+https://downloads.mysql.com/archives/workbench/
+# for mx linux fits Ubuntu Linux 18.04 (x86, 64-bit), DEB Package -- situation in 2021/5
+
+
+## add access for user admin on localhost
+#login to mysql without password
+$ sudo mysql -u root 
+mysql> CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+# check if setup for localhost is OK
+$ mysql -u admin -p -h 127.0.0.1 -P 3306
+
+#if problem with auth
+mysql> ALTER USER 'admin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+mysql> flush privileges;
+
+
+

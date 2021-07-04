@@ -1,3 +1,0 @@
-https://ghost.org/docs/ghost-cli/
-
-$ ghost --help, ghost -h, ghost help, ghost [command] --help    // show info about ghost

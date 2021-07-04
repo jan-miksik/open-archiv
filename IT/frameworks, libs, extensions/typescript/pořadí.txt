@@ -1,0 +1,2 @@
+obecně od spodu nahoru
+interface | types -> context | utils -> components | hooks -> screens

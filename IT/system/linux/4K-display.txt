@@ -1,0 +1,2 @@
+hidpi
+https://mxlinux.org/wiki/hardware/high-resolution-displays/

@@ -1,0 +1,34 @@
+# init run
+# ----------------------------------------------------
+$ ./bin/setup
+
+#if rbenv: version <2.7.1> is not installed ...
+$rbenv install <x.x.x>
+
+# if
+# Your bundle is locked to mimemagic (0.3.3) from rubygems repository https://rubygems.org/ or installed locally, but that version can no
+# longer be found in that source. That means the author of mimemagic (0.3.3) has removed it. You'll need to update your bundle to a
+# version other than mimemagic (0.3.3) that hasn't been removed in order to install.
+$bundle update mimemagic
+
+# if
+# An error occurred while installing tiny_tds (2.1.2), and Bundler cannot continue.
+# Make sure that `gem install tiny_tds -v '2.1.2' --source 'https://rubygems.org/'` succeeds before bundling.
+$ sudo apt-get install freetds-dev
+
+#if problem with database
+#check if .env.local is in folder
+$ bin/rails db:environment:set RAILS_ENV=development
+$ rails db:drop
+$ rails db:setup
+#or
+$ bundle exec rails db:create:all
+$ bundle exec rails db:create:migrate
+
+
+#if db not found
+$createdb <db name>
+
+#if login access is not correct
+$ rails db:seed
+

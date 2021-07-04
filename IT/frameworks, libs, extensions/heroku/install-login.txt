@@ -1,0 +1,5 @@
+$ sudo snap install heroku --classic
+$ heroku login
+
+if "bash: heroku: command not found"
+$ sudo ln -s  /snap/bin/heroku /usr/bin/heroku

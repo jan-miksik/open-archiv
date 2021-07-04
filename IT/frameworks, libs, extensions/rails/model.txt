@@ -1,0 +1,4 @@
+add atribute to model
+
+$ rails g migration AddNameToCategory name:string
+$ rails db:migrate

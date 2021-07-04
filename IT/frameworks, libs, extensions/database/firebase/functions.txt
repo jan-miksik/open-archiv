@@ -1,0 +1,3 @@
+firebase deploy --only functions
+firebase deploy --only functions:functionName
+firebase deploy --only functions:addMessage,functions:makeUppercase

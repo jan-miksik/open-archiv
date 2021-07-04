@@ -1,0 +1,11 @@
+#setup miltiple ssh keys
+https://www.redhat.com/sysadmin/manage-multiple-ssh-key-pairs
+
+$ cp /etc/ssh/ssh_config ~/.ssh/config
+$ man ssh_config
+$ vi ~/.ssh/config
+
+Host *github.com
+  User lookitup
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes

@@ -1,0 +1,11 @@
+https://www.typescriptlang.org/download
+
+"for npm"
+$ npm install typescript --save-dev
+$ npx tsc 
+$ npx tsc --init
+
+"for yarn"
+$ yarn add typescript --dev
+$ npx tsc --init
+# $ yarn tsc
