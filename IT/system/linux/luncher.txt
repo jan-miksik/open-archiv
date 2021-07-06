@@ -1,0 +1,16 @@
+https://askubuntu.com/questions/138908/how-to-execute-a-script-just-by-double-clicking-like-exe-files-in-windows
+
+
+If you're using XFce then you can make script executed in Thunar by executing this command:
+
+xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default \
+             --create --type bool --set true
+or by using gui xfce4-settings-editor and creating the same properties.
+
+Run xfce4-settings-editor, then enter:
+
+/misc-exec-shell-scripts-by-default
+
+Boolean
+
+TRUE
