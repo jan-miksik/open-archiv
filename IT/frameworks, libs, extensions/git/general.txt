@@ -1,0 +1,8 @@
+# list remote and local branches
+$ git branch -a
+
+$ git branch
+
+$ git checkout <existing_branch>
+
+$ git checkout -b <new_branch>
