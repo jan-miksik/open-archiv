@@ -1,3 +1,6 @@
 ./ledger-live-desktop-*.AppImage --no-sandbox
 
 https://support.ledger.com/hc/en-us/articles/360006395553-Download-and-install-Ledger-Live
+
+metamask - pro chrome 91+ nefunguje ledger.. ledger bridge
+https://support.ledger.com/hc/en-us/articles/360020871157-Connection-issues-with-MetaMask-
