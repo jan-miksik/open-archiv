@@ -1,0 +1,2 @@
+strankovani - pagy https://github.com/ddnexus/pagy
+vyhledávání, filtrování - ransack https://github.com/activerecord-hackery/ransack
