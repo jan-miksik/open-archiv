@@ -5,6 +5,13 @@ $ ./bin/setup
 #if rbenv: version <2.7.1> is not installed ...
 $rbenv install <x.x.x>
 
+#if ruby version not match
+$ rvm use ruby-<x.x.x>
+
+#if rvm not installed
+https://rvm.io/
+
+
 # if
 # Your bundle is locked to mimemagic (0.3.3) from rubygems repository https://rubygems.org/ or installed locally, but that version can no
 # longer be found in that source. That means the author of mimemagic (0.3.3) has removed it. You'll need to update your bundle to a
