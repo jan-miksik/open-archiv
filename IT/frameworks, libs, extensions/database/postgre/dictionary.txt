@@ -1,0 +1,11 @@
+- stahnout cz slovnik
+https://github.com/f00b4r/postgresql-czech
+
+- run postgre terminal
+$ psql postgres
+
+- naistalované slovníky
+postgres=# SELECT dictname FROM pg_catalog.pg_ts_dict;
+
+- nastavení tabulek postgre
+https://postgres.cz/wiki/Instalace_PostgreSQL

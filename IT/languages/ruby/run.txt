@@ -3,3 +3,6 @@ run
 $ ./bin/webpack-dev-server 
 
 $ bundle exec rails s
+
+# for live reload
+$ bundle exec rake browser_sync:start

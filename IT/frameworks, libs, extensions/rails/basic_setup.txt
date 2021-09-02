@@ -1,0 +1,15 @@
+strankovani
+pagy https://github.com/ddnexus/pagy
+
+vyhledávání, filtrování 
+ransack https://github.com/activerecord-hackery/ransack
+
+authorizace 
+gem "action_policy"
+
+authentizace 
+gem "devise"
+gem "devise-i18n"
+
+registrace pozvánkou
+gem 'devise_invitable', '~> 2.0.0'

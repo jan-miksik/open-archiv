@@ -1,0 +1,12 @@
+from other project ex. predictor
+** pavel solution
+
+* table with static data
+db/data/fileName.csv
+
+gem "dry-struct", "~> 1.4"
+gem "oj", "~> 3.13"
+
+lib/static_model/associations.rb
+lib/static_model.rb
+lib/types.rb
