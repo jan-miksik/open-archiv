@@ -1,3 +1,6 @@
+install android studio
+https://tutorialforlinux.com/2018/05/23/android-studio-mx-linux-installation-guide/
+
 errors
 - SDK location not found. Define location with sdk.dir
 $ nano $HOME/.bashrc
