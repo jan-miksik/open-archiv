@@ -1,0 +1,18 @@
+install android studio
+https://tutorialforlinux.com/2018/05/23/android-studio-mx-linux-installation-guide/
+
+errors
+- SDK location not found. Define location with sdk.dir
+$ nano $HOME/.bashrc
+add this lines to file
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+than Ctrl+o save and ctrl+x close.
+$ source $HOME/.bashrc
+
+'should return path to the SDK'
+$ echo $ANDROID_SDK_ROOT
