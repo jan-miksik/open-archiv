@@ -1,0 +1,35 @@
+
+
+- peníze
+USD($) EUR(€) Yen(¥) 
+Pound(£)
+1 300 000 000 000 000 - M3
+0 002 500 000 000 000 - apple
+0 002 200 000 000 000 - all crypto(9/2021)
+0 001 000 000 000 000 - BTC(9/2021)
+0 000 500 000 000 000 - ETH(9/2021)
+0 001 700 000 000 000 - microsoft
+0 001 600 000 000 000 - amazon
+0 001 200 000 000 000 - google
+0 000 800 000 000 000 - facebook
+0 000 000 500 000 000 - NFTs by Damien Hirst(9/2021)
+
+- čas
+minutes(min) hours(h) years(y)
+seconds(sec) days(day) weeks(wee) 
+months(mon) miliseconds(ms)  decades(dec) centuries(cen)
+0 000 000 000 000 012 - měsíců v roce
+
+- vzdálenosti
+mm cm dm m km
+
+- data
+
+- počty lidí
+0 000 007 900 000 000 https://www.worldometers.info/
+
+0 000 000 000 XX0 000 - menší město
+0 000 000 000 XX0 000
+
+- text
+0 000 000 000 000 0XX - písmen v abecedě
