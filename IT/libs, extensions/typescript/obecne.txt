@@ -1,0 +1,2 @@
+- any Object 
+Record<string, string>

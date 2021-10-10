@@ -1,0 +1,6 @@
+- error
+failed to install .apk: Failure [INSTALL_FAILED_INVALID_APK: Scanning Failed.: Package /data/app/base.apk code is missing]
+
+in root folder
+$ cd android
+$ ./gradlew clean

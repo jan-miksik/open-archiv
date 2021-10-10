@@ -6,3 +6,7 @@ $ bundle exec rails s
 
 # for live reload
 $ bundle exec rake browser_sync:start
+
+# ruby version manager
+$ rbenv
+$ rbenv install

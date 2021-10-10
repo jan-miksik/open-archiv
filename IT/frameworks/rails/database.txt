@@ -1,2 +1,10 @@
 
+$ rails db:drop
+$ rails db:create
+
 $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -d brown_forman_development ../brown-forman.dump 
+
+
+- ActiveRecord::ProtectedEnvironmentError: You are attempting to run a destructive action against your 'production' database.
+$ bin/rails db:environment:set RAILS_ENV=development
+
