@@ -1,0 +1,97 @@
+- technologie
+vue with typescript
+tailwind
+
+časem přidat
+vite, nuxt, 
+router
+ipfs
+
+-zjistit rozdíl mezi 
+setup() {
+  reactive + toRefs
+}
+setup() {
+  ref
+}
+data(){}
+
+vulgárně.. sprostě
+běžně
+akademicky, úředně, strojeně
+specialisticky, odborně
+
+
+??????????? asi zbytečné kecy ????????????
+- běžné obecné cíle
+naplnit potřeby
+zabezpečit se, pobavit se, získat uznání, splnit si tradiční sny, získat moc, pomstít se, prožívat pohodu
+zvýšit finanční příjem, 
+
+- obecny cil
+Zjednodušit a vyčistit - profiltrovat nadbytečné data, objekty...
+Hledat rovnováhu mezi nadbytečným a chybějícím záznamem
+Vytvořit a vylepšovat osobní systém na práci s daty, materiálem, časem
+- cíl
+Proč: zvýšit povědomí o množství a číslech v rámci odvětví a napříč obory. Potvrdit nebo vyvrátit tušení-představy o tom jaké jsou vztahy množství a čísel v rámci a napříč kategorií.
+???????????? asi zbytečné kecy ?????????? 
+
+
+
+- cíl
+Webová aplikace na zkoumání množství a čísel. Zaměření na různorodé kategorie: finance, vzdálenost, počty lidí, data... .
+
+Zároveň vytvořit kostru nebo systém, který by se potom dal použít i pro jiný výzkum nebo něco jiného. Např. zkoumání ikon, symbolů a znaků.
+??V první fázi může data vytvářet a editovat admin??
+??Později přidat možnost založit si účet a vytvářet vlastní obsah??
+
+??Problémy_______
+množství a čísla je dost možná úzké pole.
+časem se asi víc zaměřit na text nebo ikony,symboly a znaky
+tvary a rozklad obrazu na základní prvky zase asi příliš široké
+******
+Možná je to úplně zbytečná blbost-kravina, aspoň se na tom naučím.
+
+******
+
+
+- todo
+-kategorie - prepinani-filtrovani podle kategorie
+-rozlišení kategorií ?? podle barev
+
+.+ jestli je záznam konkrétní množství
+
+.+ vite
+.+ datum k amountItemu?
+.+ grafy
+-vylepsit nastylovani amountItem
+
+.+ podkategorie
+.+ přepínání rozsahu u amountItem tam kde to jde
+
+-testovaní různých dizajnů - přidat přepíná mezi nimi
+
+-víc rozepsat cíl a směřování projektu, důvod, motivaci
+
+-možnost přidávat data přes web ?administraci?
+.+ ipfs?
+
+.+ další data
+-vylepsit grafy
+
+-dát na internet
+
+?????
+-select items for graph
+-switch graph type
+
+-doplnit top 5 pro kazdou kategorii
+
+https://ourworldindata.org/corruption
+https://companiesmarketcap.com/
+
+
+- done
+-rozepsat cíl a směřování projektu, důvod-y, motivace - 1.5h
+-zaplnit daty +-30záznamů 2h + 4h
+-zakladni nastylovani amountItem / zvyrazneni cisel za nulama ... tailwind 3h?

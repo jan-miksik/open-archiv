@@ -1,0 +1,2 @@
+- vetur extension 
+-vetur template in preferences/settings

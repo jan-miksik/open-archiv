@@ -1,0 +1,112 @@
+potecionální projekty
+- art atlas
+- amounts
+- crypto přehled
+- encyklopedie crypta
+- atlas component - vue, react ...
+
+General data structure
+aplikace na obecnou datovou strukturu - backend
+
+- příklady aplikací
+prezentační web - one page app
+A - only static content
+B - with few simple animation
+C - with more complex animation and and component
+(carousel, gallery, contact form, custom scrollbar, custom pointer, ...)
+
+mini eshop
+- max 5 items, login, order list, database, payment gateway, notification
+(trička, placky)
+
+
+
+- uživatelé
+role uživatelů
+registrace
+přihlášení
+
+- záznam
+CRUD
+typ záznamu
+vztahy mezi záznamy
+
+- vyhledávání
+plain text
+fulltext
+s filtrováním
+
+- api
+jazyky - verze
+
+záznam
+api
+uživatelé (admin, editor, uzivatel)
+vyhledávání a filtrování
+tagy
+vizualizace dat
+zasílání emailů
+posílání notifikací
+
+
+
+
+___________________ FRONTEND___________
+
+
+*******Level 1********
+tlačítka
+	toggle
+	checkbox
+	
+inputy
+	text
+	calendar
+	number
+	number in range
+	long text
+
+loaders
+cursors
+hovers
+tooltip
+texts - fonts
+backgrounds
+scroll
+scrollbar
+tooltip
+
+********level 2*********
+carousel
+gallery
+contact form
+modal
+
+-simple animation
+	on background
+	generaly
+
++level 1 in advanced form
+*********level 3*********
+authentication
+forms
+notifikace
+ -email
+	-mobile
+	-sms
+pagination
+maps with custom elements
+search
+
+- authentication
+registration
+login
+account setup
+
++levels before in advanced
+
+*********level 4**********
+security
+?payment gateways
+
++levels before more advanced and customized
