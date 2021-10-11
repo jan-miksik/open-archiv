@@ -1,0 +1,11 @@
+https://firebase.google.com/docs/cli/#managing_project_aliases
+
+$ firebase projects:list
+$ firebase use --add
+
+- download indexes into firestore.indexes.json
+$ firebase firestore:indexes
+$ firebase deploy --only firestore:indexes
+
+- rules
+$ firebase deploy --only firestore:rules
