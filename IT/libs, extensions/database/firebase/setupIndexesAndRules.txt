@@ -4,7 +4,8 @@ $ firebase projects:list
 $ firebase use --add
 
 - download indexes into firestore.indexes.json
-$ firebase firestore:indexes
+$ firebase firestore:indexes > firestore.indexes.json
+- deploy
 $ firebase deploy --only firestore:indexes
 
 - rules

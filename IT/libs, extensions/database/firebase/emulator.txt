@@ -11,3 +11,10 @@ $firebase emulators:export ./testDataExport
 
 
 $firebase emulators:start --import ./testDataExport
+
+
+$firebase emulators:start --import=./testDataExport  --export-on-exit
+
+// watch for change in functions in emulator
+// go to folder "functions" and run 
+$while inotifywait -e close_write ./src/*; do npm run build; done
