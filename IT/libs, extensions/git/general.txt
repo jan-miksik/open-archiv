@@ -6,3 +6,6 @@ $ git branch
 $ git checkout <existing_branch>
 
 $ git checkout -b <new_branch>
+
+install latestes version
+https://linuxize.com/post/how-to-install-git-on-debian-9/#installing-git-from-source
