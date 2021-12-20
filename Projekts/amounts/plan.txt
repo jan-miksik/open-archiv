@@ -7,15 +7,6 @@ vite, nuxt,
 router
 ipfs
 
--zjistit rozdíl mezi 
-setup() {
-  reactive + toRefs
-}
-setup() {
-  ref
-}
-data(){}
-
 vulgárně.. sprostě
 běžně
 akademicky, úředně, strojeně
