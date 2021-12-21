@@ -1,0 +1,32 @@
+o projektu
+
+
+TODO
+
+
+- vybrat knihy pro ilustrativní analýzu + implementovat do app
+
+- analyzovat source code programu
+- vymyslet a implementovat design 
+- barvy, pozadí, inputy, tlačítka, loader, font
+
+- přehled dvojic slov, trojic slov... ? kterých je víc jak 1x
+- přehled dvojic znaků, trojic znaků... ? kterých je víc jak 1x
+
+- refactoring own components for button, input, ...
+
+- refactoring abstractization functions
+- testy
+
+- nahrání knihy, delšího textu, ? vymyslet práci s delším textem
+
+- vymyslet název
+
+
+
+DONE
+# přepíná řazení sestupně a vzestupně 28.11.2021(0.5h)
+# celokovy počet znaky, počet unikátních znaky, sloupec znaky + číslo kolik je znaků, nastavení linteru 28.11.2021(1h)
+# sloupec slov + číslo kolik je slova, počet unikátních slov 31.10.2021(1h) 
+# celokovy počet slov + soupis zadání 31.10.2021(0.5h) 
+# základní kostra projektu.. vue-vite, tailwind, eslint... 24.10.2021(1.5h)

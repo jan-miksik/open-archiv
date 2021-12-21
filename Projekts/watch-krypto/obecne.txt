@@ -1,0 +1,206 @@
+?z terra na bankovní účet
+?Gitcoin stake nebo nějaké využití tokenu....
+-- adam kracík - portfolio tipy
+
+
+
+111 TODO 111
+??**min 3hod tydne, max 8hod tydne**??
+
+## add untracked assets
+- polygon
+- fantom 300 FTM
+
+
+##design
+- background, 
+- barvy
+
+- loader,
+- input, 
+- hover effecty, 
+- animace, 
+- přechody stránek,
+- cursor
+
+
+##farms
+- restyling - upravit grid, hover pro řádek, total, 
+- vyplňování pře web UI - ?ipfs, funkce přidat měsíc,
+- automatizace informací o assetu - % apy, hodnota...
+- refactoring codu
+
+
+##summaries
+- ?graf s procentualnim rozlozenim?
+
+
+##history
+- assets history refaktoring
+- history možnost mazat odebírat,
+- víc prostudovat ipfs
+- ?hashování dat, které se ukládají do ipfs?
+
+
+##overview
+- postupně měnit hardcoded na hardcoded(half tracked) nebo full tracked  a hardcoded(half tracked) na full tracked
+- znovu projít aktiva podle hodnoty
+
+- mapování polygonu
+- ?pridani dalsich siti (terra, palm, btc)
+- ?rozdělení na sekce podly typu assetu?
+- na jaké síti asset je
+- ?rozkliknutelné "sum of others under"
+- prepinani mezi rozsirenou a strucnou tabulkou
+- bundle pro podobné assety napříč peněženkami - ETH, USD stable coiny, BTC
+
+
+##invested cash
+- přidat přehled kolik fiatu bylo posláno do crypta, kdy, kolik, přes jakou službu, poplatek?, kolik celkem
+
+
+##refaktor
+- refaktorování, vytvoření modelů ERC20, ERC723, ?ERC1155? + extrahovani nekterých funkcí
+- refaktoring, typescript
+- pridat vite
+
+
+
+
+
+7. terra network hardcoded -> (half tracked)
+--
+8. sushiswap(polygon) hardcoded -> (half tracked)
+9. BPC - PieDao hardcoded -> (half tracked)
+11. Axie Infinity NFTs hardcoded -> (half tracked)
+12. Quickswap(polygon) hardcoded -> (half tracked)
+
+
+4. cs account +- hardcoded -> (half tracked) ?
+
+## can wait
+1A. ??Currency NFT "floor price" (half tracked) -> (full tracked)
+2A. ??Punk comics NFT "floor price" (half tracked) -> (full tracked)
+3. ??BTC in wallet hardcoded(half tracked) -> (full tracked)
+
+
+
+
+
+222 DONE 222
+## add untracked assets - loopring 19.12.2021(0.5h)
+# - stranku o farmaření, zaznamenávání historie(zatím asi manuálně); zatím záznamy hardcoded do app, přehled po měsících 19.12.2021(1.5h)
+#- stranku o farmaření, zaznamenávání historie(zatím asi manuálně) 18.12.2021(3.5h)
+#- #summaries % rozložení podle sítě - doladit api -polygon, stranku o farmaření, zaznamenávání historie(zatím asi manuálně) 18.12.2021(1h)
+
+# % rozložení podle sítě, api, tailwind 11.12.2021(2h)
+# kolik je na jednotlivé wallet, % a $ - 11.12.2021(1h)
+
+# snapshot funkci, která uloží přehled množství a ceny aktiv. Vytvoří se tak seznam snapshotů z různých časů, které půjde zobrazit. Zatím bude snapshot funkce na kliknutí, možná časem by se v pravidelném intervalu např. 1 měsíc, vytvořil snapsot. ? Snapshot jako screen shot, snapshot jako uložení dat ... anebo obojí... zatím jako uložení dat. ??(6hod) ukládání do web3.storage na ipfs 5.12.2021
+
+# přehled % v NFT, stable coinu + bank acc, LP stablu, native tokenu(BTC, ETH, MATIC...), ostatnich tokenech, dokumentace, vymýšlení vylepšení pro app 28.11.2021(4h)
+# přidat 13. Polkadot 14. Kusama, dokumentace 27.11.2021(2.5h)
+5. UNI token (impermax) hardcoded -> (half tracked)
+6. ETH (impermax) hardcoded -> (half tracked)
+# přehled % stable + na bankovnim ucte, stable in cotract(LP, stake ...) vs. tokens in wallet, tokens in cotract
+# přemýšlení o vylepšeních 20.11.2021(1h)
+# vytvořit % přehled assets in wallet, assets in contract 20.11.2021(1.5h)
+# refaktorování TableWithBalances -extrahování summaryInterestAndFarms, add column asset location 20.11.2021(1.5h)
+# 2. Punk comics NFT "floor price" (hardcoded) -> (half tracked), pruzkum, dokumentace 20.11.2021(1h)
+# 1. Currency NFT "floor price" hardcoded -> (half tracked) 20.11.2021(2h)
+# nastavitelne "sum of others under" <number>$ 31.10.2021(0.5h)
+# průměrné apy ze všech farem a stakování 31.10.2021(1h)
+# přehled ve farmách stackování celkem, 31.10.2021(0.5h)
+
+# filter - skrýt aktiva které mají hodnotu menší než <> a sečíst jich do jednoho řádku "ostatní míň jak xxx$" 30.10.2021(1h)
+
+# přidat sloupec o farmaření, stackování(procenta, měsíční výnos)-zatím hardcoded 30.10.2021(1h)
+
+# optimalizace api -- ukládání dat do local storage, dotaz na api jen když jsou data starší jak ?10min 30.10.2021(1.5h)
+
+#rozlišit hardcoded, hardcoded(half tracked) a full tracked 30.10.2021(2h)
+# dkumentace úkolů 24.10.2021(1h)
+# postupne přidávání aktiv 24.10.2021(1.5h)
+1. Currency NFT "floor price" hardcoded
+2. Punk comics NFT "floor price" hardcoded
+3. BTC in wallet hardcoded(half tracked)
+4. cs account +- hardcoded
+5. UNI token (impermax) hardcoded(half tracked)
+6. ETH (impermax) hardcoded(half tracked)
+7. terra network hardcoded
+--
+8. sushiswap(polygon) hardcoded
+9. BPC - PieDao hardcoded(half tracked)
+10. 1inch hardcoded
+11. Axie Infinity NFTs hardcoded
+12. Quickswap(polygon) hardcoded
+Klima DAO - polygon
+Kusama
+Great Expectations NFT
+wBTC - impermax
+# podrobneji projít aktiva podle hodnoty
+# přidání vlastního aktiva které se zatím nenačítá z crypto adresy / hardcoded into app 24.10.2021(2h)
+# součet hodnoty USD 24.10.2021(1h)
+# typescript + refactoring nahrubo 23.10.2021(1.5h)
+# razeni podle ceny 23.10.2021(1.5h)
+# vyfiltrovani scam coinu x.10.2021
+# zmapovani vic eth adres x.10.2021
+# ukladani dat(crypto adresy, nastaveni) -- zatim primo do app, x.10.2021
+# pridani dalsich crypto adres -- zatim primo do kódu app x.10.2021
+# zjistit mnostvi eth na adrese 23.10.2021
+# spravne nastaveni ceny tokenu(coingecko) 23.10.2021
+
+
+
+--upravování v excel tabulce
+
+vytvořit webovou-mobilní app
+?? inspirace zerion, zapper - vytvořit fork a upravit??
+
+ziskavat assety podle hodnoty od nejvetsi
+--- nad +-100 000Kc
+nft The Currency
+nft Punk Comics
+ucet cs
+Eth
+Gtc token
+uni token
+terra
+--- nad +-50 000Kc
+sushi
+pieDao
+polkadot
+
+
+Todo
+- zmapování aktuálních assetů(tokenů, NFT, ?fiat) na
+-eth
+-polygon
+-terra
+-polkadot
+-cardano
+-fantom
+-palm
+-loopring
+-?ceska spořitelna
+-?revolut
+-ostatní s hod. nad 500$ (monolith, ...)
+
+- zmapování aktuálních pozic (v stakování, farmách) na
+-eth
+-polygon
+-terra
+-polkadot
+-cardano
+-fantom
+-palm
+-loopring
+-?ceska spořitelna
+-?revolut
+-ostatní s hod. nad 500$ (monolith, ...)
+
+- možnost udělat snapshot aktuálních assetů a pozic
+
+- zjistit historické množství a hodnotu
+-assetů
+-pozic(stake, farm)
