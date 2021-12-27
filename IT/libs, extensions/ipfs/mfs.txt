@@ -1,0 +1,49 @@
+- MFS
+# Mutable File System (MFS)
+
+////////create//////////
+// Your code to add one file to MFS goes here
+const addFilesToIpfs = async (files) => {
+  await Promise.all(files.map(f => ipfs.files.write('/' + f.name, f, { create: true })))
+}
+- alternatively
+const addFilesToIpfs = async (files) => {
+  for (let file of files) {
+    await ipfs.files.write('/' + file.name, file, { create: true })
+  }
+}
+
+# create directory
+await ipfs.files.mkdir('/some/stuff', { parents: true })
+
+/////read////////
+/* global ipfs, all */
+const run = async (files) => {
+  - need package it-all for promise await all
+  const rootDirectoryContents = await all(ipfs.files.ls('/'))
+  return rootDirectoryContents
+}
+return run
+
+#read main directory
+const directoryStatus = await ipfs.files.stat('/')
+
+
+#remove
+await ipfs.files.rm('/some', { recursive: true })
+
+
+# operations with files
+const run = async (files) => {
+  await Promise.all(files.map(f => ipfs.files.write('/' + f.name, f, { create: true })))
+  await ipfs.files.mkdir('/some/stuff', { parents: true })
+  let rootDirectoryContents = await all(ipfs.files.ls('/'))
+  const filepathsToMove = rootDirectoryContents.filter(file => file.type === 0).map(file => '/' + file.name)
+  await ipfs.files.mv(...filepathsToMove, '/some/stuff')
+  await ipfs.files.cp('/ipfs/QmWCscor6qWPdx53zEQmZvQvuWQYxx1ARRCXwYVE4s9wzJ', '/some/stuff/success.txt')
+  let someStuffDirectoryContents = await all(ipfs.files.ls('/some/stuff'))
+
+  let secretMessage = (await toBuffer(ipfs.files.read('/some/stuff/success.txt'))).toString()
+
+  return secretMessage
+}
