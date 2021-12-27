@@ -7,10 +7,12 @@
 111 TODO 111
 ??**min 3hod tydne, max 8hod tydne**??
 
-## add untracked assets
-- polygon
-- fantom 300 FTM
 
+- rozliseni stable coinu od ostatnich tokenu
+
+## planning
+- přidat k assetům za jak dlouho bude by se s ním měla udělat nějaká změna - akce
+- přidat předpokládaný plán u jednotlivých assetů, 1měsíc, půl roku, rok, ...
 
 ##design
 - background, 
@@ -31,9 +33,17 @@
 - refactoring codu
 
 
+##notifikace
+?? EPNS
+
+##autorizace - authentication
+
 ##summaries
 - ?graf s procentualnim rozlozenim?
 
+## add untracked assets
+- fantom 300 FTM
+- ronin eth,
 
 ##history
 - assets history refaktoring
@@ -88,6 +98,10 @@
 
 
 222 DONE 222
+# add untracked assets, 26.12.2021(0.5h)
+## planning -- přidat předpokládaný plán u jednotlivých assetů, 1měsíc, půl roku, rok, ... 26.12.2021(1h)
+## add untracked assets - loopring 
+#- polygon - zmapovani assetů, polygon - vyfiltrovaní scam a dead tokenů 23.12.2021(4.5h)
 ## add untracked assets - loopring 19.12.2021(0.5h)
 # - stranku o farmaření, zaznamenávání historie(zatím asi manuálně); zatím záznamy hardcoded do app, přehled po měsících 19.12.2021(1.5h)
 #- stranku o farmaření, zaznamenávání historie(zatím asi manuálně) 18.12.2021(3.5h)

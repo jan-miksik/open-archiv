@@ -1,0 +1,62 @@
+- Referring to files by their content, not their location
+Protocol Labs
+
+
+#fundemental principles of IPFS
+1) Unique identification via content addressing (similar to Git, Ethereum and Bitcoin)
+2) Content linking via directed acyclic graphs (DAGs)
+3) Content discovery via distributed hash tables (DHTs)
+
+IPLD (InterPlanetary Linked-Data)
+NAT (Network Address Translation)
+OSI Model (Open Systems Interconnection Model)
+
+content identifier (CID) - contains codec and multihash
+codec
+multihash - has hash type and hash value
+
+-same data have same hash
+
+
+
+# Merkle DAG # 
+directed - structure parent -> child
+Acyclic Graphs - no loops in the graph
+-used in git
+-building the graph from the bottom to up *parents are created after children
+-if something change in child every ancestors will change
+-deduplication
+
+
+# libp2p
+libp2p is more focused on process addressing,
+-libp2p breaks the OSI Model apart and allows applications to mix and match freely without being restricted to rigid conceptual models.
+
+
+# Mutable File System (MFS)
+-is a tool built into IPFS that lets you treat files like you normally would in a name-based filesystem -CRUD
+
+
+## PROTO SCHOOL ##
+- Content Addressing on the Decentralized Web
+- Merkle DAGs: Structuring Data for the Distributed Web
+- Introduction to libp2p
+- Mutable File System
+
+
+++
+-with content addressing is much harder to fake some data
+-verifable
+-trustless
+
+?? hash collision
+
+A] ipfs gateway
+B] vlastni ipfs node
+
+1. vytvořit jednoduchout databázi např. todo list ... CRUD, vue app, připojení na existující node
+2. vlastní IPFS node
+3.
+
+
+
