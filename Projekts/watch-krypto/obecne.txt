@@ -8,12 +8,6 @@
 ??**min 3hod tydne, max 8hod tydne**??
 
 
-- rozliseni stable coinu od ostatnich tokenu
-
-## planning
-- přidat k assetům za jak dlouho bude by se s ním měla udělat nějaká změna - akce
-- přidat předpokládaný plán u jednotlivých assetů, 1měsíc, půl roku, rok, ...
-
 ##design
 - background, 
 - barvy
@@ -24,6 +18,11 @@
 - animace, 
 - přechody stránek,
 - cursor
+
+
+## planning
+- přidat k assetům za jak dlouho bude by se s ním měla udělat nějaká změna - akce
+- přidat předpokládaný plán u jednotlivých assetů, 1měsíc, půl roku, rok, ...
 
 
 ##farms
@@ -95,9 +94,34 @@
 
 
 
+????????????
+rozložení portfolia
+procent zisku // procent z portfolia
+
+A
+max 35% in one platform
+0 // zbytek min 25%
+1-5% // max 50%
+5-10% // max 30%
+10-20% // max 30%
+20-50% // max 20%
+50-100% // max 10%
+100+% // max 10%
+
+B
+max 30% in one platform
+0 // min 30% (in wallet, most secure)
+1-5% // max 60% (in well know contract, secure)
+5-10% // max 35% (in know contract, secure)
+10-20% // max 25% (in know contract, secure)
+20-50% // max 20% (in know contract, with some risks, less secure)
+50-100% // max 10%
+100+% // max 5%
+???????????
 
 
 222 DONE 222
+##farms vice mesicu, sprava portfolia, rozliseni stable coinu od ostatnich tokenu 31.12.2021(3.5h)
 # add untracked assets, 26.12.2021(0.5h)
 ## planning -- přidat předpokládaný plán u jednotlivých assetů, 1měsíc, půl roku, rok, ... 26.12.2021(1h)
 ## add untracked assets - loopring 

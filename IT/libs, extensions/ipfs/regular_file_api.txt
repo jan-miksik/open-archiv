@@ -1,0 +1,80 @@
+Regular Files API
+
+# add #####
+const run = async (files) => {
+  const result = await all(ipfs.addAll([...files]))
+  return result
+}
+
+- add to direrectory
+-Directories are immutable
+
+ipfs.add(file, { wrapWithDirectory: true }) // add a single file
+ipfs.addAll([file1, file2], { wrapWithDirectory: true }) 
+ipfs.addAll([
+  {
+      path: 'adorable-kitty.jpg',
+      content: catPic1
+  },
+  {
+      path: 'cat-drinking-milk.jpg',
+      content: catPic2
+  }
+], { wrapWithDirectory: true })
+
+const addFilePlusDirerectory = async (files) => {
+  let fileObjectsArray = files.map((file) => {
+        return {path: file.name,
+        content: file}
+  })
+
+  const result = await all(ipfs.addAll(fileObjectsArray, { wrapWithDirectory: true })) 
+
+  return result
+}
+
+
+
+
+
+
+
+# read ############
+https://www.npmjs.com/package/it-to-buffer
+const run = async () => {
+  const fileContents = await toBuffer(ipfs.cat('QmWCscor6qWPdx53zEQmZvQvuWQYxx1ARRCXwYVE4s9wzJ'))
+
+  // don't forget to return the string value
+  return fileContents.toString()
+}
+return run
+
+- ls
+const run = async (files) => {
+  const fileObjectsArray = files.map((file) => { return { path: file.name, content: file }})
+  const addedFiles = await all(ipfs.addAll(fileObjectsArray, { wrapWithDirectory: true }))
+  const directoryCID = addedFiles[addedFiles.length - 1].cid
+
+  // only edit code below this point
+  const result = await all(ipfs.ls(directoryCID))
+
+  return result // your code to list the contents of the top-level directory
+}
+
+/* global ipfs, toBuffer */
+- cat
+const run = async () => {
+  const bufferedContents = await toBuffer(ipfs.cat("/ipfs/QmcmnUvVV31txDfAddgAaNcNKbrtC2rC9FvkJphNWyM7gy/fun/success.txt"))// access the content of the file as a buffer
+
+  // we've taken care of converting the buffer to a string in the return statement below
+
+  return bufferedContents.toString()
+}
+
+/* global ipfs, all */
+- get
+const run = async () => {
+  let result = await all(ipfs.get("QmcmnUvVV31txDfAddgAaNcNKbrtC2rC9FvkJphNWyM7gy"))
+
+  return result
+}

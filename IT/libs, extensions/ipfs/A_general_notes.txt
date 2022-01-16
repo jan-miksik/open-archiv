@@ -42,7 +42,7 @@ libp2p is more focused on process addressing,
 - Merkle DAGs: Structuring Data for the Distributed Web
 - Introduction to libp2p
 - Mutable File System
-
+- Regular Files API
 
 ++
 -with content addressing is much harder to fake some data
@@ -59,4 +59,19 @@ B] vlastni ipfs node
 3.
 
 
+struktura pro ukládání fotek a dat, které k nim patří
 
+{
+  img: {
+    src: 'sss',
+    name: 'ssss',
+    ...
+  }
+  note: 'eeee',
+  author: 'eeee'
+  ...
+}
+
+
+
+uložení 

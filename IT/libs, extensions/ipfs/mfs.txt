@@ -1,11 +1,25 @@
 - MFS
 # Mutable File System (MFS)
 
+
+# init node
+import * as Ipfs from 'ipfs'
+
+node = await Ipfs.create({
+  preload: { enabled: false },
+  repo: './ipfs',
+  EXPERIMENTAL: { pubsub: true },
+  config: {
+    Bootstrap: [],
+    Addresses: { Swarm: [] },
+  },
+})
+
 ////////create//////////
-// Your code to add one file to MFS goes here
 const addFilesToIpfs = async (files) => {
-  await Promise.all(files.map(f => ipfs.files.write('/' + f.name, f, { create: true })))
+  await Promise.all(files.map(f => node.files.write('/' + f.name, f, { create: true })))
 }
+
 - alternatively
 const addFilesToIpfs = async (files) => {
   for (let file of files) {
@@ -13,8 +27,9 @@ const addFilesToIpfs = async (files) => {
   }
 }
 
-# create directory
+#directory
 await ipfs.files.mkdir('/some/stuff', { parents: true })
+
 
 /////read////////
 /* global ipfs, all */
