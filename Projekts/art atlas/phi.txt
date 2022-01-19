@@ -1,0 +1,13 @@
+A {
+  Create system where is possible to work anytime, anywhere, for anyone, without needs to say or explaining when he wants works and what he wants to do.
+
+  Help to find inernal motivation: 
+  -to do something
+  -to join the community
+  -to contribute
+
+  specif problems of internet, pc apps and virtual:
+  -physical separation
+  -little movement
+
+}
