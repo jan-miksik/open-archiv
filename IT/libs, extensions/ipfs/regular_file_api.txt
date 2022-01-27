@@ -6,6 +6,8 @@ const run = async (files) => {
   return result
 }
 
+const result = await ipfs.add(file)
+
 - add to direrectory
 -Directories are immutable
 

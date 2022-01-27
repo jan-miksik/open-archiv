@@ -16,7 +16,7 @@ codec
 multihash - has hash type and hash value
 
 -same data have same hash
-
+-There are two types of encryption in a network: transport-encryption and content-encryption. IPFS uses transport-encryption but not content encryption.
 
 
 # Merkle DAG # 
@@ -75,3 +75,19 @@ struktura pro ukládání fotek a dat, které k nim patří
 
 
 uložení 
+
+
+*************Deeper*****************
+- types of nodes
+-Preload
+-Relay
+-Bootstrap
+-Delegate routing
+
+- Implementations
+Go-ipfs or js-ipfs
+
+DHT - A Distributed Hash Table (DHT) is a distributed key-value store where keys are cryptographic hashes.
+
+- examples of usage
+audius, fleek, dtube, dbOrbit, 
