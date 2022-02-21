@@ -8,3 +8,13 @@ $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -d brown_forman_
 - ActiveRecord::ProtectedEnvironmentError: You are attempting to run a destructive action against your 'production' database.
 $ bin/rails db:environment:set RAILS_ENV=development
 
+
+- change password
+$ rails c
+> u = User.first
+> u.password = "password"
+> u.save
+
+
+- execute seed only for banners
+rails db:seed ONLY=banners

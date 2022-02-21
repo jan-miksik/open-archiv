@@ -10,3 +10,5 @@ $inxi -Fzv //general info
 
 # search
 $find / -type f -name ""
+-iname ignore Case sensitivity
+$find . -iname <name of file>

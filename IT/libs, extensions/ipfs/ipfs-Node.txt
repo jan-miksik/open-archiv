@@ -1,0 +1,13 @@
+https://docs.ipfs.io/how-to/default-profile/#find-your-current-profile
+- Configure a default profile and switching between profiles
+
+-Available profiles:
+flatfs
+badgerds
+server
+randomports
+default-datastore
+local-discovery
+test
+default-networking
+lowpower

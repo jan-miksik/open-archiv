@@ -91,3 +91,41 @@ DHT - A Distributed Hash Table (DHT) is a distributed key-value store where keys
 
 - examples of usage
 audius, fleek, dtube, dbOrbit, 
+
+
+- DHT - A Distributed Hash Table (DHT)
+-types: Provider records, IPNS records, Peer records
+-Kademlia algorithm
+
+- Bitswap
+Bitswap is a core module of IPFS for exchanging blocks of data.
+want-lists
+want-have
+dont-have
+
+- IPNS
+create mutable addresses on IPFS
+
+- IPFS Gateway
+types
+Read/write support
+Authentication support
+Resolution style
+Service
+
+Resolution style
+
+-Path https://{gateway URL}/ipfs/{content ID}/{optional path to resource}
+-Subdomain https://{CID}.ipfs.{gatewayURL}/{optional path to resource}
+-DNSLink https://{gatewayURL}/ipns/{IPNS identifier}/{optional path}
+
+
+Get info about
+
+SSL
+
+#NAT - Network address translation
+https://en.wikipedia.org/wiki/Network_address_translation
+method of mapping an IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.
+
+PubSub
