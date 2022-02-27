@@ -12,3 +12,8 @@ $inxi -Fzv //general info
 $find / -type f -name ""
 -iname ignore Case sensitivity
 $find . -iname <name of file>
+
+
+# file sizes
+$ sudo apt-get install ncdu
+$ ncdu <directory>

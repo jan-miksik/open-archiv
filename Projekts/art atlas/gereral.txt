@@ -150,8 +150,17 @@ anger, jealousy, pain, delight, happines, joy, shame, boringness, euphoria, viol
 -------TODOs harmonogram-------------
 -------------------------------------
 
+#study
+- filecoin,
+
+
+
 #app
-- make accessibel on net, fleek? + pinata
+- fleek storage - edit, remove
+- fleek storage - lazy loading
+- make accessibel on net, fleek?
+- loading animation, page about
+- 
 
 Základní verze
 - make available on net
@@ -199,6 +208,12 @@ medium (photo, pc graphic, painting) as multi-select
 
 //////// DONE /////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
+
+#app
+-fleek ipfs storage - add image 27.2. 2022 2.5h
+
+#study
+-fleek ipfs storage 26.2. 2022 2.5h
 
 #app
 -How-tos / MANAGE FILES - done
