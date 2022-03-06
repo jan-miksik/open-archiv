@@ -1,0 +1,33 @@
+#research, data collection, creativity
+- art, paintings, drawings, NFTs
+- fotography
+- ikons
+??
+- animals
+- nature
+- buildings
+- mobility
+- people faces
+- people
+- memes
+- plants
+
+
+- columns names: 
+price:
+last sold, unknown
+
+
+medium:
+photo, pc graphic, painting, 
+
+author:
+live, nationality, link to,
+author and me:
+I personaly known, I meet, I do not personaly known
+
+auto generated:
+added by
+added at date
+edited by
+edited at date

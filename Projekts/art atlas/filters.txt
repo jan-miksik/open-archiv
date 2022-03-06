@@ -1,0 +1,31 @@
+- filters
+
+created: 
+before, after time, by account,
+
+
+picture contain / not contain:
+
+woman,man,child
+
+food:
+...names
+
+text:
+...texts,
+
+person:
+...names
+
+geometry:
+circle, square, triangle, polygon
+
+animal:
+dog, cat
+
+color:
+red, blue, yellow, green, white, black...
+black and white
+
+feelings:
+anger, jealousy, pain, delight, happines, joy, shame, boringness, euphoria, violence, revenge, sex, stupidity, wierdness, comedy, hilarious, unpleasantly
