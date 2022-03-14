@@ -8,6 +8,10 @@ $rbenv install <x.x.x>
 #if ruby version not match
 $ rvm use ruby-<x.x.x>
 
+#if rbenv: rails: command not found
+$ gem install bundler
+$ bundle
+
 #if rvm not installed
 https://rvm.io/
 

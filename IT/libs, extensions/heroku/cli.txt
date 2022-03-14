@@ -1,1 +1,6 @@
+$ heroku login
 $ heroku run bash -a <app name>
+
+
+heroku pg:backups:restore b021 DATABASE_URL --app menubuilder-dev
+heroku run rake db:migrate  -a menubuilder-dev

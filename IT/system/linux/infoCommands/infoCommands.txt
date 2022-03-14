@@ -10,3 +10,6 @@ $inxi -Fzv //general info
 
 # search
 $find / -type f -name ""
+
+# file sizes
+$ ncdu

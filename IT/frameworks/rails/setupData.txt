@@ -1,1 +1,5 @@
-rails db:seed ONLY=banners
+$ rails ONLY=banners db:seed
+
+$ rails db:seed ONLY=title_pages UPDATE_DATA=1 --trace
+
+
