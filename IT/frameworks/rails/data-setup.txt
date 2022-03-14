@@ -9,3 +9,13 @@ $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -d brown_forman_
 $ bin/rails db:environment:set RAILS_ENV=development
 
 $ psql -d <gamekeeper_report_development> -f <tmp/backup.psql>
+
+- change password
+$ rails c
+> u = User.first
+> u.password = "password"
+> u.save
+
+
+- execute seed only for banners
+rails db:seed ONLY=banners

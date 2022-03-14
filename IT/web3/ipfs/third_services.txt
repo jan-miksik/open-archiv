@@ -1,0 +1,16 @@
+- 2022
+
+# https://app.fleek.co/
+free to use up to 3GB,
+https://docs.fleek.co/storage/fleek-storage-js/
+
+
+# infura https://infura.io/product/ipfs
+up to 5Gb free, need credit card to use IPFS
+
+# pinata https://www.pinata.cloud/about
+paid gateway, 
+
+# web3.storage https://web3.storage/
+
+# anmaicloud https://www.anmaicloud.com/index-en.html

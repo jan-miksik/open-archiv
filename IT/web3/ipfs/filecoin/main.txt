@@ -1,0 +1,10 @@
+CommD - Commitment of Data, aka UnsealedSectorCID
+CommR - Commitment of Replication, aka SealedSectorCID
+
+Proof of Spacetime (PoSt)
+zk-SNARKs stands for "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge."
+-zk-SNARKs keep the chain smaller and reduce the time needed for verification.
+
+
+https://docs.filecoin.io/get-started/store-and-retrieve/set-up/#things-to-note
+https://lotus.filecoin.io/
