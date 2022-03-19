@@ -1,13 +1,54 @@
-A {
-  Create system where is possible to work anytime, anywhere, for anyone, without needs to say or explaining when he wants works and what he wants to do.
+- general goal, ultimate goal
+- main problems
 
+- moral dilemas / copying methods and ideas from others projects + working cooperate on other projects
+- what to want
+- multiple why
+- concentrate and review alreade writen content
+
+- general goal abstraction {
+  Help to find inernal motivation for doing things that are synchronized with own inner attitude.
+  
   Help to find inernal motivation: 
   -to do something
   -to join the community
   -to contribute
 
+  Support quality under quantity.
+
+  ?Support exploring and study as well as aplication of new skills and obtained information.?
+  ?Rather suggestion
+  Developing technical skills as well as creativity as well as social interactions.?
+  ?Exploring and study. ?Go Against comformity with comform feel.?
+  ?Try to hack system in polite ways?
+
+
+  ?Create system where is possible to work anytime, anywhere, for anyone, without needs to say or explaining when he wants works and what he wants to do.?
+
   specify problems of internet, pc apps and virtual:
   -physical separation
   -little movement
+
+
+
+  One of main problems with abstraction is that in concreate aplication can have too wide ragnge of forms. Be nice, be crude, be unpredictable etc. .
+}
+
+- main problems {
+  coodrdination,
+  inconsistency,
+  governance,
+  too wide a range of what this system can be,
+  how to reward people, that develop this system,
+  hard to select source of true,
+  monetization,
+  no responsible person,
+  usage by unwanted people?,
+  usage for criminal activity,
+  -financing of development and maintenance
+  In world is lot of rich people which have intense to do general welfare. Main problems is in unpredictibility and unstablity of current proposal.
+}
+
+- moral dilemas / copying methods and ideas from others projects + working cooperate on other projects {
 
 }
