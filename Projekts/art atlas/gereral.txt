@@ -3,14 +3,13 @@ Art atlas --
 TODOs
 
 #point of view / attitude
-- ultimate goal
 - moral dilemas / copying methods and ideas from others projects + working cooperate on other projects
 - main problems
 - what to want
 - multiple why
 - concentrate and review alreade writen content
 #point of view #2
-- general goal
+- general goal abstraction
 
 #project planning and direction
 - write brodly about project without time frame
@@ -28,6 +27,7 @@ TODOs
 #project planning and direction #2
 - try to find similar projects + compare to current app
 - find tool for monitoring spended time in projects and activities
+- write brodly about project without time frame #2
 
 
 #app
@@ -37,7 +37,7 @@ TODOs
 
 - refactore code
 - create logger??
-- create local ipfs node
+- ?create local ipfs node
 - data: filter, sort
 - data pagination
 
@@ -46,8 +46,6 @@ TODOs
 - mobile version
 - multiple design versions?
 
-- create online version
-
 - filter data in table
 https://css-tricks.com/complete-guide-table-element/#aa-table-search
 - sort data in table
@@ -55,7 +53,6 @@ https://css-tricks.com/complete-guide-table-element/#aa-table-sorting
 
 
 - account
-
 
 - dynamic table properties ... create own column,
 - dynamic filter, sort, ... posibility of create own,
@@ -90,26 +87,30 @@ acquaintance/popularity
 -------TODOs harmonogram-------------
 -------------------------------------
 
-#app
-- fleek storage - remove
-- fleek storage - lazy loading
-- make accessibel on net, fleek?
-- loading animation, page about
-
 #study
 - filecoin,
 
+#app
+- loading animation, page about
+
+#app
+- pagination
+- create thumbnail for images, restrict images larger than 10MB
+- mobile version
+
+#project planning and direction
+- write brodly about project without time frame
 
 Základní verze
-- make available on net
+-make available on net
 - mobil, responzivness, - místo tabulky galerie?
 - bez prihlaseni? - kdokoliv může přispět?
-- -
+
 - filter .. obsahuje, neobsahuje, rozmezí,
 - (Mira známosti?, vznik, cena, ), 
 - řazení vzestupně, 
 - vyladenejsi design, několik variant?
-- 
+
 - vybranejsi obsah
 - refaktorink, testy
 
@@ -118,17 +119,13 @@ Základní verze
 created
 medium (photo, pc graphic, painting) as multi-select
 
-
-#project planning and direction
-- todos for minimal version to be online
+#philosophy
+- general goal abstraction #2
 
 
 #project planning and direction
 again -- 
 - A invent more synchronized and accessible documentation ... goole notes, github, own solution, google notes + manuálně sloučit, mobile app connected to github?
-
-#philosophy
-- general goal
 
 #project planning and direction
 - write brodly about project without time frame
@@ -151,6 +148,16 @@ again --
 
 //////// DONE /////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
+
+#philosophy
+-general goal abstraction 19.3. 2022 1h
+
+#app
+-fleek storage - lazy loading - partialy, make accessibel on net, fleek? 19.3. 2022 2.5h
+-fix edit, remove image 19.3. 2022 1.5h
+
+#app
+-fleek storage - remove. refactoring, testing, 13.3. 2022 3h
 
 #app
 -fleek storage - edit, 6.3. 2022 2h
