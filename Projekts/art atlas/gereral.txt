@@ -89,12 +89,12 @@ acquaintance/popularity
 
 
 #app
-- design of table
-- create thumbnail for images, restrict images larger than 10MB
-- mobile version
+- mobile version, thumbnails for images,
+
 - design of modal
 - add columns, medium, created, price?
 - filter .. obsahuje, neobsahuje, rozmezí
+- sorting .. asc, decs
 
 #project planning and direction
 - write brodly about project without time frame
@@ -139,7 +139,14 @@ again --
 //////// DONE /////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 
+
 #app
+-create thumbnail for images, setup enviroment after reinstall pc, enlarge images on hover,
+restrict images larger than 5MB, 27.3. 2022 3.5h
+
+
+#app
+-design of table ?20.3. 2022 2h?
 -preview image in modal 20.3. 2022 0.5h
 -page about, pagination 20.3. 2022 3h
 
