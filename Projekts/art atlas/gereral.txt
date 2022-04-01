@@ -142,7 +142,7 @@ again --
 
 #app
 -create thumbnail for images, setup enviroment after reinstall pc, enlarge images on hover,
-restrict images larger than 5MB, 27.3. 2022 3.5h
+restrict images larger than 5MB, refactoring 27.3. 2022 4h
 
 
 #app
