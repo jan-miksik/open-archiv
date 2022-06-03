@@ -1,11 +1,29 @@
-?z terra na bankovní účet
 ?Gitcoin stake nebo nějaké využití tokenu....
 -- adam kracík - portfolio tipy
 
 
-
 111 TODO 111
 ??**min 3hod tydne, max 8hod tydne**??
+
+TODOS  crypto wath
+- souhrn kolik je v jednom tokenu -- napříč peněženkami
+- dokončit -- souhrn kolik je v jednom tokenu
+
+- přidat vklady
+- promyslet název aplikace
+- farms and staking - udělat nějak jinak
+- vylepšit UI (loading, tabulka ..., procentuální rozdělení)
+
+- záložní fetch pro NFT místo Moralis
+- asset location filter by type, by wallet
+
+
+- assets in contracts - vizuální zpracování, přehled kolik procent a hodnoty v jakém kontraktu
++ na jaké síti, na jaké peněžence
+- ?add acounts?
+
+
+
 
 
 ##design
@@ -98,6 +116,13 @@
 rozložení portfolia
 procent zisku // procent z portfolia
 
+stable + bank acc 20 - 35%
+just in wallet ? 20 - 35% (tokens)
+in contracts ? 20 - 35%
+
+amount of investments 3-7
+max % in one investment/platform 30% ()
+
 A
 max 35% in one platform
 0 // zbytek min 25%
@@ -120,7 +145,12 @@ max 30% in one platform
 ???????????
 
 
+PROJECTS - in contracts
+
+
 222 DONE 222
+# souhrn kolik je v jednom tokenu -- napříč peněženkami 29.5.2021(3.5h)
+
 ##farms vice mesicu, sprava portfolia, rozliseni stable coinu od ostatnich tokenu 31.12.2021(3.5h)
 # add untracked assets, 26.12.2021(0.5h)
 ## planning -- přidat předpokládaný plán u jednotlivých assetů, 1měsíc, půl roku, rok, ... 26.12.2021(1h)
