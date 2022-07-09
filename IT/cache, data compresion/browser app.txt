@@ -1,0 +1,12 @@
+- session storage
+
+#semi persistent storages
+- local storage ~5Mb
+- cookies
+- Cache API ~50Mb
+
+- indexed DB min. 1Gb (up to ~60% of remaining disk space)
+good to use with Dexie.js or another wrapper
+
+.htaccess
+c-panel - tool for setup c-panel

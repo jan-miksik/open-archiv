@@ -1,0 +1,2 @@
+squoosh for multiple files
+https://github.com/GoogleChromeLabs/squoosh/issues/301#issuecomment-995961130
