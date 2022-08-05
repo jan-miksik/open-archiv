@@ -6,7 +6,6 @@
 ??**min 3hod tydne, max 8hod tydne**??
 
 TODOS  crypto wath
-- souhrn kolik je v jednom tokenu -- napříč peněženkami
 - dokončit -- souhrn kolik je v jednom tokenu
 
 - přidat vklady
@@ -118,7 +117,9 @@ procent zisku // procent z portfolia
 
 stable + bank acc 20 - 35%
 just in wallet ? 20 - 35% (tokens)
-in contracts ? 20 - 35%
+in contracts ? 20 - 35% (2-5 main projects 70%-80%) 1 project max. 35%? + ?
+?Lido - stake eth
+
 
 amount of investments 3-7
 max % in one investment/platform 30% ()
@@ -149,7 +150,9 @@ PROJECTS - in contracts
 
 
 222 DONE 222
-# souhrn kolik je v jednom tokenu -- napříč peněženkami 29.5.2021(3.5h)
+-fix api calls, basic caching, remove spam tokens 4.8.2021(7h)
+
+-souhrn kolik je v jednom tokenu -- napříč peněženkami 29.5.2021(3.5h)
 
 ##farms vice mesicu, sprava portfolia, rozliseni stable coinu od ostatnich tokenu 31.12.2021(3.5h)
 # add untracked assets, 26.12.2021(0.5h)
