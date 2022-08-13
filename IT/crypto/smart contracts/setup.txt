@@ -1,0 +1,6 @@
+- hardhat
+yarn add --dev hardhat
+npx hardhat help
+
+npx hardhat node
+npx hardhat test

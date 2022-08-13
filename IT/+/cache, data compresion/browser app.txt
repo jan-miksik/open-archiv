@@ -10,3 +10,4 @@ good to use with Dexie.js or another wrapper
 
 .htaccess
 c-panel - tool for setup c-panel
+

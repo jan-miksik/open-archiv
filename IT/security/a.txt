@@ -1,0 +1,15 @@
+- Cipher suite
+Why is Diffie-Hellman prefered against RSA?
+What is AES?
+
+symetric cryptography - same key for encryption and decryption
+Protocol - TLS 1.2, 1.1, 1.0, SSLv3, SSLv2
+key exchange -ECDHE - eliptic curve diffie hellman ephemeral key exchange
+Auth - RSA, ECDSA
+Cipher - AES GCM/CBC, Camellia, DES, RC4, RC2 (encryption algorithms)
+MAC - 
+
+Key exchange - Auth - Cipher - MAC
+
+
+- OWASP - open web aplication security project
