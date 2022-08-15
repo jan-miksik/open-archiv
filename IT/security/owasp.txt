@@ -1,0 +1,20 @@
+- OWASP - open web aplication security project
+#top 10
+1) Broken access control
+inputs: API, Urls
+-rate limit APIs, implement once?, should added be early in development
+
+2)Cryptographic Failures
+if sensitive data are not neccaesary to store, remove them 
+
+3) Injection
+sanitaze query parameters,
+escape special characters,
+
+4) Insecure design
+evaluation of all possible usage of app
+
+5) Security Misconfiguration
+unnecessary details in response
+setup TLS corretly
+automated proccess to check setup is ok

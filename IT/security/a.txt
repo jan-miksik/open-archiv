@@ -12,4 +12,20 @@ MAC -
 Key exchange - Auth - Cipher - MAC
 
 
-- OWASP - open web aplication security project
+- BIG IP
+BIG IP is platform of HW and SW
+
+LTM - local traffic manager
+DNS/GTM - global traffic manager
+APM - access policy manager (inspect device type, identity)
+SWG - secure web gateway, filtering requests
+ASM - aplication security manager (inspect application), layer 7 L7
+AFM - advanced firewall manager, L3/L4 - layer 3 and 4,
+AAM - aplication acceleration manager - optimization
+
+BIG IQ - management of all this big IPs, silverline, f5Saas
+
+NODE (serve) = IP
+POOLS (server services) IP:PORT
+SNATS secure NAT translation
+PROFILES cusomeres rules
