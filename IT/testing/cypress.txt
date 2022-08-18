@@ -1,0 +1,16 @@
+cypress Notes
+
+env-cmd -f .env
+
+- prefer on local server - performance, more posibilities. Can be also against deployed server
+- We recommend that the vast majority of tests use stub data
+-Don't use your UI to build up state! It's enormously slow, cumbersome, and unnecessary.
+-Add data-* attributes to make it easier to target elements
+-cy.contains()
+
+-You rarely have to ever use const, let, or var in Cypress. If you're using them, you will want to do some refactoring.
+
+-?Tests should always be able to be run independently from one another and still pass .
+
+- it().only runs only this selected test
+- it.skip() skip test
