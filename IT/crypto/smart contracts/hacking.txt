@@ -1,0 +1,10 @@
+Ethernaut
+
+
+lvl 15
+be aware about inherited functions, idealy implement all off them or make that there is not vulnerabilities
+balanceOf()
+allowance()
+
+approve()
+transferFrom()

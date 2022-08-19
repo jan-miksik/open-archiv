@@ -1,17 +1,128 @@
-pay somebody to do research about net art/internet art in last years
-+if the projects are crypto related, but not condition
--list of names and online projects with short descriptions
+About Net art
+mainly in mid 1990. Some claims that net art died because of absorbtion by institutions.
+
+
+-crypto art, or blockchain as part of piece
+-internet art, net art
+-digital media
+-new media
+
+
+at least part of the piece have to be accessible online
+-social media(facebook, instragram, twitter, discord, tiktok...)
+-platforms (youtube, vimeo, soundcloud, spotify, twitch, reddit, tumblr, etc.)
+-crypto
+
+-nft
+-generativni umeni
+-mobile
+-maps
+-intervention 
 
 
 
 
-#digital art
-Ryoji Ikeda 
-Davide Quayola 
-Maurice Benayoun 
-Saint Denis
 
-#to research
+
+
+
+
+
+
+
+
+- A
+
+Rhizome
+
+0100101110101101.ORG (Eva and Franco Mattes)
+
+www.jodi.org (Joan Heemskerk, Dirk Paesmans)
+
+Pak (anonymous, @muratpak, 3d, minimalism, bot Archillect) 
+  hunderts milions in value,
+  Archillect - internet bot to archive intelectual, https://twitter.com/archillect
+
+Sarah Friend (blockchain, p2p, crypto, games)
+https://isthisa.com/ 
+
+-Olia Lialina’s - My Boyfriend Came Back from the War 1996
+http://www.teleportacia.org/war/
+
+
+Nathalie Lawhead (games, net art, digital art)
+http://tetrageddon.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 1?
+https://mcachicago.org/Publications/Websites/I-Was-Raised-On-The-Internet
+
+https://winners.webbyawards.com/winners/websites-and-mobile-sites/general-websites-and-mobile-sites/netart?years=0
+
+
+ManadalaGaba - online tool for creating madalas
+SculptGL - online for simple 3d scupturing
+
+
+exonemo - Japanese, SEMBO Kensuke and AKAIWA Yae
+http://exonemo.com/, metaverse petshop
+
+
+
+*Golan Levin (Terrapattern 2016, )
+*compart
+*monoskop
+*UBERMORGEN
+Vuk Cosic
+Alexei Shulgin
+
+*Martin Wattenberg
+*Mary Flanagan
+*Jon Rafman
+
+*https://www.potatoland.org/
+-created own web browser -> kind of chaotic
+
+-YOUNG-HAE CHANG HEAVY INDUSTRIES
+text, music, philosophy, cultural critique, 
+
+Jesse Darling
+
+-https://www.nycmap.com/
+
+-MARC LAFIA & FANG-YU LIN, the battle of algiers 2006
+-Heat hunting/ Heath Bunting - A terrorist - the status project 2008
+-Shilpa Gupta - blessed bandwith 2003
+-Elsa James - circle of blackness - part 1 - meet ann E. styles 2019
+-Natalie bookchin & Jacqueline stevens - agoraxchange 2003
+-Andy deck screening circle 2006
+-Graham Hardwood - unconmfortable proximity 2001
+-Susan Colins
+Michael Mandiberg
+Skawennati
+Lorna Mills
+Raquel Meyers
+Daniel García Andujar
+Casey Reas
+
+tom moody - digital art,
+
+Hito Stereyl
+
 Cary Peppermint, 
 Prema Murthy, 
 Ricardo Dominguez,
@@ -27,49 +138,50 @@ Mez Breeze
 Domenico Quaranta
 Andrea Mayr
 
+
+
+
+
+Cecil B. Evans - videos, my
+
+
+
+
+
+- ?
+Alexis Christodoulou https://www.instagram.com/teaaalexis/
+Erik Ferguson (3d, motion design) https://www.instagram.com/fergemanden
+Reuko (Rob Milus) https://www.instagram.com/_reuko
+Antoni Tudisco - https://www.instagram.com/antonitudisco/
+Esteban Diácono (3d, motion design) https://www.instagram.com/_estebandia..., https://www.estebandiacono.com/
+Steven McCorry https://www.instagram.com/glass_crane 
+Oliver Latta (3d, motion design, body, surreal, disturbing) https://www.instagram.com/extraweg/
+Zollac (3d, motion design, surreal) https://www.instagram.com/zolloc/ Hyden Zezula
+
+
+Jeremy Bailey - videos,
+
+
+
+
+
+
+
+#digital art
+Ryoji Ikeda 
+Davide Quayola 
+Maurice Benayoun 
+Saint Denis
+
+#to research
+
+
 ?Info Wars (film)
-
-
-- Worth more research more
-*Golan Levin (Terrapattern 2016, )
-*Rhizome
-*compart
-*monoskop
-*www.jodi.org
-*UBERMORGEN
-
-*Sarah Friend (blockchain, p2p, crypto, games)
-*0100101110101101.ORG
-*Martin Wattenberg
-*Mary Flanagan
-*Jon Rafman
-
-Vuk Cosic
-Alexei Shulgin
-
-
-#websites
-www.jodi.org (Joan Heemskerk, Dirk Paesmans)
-
-Sarah Friend
-https://isthisa.com/ 
-https://off.supply/
-
-Nathalie Lawhead (games, net art, digital art)
-http://tetrageddon.com/
-
-
-
-
 
 
 #NFT artist more mainstream
 
 *Art Block
-
-*Pak (anonymous, @muratpak, 3d, minimalism, bot Archillect) 
-  hunderts milions in value, 
-  Archillect - internet bot to archive intelectual, https://twitter.com/archillect
 
 **Rich Lord (art block, geometry)
   Geometry Runners
@@ -106,12 +218,7 @@ Damien Hirst
 
 
 ?
-Alexis Christodoulou https://www.instagram.com/teaaalexis/
-Erik Ferguson (3d, motion design) https://www.instagram.com/fergemanden
-Reuko (Rob Milus) https://www.instagram.com/_reuko
-Antoni Tudisco - https://www.instagram.com/antonitudisco/
-Esteban Diácono (3d, motion design) https://www.instagram.com/_estebandia..., https://www.estebandiacono.com/
-Steven McCorry https://www.instagram.com/glass_crane 
+
 
 
 0. maybe worth for more research
@@ -121,9 +228,38 @@ https://lgnd.art/profile/kouhei-nakama
 
 helmut_breineder (3d, motion design, objects)https://www.instagram.com/helmut_breineder/ ,https://www.instagram.com/p/B4z6JM-IJLv/
 
-?Oliver Latta (3d, motion design, body, surreal, disturbing) https://www.instagram.com/extraweg/
-
-?Zollac (3d, motion design, surreal) https://www.instagram.com/zolloc/ Hyden Zezula
 
 
+################################################################################################
+#################################################18.8.2022###############################################
 
+BEN BENJAMIN: SUPERBAD
+(1997)
+
+
+
+
+
+
+
+
+
+
+I am looking for list of net art/ internet art artists and pieces in last years. By last years is meant max 10. years back from current. More recent is better. 
+
+As net artist I mean artist which use internet as direct part of the work. The artwork is accessible online. It is not just presentation of artworks on the web. Like video art or 3d digital sculptures, fotos ... . These pieces are usally interactive, but it is not condition.
+Plus, if the piece or artist work with crypto/blockhain technologies - NFT, dapp, smart contracts etc.
+Example: https://off.supply/ from Sarah Friend. 
+ 
+At least 5 artists. From 3 to 10 key words or from 1 to 5 sentences about this person.
+At least 1 example of work, what is online accessible and similar description as about artist - keywords(3-10) or sentences(1-5)
+
+
+
+
+
+
+
+
+---------DONE----------
+pay somebody to do research about net art/internet art in last years
