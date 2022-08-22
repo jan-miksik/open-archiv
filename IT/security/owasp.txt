@@ -18,3 +18,9 @@ evaluation of all possible usage of app
 unnecessary details in response
 setup TLS corretly
 automated proccess to check setup is ok
+
+6)Vulnerable and Outdated Components
+-dependabot
+
+7)Authentication Failures
+no reuse of passwords

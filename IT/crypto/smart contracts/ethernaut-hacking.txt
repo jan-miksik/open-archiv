@@ -1,0 +1,85 @@
+Ethernaut
+
+
+lvl 15 Naught coin
+approve()
+transferFrom()
+{
+  be aware about inherited functions, idealy implement all off them or make that there is not vulnerabilities
+  balanceOf()
+  allowance()
+}
+
+
+lvl 16 Preservation
+web3.eht.getStorageAt()
+delegatecall()
+{
+  Ethereum allots 32-byte sized storage slots to store state,
+  delegatecall is able to mutate state
+  -Ideally, libraries should not store state
+  
+  When creating libraries, use library, not contract, to ensure libraries will not modify caller storage data when caller uses delegatecall.
+  -Use higher level function calls to inherit from libraries, especially when you 
+  i) don’t need to change contract storage and 
+  ii) do not care about gas control.
+
+}
+
+lvl 17 Recovery
+web3.utils.soliditySha3()
+{
+  contract address is determinitic, it is possible to calculate by this formula
+
+  nonce 0 is always the smart contract’s own creation event
+
+  address = rightmost_20_bytes(keccak(RLP(sender addr, nonce)))
+  example: web3.utils.soliditySha3('0xd6','0x94','0x5c62f2c278C5AD2A5117077656688e076f4cCc8c','0x01')
+
+  data = web3.eth.abi.encodeFunctionCall({
+    name: 'destroy',
+    type: 'function',
+    inputs: [{
+        type: 'address',
+        name: '_to'
+    }]
+  }, [player]);
+}
+
+18 Magic Number
+Opcode - operation code
+bytecode
+https://www.ethervm.io/
+
+
+
+19 alien codex
+patern check - efect - interact
+undreflow
+rewrite storage value
+{
+p = web3.utils.keccak256(web3.eth.abi.encodeParameters(["uint256"], [1]))
+i = BigInt(2**256) - BigInt(p)
+#EVM storage size is exactly 2**256-1 slots of 32 bytes
+content = '0x' + '0'.repeat(24) + player.slice(2)
+contract.revise(i, content)
+}
+
+
+20 denail
+gas limit
+{call should have specefied gas limit
+consume all gas, so contract can not continue in execution
+}
+
+
+21 shop
+double call
+{
+Contracts can manipulate data seen by other contracts in any way they want.
+
+Like for the Level 11 - Elevator, Shop never implements the price() function from the Buyer interface. An attacker can create a contract that implements its own version of this function.
+}
+
+
+24 puzzle wallet
