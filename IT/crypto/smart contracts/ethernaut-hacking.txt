@@ -1,5 +1,14 @@
 Ethernaut
 
+Posible forms of attacks
+--change storage values
+-retake ownership
+-block contract
+-change pricing, royalty...
+
+-get all "money" from contract
+
+
 
 lvl 15 Naught coin
 approve()
@@ -83,3 +92,17 @@ Like for the Level 11 - Elevator, Shop never implements the price() function fro
 
 
 24 puzzle wallet
+storage collision, proxy contract, upgradable contracts
+{
+-delegatecall
+use some safe paterns for delegatecall (diamond storage, appStorage...)
+}
+
+25 motorbike
+EIP-1967, UUPS upgradeable pattern, Initializable contract
+{
+EIP-1967: Standard Proxy Storage Slots
+delegatecall is context preserving
+proxy contract - storage layer
+called contract by proxy - logic layer
+}

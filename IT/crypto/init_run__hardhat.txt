@@ -1,0 +1,27 @@
+$ npx hardhat help
+
+__INIT__
+create contract
+compile contract
+$ npx hardhat compile
+deploy contract
+- setup deploy.ts to fullil deployment needs
+$ npx hardhat run scripts/deploy.ts --network <localhost | testnet name | ...>
+
+connect contracts to app - abi
+-> abi is in artifacts/contracts/...json
+-> contract address in .env or app ex. (import.meta.env.VITE_APP_TEST_NFT_CONTRACT)
+
+
+__RUN__
+1) run ethereum node
+$ npx hardhat node 		
+#on port 8545
+
+2) compile contract if changed or not compiled
+$ npx hardhat clean
+$ npx hardhat compile
+
+3) deploy contract
+$ npx hardhat run scripts/deploy.ts --network <localhost | testnet name | ...>
++update contract address
