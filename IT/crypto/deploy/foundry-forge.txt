@@ -1,0 +1,14 @@
+https://book.getfoundry.sh/reference/forge/forge-build
+
+$ forge install
+
+$
+
+$ forge script script/TokenBundler.s.sol:Deploy --rpc-url https://rinkeby.infura.io/v3/66be5943b020482a8774e57d9e145a35 --private-key f0796cf120f6a924019a78dc5991e3aa0efb52636cfd1ab83d93c679ea6e3123 --broadcast
+
+$ ZN8W2V9X1SI4BHUU32TZKRI3MKM3I3MRG5
+
+
+# deploy and verify in one command
+$ forge create --rpc-url https://rinkeby.infura.io/v3/66be5943b020482a8774e57d9e145a35 --constructor-args "https://api.pwn.xyz/bundle/4/0xa5f4c5714baa402c01eb3f7192fbb7a5b1c01197" --private-key f0796cf120f6a924019a78dc5991e3aa0efb52636cfd1ab83d93c679ea6e3123 src/TokenBundler.sol:TokenBundler --etherscan-api-key ZN8W2V9X1SI4BHUU32TZKRI3MKM3I3MRG5 --verify
+
