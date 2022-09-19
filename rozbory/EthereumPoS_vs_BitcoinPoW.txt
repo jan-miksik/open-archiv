@@ -1,0 +1,59 @@
+////Ethereum merge ////
+
+#plus
+lower energy comsumption
+most of developers
+functionality - Defi, NFT
+potenciál - rychlejší a levnější transakce v budoucnosti
+skalovatelnost
+
+#minus
+-staking in few entities (Lido) -> slashing mechanismus
+-tornado cash ban -> lunarpunk movement, zaměření na privacy
+-narůstající komplexnost systému -> cena za víc funcionalit, škálovatelnost, efektivnější systém
+
+???
+Jak těžké je vystoupit z Lida nebo Rocketpool?
+slashing mechanismus?
+tornado cash ban?
+
+
+
+
+
+
+////Bitcoin////
+
+#plus
+nejdelší historie
+jednoduší změna poolu?
+jednoduchost systému
+rozvoj lighting network
+
+
+~
+-prakticky žádný další vývoj?
+
+
+#minus
+-rostoucí cena elektřiny
+-spotřeba energie -> potenciální regulace státy(tlak veřejnosti k ekologii) -> těžba na místech kde se to vyplatí
+-pravděpodobně nejvíc hasrate z několika mining farem?
+-se snižováním mining odměn bude dost možná klesat důvod těžit
+
+
+
+???
+přesnější porovnání spotřeby energie?
+centralizace lighting network?
+centralizace minig farem?
+
+
+
+
+
+
+
+
+General
+Oba
