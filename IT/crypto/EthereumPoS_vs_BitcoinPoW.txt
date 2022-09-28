@@ -13,13 +13,16 @@ skalovatelnost
 -narůstající komplexnost systému -> cena za víc funcionalit, škálovatelnost, efektivnější systém
 
 ???
+- ethereum development - 
+$ who or how is decided what should be implemented?
+$ who have responsibility if things go wrong?
 Jak těžké je vystoupit z Lida nebo Rocketpool?
 slashing mechanismus?
 tornado cash ban?
+centralizace stakingu u nekolika malo entit?
 
 
-
-
+If i have huge amount of money is possible retake control of the Ethereum network and cancel slashing?
 
 
 ////Bitcoin////
@@ -45,8 +48,10 @@ rozvoj lighting network
 
 ???
 přesnější porovnání spotřeby energie?
+
 centralizace lighting network?
-centralizace minig farem?
+
+centralizace minig farem? -> obtížné získat přesné čísla, velké známé mining firmy mají minimálně několik % https://www.statista.com/statistics/1200477/bitcoin-mining-by-country/
 
 
 
