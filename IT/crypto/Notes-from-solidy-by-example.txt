@@ -1,0 +1,227 @@
+Primitive Data Types {
+  // Default values
+  // Unassigned variables have a default value
+  bool public defaultBoo; // false
+  uint public defaultUint; // 0
+  int public defaultInt; // 0
+  address public defaultAddr; // 0x0000000000000000000000000000000000000000
+  
+  'uint' stands for unsigned integer, meaning non negative integers
+  uint8, uint16, uint32, uint64, uint128, uint256
+  ?? unit10
+  Negative numbers are allowed for 'int' types.
+  'int' is same as int256
+  'uint' is an alias for uint256
+}
+
+Variables {
+  There are 3 types of variables in Solidity
+  
+  - local (uint i)
+  declared inside a function
+  not stored on the blockchain
+  - state (string public text, uint public num)
+  declared outside a function
+  stored on the blockchain
+  - global (block.timestamp; msg.sender;)
+  (provides information about the blockchain)
+
+  Constants {
+    Constants are variables that cannot be modified.
+    Their value is hard coded and using constants can save gas cost.
+    $ uint public constant MY_UINT = 123;
+  }
+  
+  Immutable {
+    Immutable variables are like constants. 
+    Values of immutable variables can be set inside the constructor but cannot be modified afterwards.
+    // coding convention to uppercase constant variables
+    $ address public immutable MY_ADDRESS;
+  }
+}
+
+Ether and Wei {
+  Similar to how one dollar is equal to 100 cent, one ether is equal to 1018 wei.
+}
+
+Gas {
+  transaction price = `gas spent` * `gas price amount of ether`
+  + 
+  {
+    How much ether do you need to pay for a transaction?
+    You pay , where
+    
+    gas is a unit of computation
+    gas spent is the total amount of gas used in a transaction
+    gas price is how much ether you are willing to pay per gas
+  
+    Unspent gas will be refunded.
+  
+    There are 2 upper bounds to the amount of gas you can spend
+  
+    gas limit (max amount of gas you're willing to use for your transaction, set by you)
+    block gas limit (max amount of gas allowed in a block, set by the network)
+  }
+
+  // Using up all of the gas that you send causes your transaction to fail.
+    // State changes are undone.
+    // Gas spent are not refunded.
+    function forever() public {
+        // Here we run a loop until all of the gas are spent
+        // and the transaction fails
+        while (true) {
+            i += 1;
+        }
+    }
+}
+
+If / Else {
+  Solidity supports conditional statements if, else if and else.
+  also ternary operator
+  return _x < 10 ? 1 : 2;
+}
+
+For and While Loop {
+  Solidity supports for, while, and do while loops.
+  
+  Don't write loops that are unbounded as this can hit the gas limit, causing your transaction to fail.
+  
+  For the reason above, while and do while loops are rarely used.
+}
+
+Mapping {
+  Maps are created with the syntax mapping(keyType => valueType).
+  The keyType can be any built-in value type, bytes, string, or any contract.
+
+  valueType can be any type including another mapping or an array.
+
+  Mappings are not iterable.
+
+  // Mapping always returns a value.
+  // If the value was never set, it will return the default value.
+  return myMap[_addr];
+
+  // Update the value at this address
+  myMap[_addr] = _i;
+
+  // Reset the value to the default value.
+  delete myMap[_addr];
+
+  // Nested mapping (mapping from address to another mapping)
+    mapping(address => mapping(uint => bool)) public nested;
+
+    return nested[_addr1][_i];
+
+}
+
+Array {
+  Array can have a compile-time fixed size or a dynamic size.
+
+  // Several ways to initialize an array
+  uint[] public arr;
+  uint[] public arr2 = [1, 2, 3];
+  // Fixed sized array, all elements initialize to 0
+  uint[10] public myFixedSizeArr;
+
+  return arr[i];
+  arr.push(i);
+  // Remove last element from array
+  arr.pop();
+  arr.length;
+  delete arr[index];
+
+  // create array in memory, only fixed size can be created
+  uint[] memory a = new uint[](5);
+
+  // Deleting an element creates a gap in the array.
+  // One trick to keep the array compact is to
+  // move the last element into the place to delete.
+  arr[index] = arr[arr.length - 1];
+  // Remove the last element
+  arr.pop();
+}
+
+Enum {
+  Solidity supports enumerables and they are useful to model choice and keep track of state.
+
+  Enums can be declared outside of a contract.
+
+  enum Status {
+    Pending,
+    Shipped,
+    Accepted,
+    Rejected,
+    Canceled
+  }
+  // Default value is the first element listed in
+}
+
+Structs {
+  You can define your own type by creating a struct.
+  
+  They are useful for grouping together related data.
+  
+  Structs can be declared outside of a contract and imported in another contract.
+
+  struct Todo {
+    string text;
+    bool completed;
+  }
+
+  // 3 ways to initialize a struct
+  // - calling it like a function
+  todos.push(Todo(_text, false));
+
+  // key value mapping
+  todos.push(Todo({text: _text, completed: false}));
+
+  // initialize an empty struct and then update it
+  Todo memory todo;
+  todo.text = _text;
+  // todo.completed initialized to false
+
+  todos.push(todo);
+
+  $// Solidity automatically created a getter for 'todos' so
+  // you don't actually need this function.
+
+}
+
+Data Locations - Storage, Memory and Calldata {
+  Variables are declared as either storage, memory or calldata to explicitly specify the location of the data.
+  
+  storage - variable is a state variable (store on blockchain)
+  memory - variable is in memory and it exists while a function is being called
+  calldata - special data location that contains function arguments
+
+}
+
+Function {
+  There are several ways to return outputs from a function.
+  
+  Public functions cannot accept certain data types as inputs or outputs
+
+  // Functions can return multiple values.
+  // Return values can be assigned to their name.
+  // In this case the return statement can be omitted.
+
+  // Can use array for input
+    function arrayInput(uint[] memory _arr) public {}
+
+  // Can use array for output
+  uint[] public arr;
+
+  function arrayOutput() public view returns (uint[] memory) {
+      return arr;
+  
+  }
+
+  
+  View and Pure Functions {
+    Getter functions can be declared view or pure.
+    
+    View function declares that no state will be changed.
+    
+    Pure function declares that no state variable will be changed or read.
+  }
+}

@@ -1,0 +1,4 @@
+Tips and trings
+
+js random color = `#${Math.floor(Math.random() * 0xffffff).toString(16)}`
+console.table()
