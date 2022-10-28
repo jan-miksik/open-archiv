@@ -18,6 +18,7 @@ Variables {
   There are 3 types of variables in Solidity
   
   - local (uint i)
+  memory
   declared inside a function
   not stored on the blockchain
   - state (string public text, uint public num)
@@ -41,7 +42,7 @@ Variables {
 }
 
 Ether and Wei {
-  Similar to how one dollar is equal to 100 cent, one ether is equal to 1018 wei.
+  Similar to how one dollar is equal to 100 cent, one ether is equal to 10to18 wei.
 }
 
 Gas {
@@ -189,7 +190,7 @@ Structs {
 
 Data Locations - Storage, Memory and Calldata {
   Variables are declared as either storage, memory or calldata to explicitly specify the location of the data.
-  
+
   storage - variable is a state variable (store on blockchain)
   memory - variable is in memory and it exists while a function is being called
   calldata - special data location that contains function arguments
@@ -224,4 +225,194 @@ Function {
     
     Pure function declares that no state variable will be changed or read.
   }
+}
+
+Errors {
+  An error will undo all changes made to the state during a transaction.
+
+  You can throw an error by calling require, revert or assert.
+
+  require is used to validate inputs and conditions before execution.
+  revert is similar to require.
+
+  assert is used to check for code that should never be false. Failing assertion probably means that there is a bug.
+
+  function withdraw(uint _amount) public {
+    uint oldBalance = balance;
+
+    // balance - _amount does not underflow if balance >= _amount
+    require(balance >= _amount, "Underflow");
+
+    if (balance < _amount) {
+        revert("Underflow");
+    }
+
+    balance -= _amount;
+
+    assert(balance <= oldBalance);
+  }
+
+}
+
+Function Modifier {
+  Modifiers are code that can be run before and / or after a function call.
+  
+  Modifiers can be used to:
+  
+  Restrict access
+  Validate inputs
+  Guard against reentrancy hack
+
+  modifier onlyOwner() {
+    require(msg.sender == owner, "Not owner");
+    // Underscore is a special character only used inside
+    // a function modifier and it tells Solidity to
+    // execute the rest of the code.
+    _;
+  }
+}
+
+Event {
+  Events
+  Events allow logging to the Ethereum blockchain. Some use cases for events are:
+
+  Listening for events and updating user interface
+  A cheap form of storage
+
+  / Event declaration
+  // Up to 3 parameters can be indexed.
+  // Indexed parameters helps you filter the logs by the indexed parameter
+  event Log(address indexed sender, string message);
+
+  emit Log(msg.sender, "Hello World!");
+}
+
+Constructor {
+  A constructor is an optional function that is executed upon contract creation.
+
+  // Base contract X
+  contract X {
+      string public name;
+
+      constructor(string memory _name) {
+          name = _name;
+      }
+  }
+
+  // Parent constructors are always called in the order of inheritance
+  // regardless of the order of parent contracts listed in the
+  // constructor of the child contract.
+}
+
+
+Inheritance {
+
+  Solidity supports multiple inheritance. Contracts can inherit other contract by using the `is` keyword.
+  
+  Function that is going to be overridden by a child contract must be declared as `virtual`.
+  
+  Function that is going to override a parent function must use the keyword `override`.
+  
+  Order of inheritance is important.
+  
+  You have to list the parent contracts in the order from “most base-like” to “most derived”.
+  
+  // Contracts can inherit from multiple parent contracts.
+  // When a function is called that is defined multiple times in
+  // different contracts, parent contracts are searched from
+  // right to left, and in depth-first manner.
+  
+  Shadowing Inherited State Variables {
+    Unlike functions, state variables cannot be overridden by re-declaring it in the child contract.
+
+    contract A {
+      string public name = "Contract A";
+  
+      function getName() public view returns (string memory) {
+          return name;
+      }
+    }
+    
+    // Shadowing is disallowed in Solidity 0.6
+    // This will not compile
+    // contract B is A {
+    //     string public name = "Contract B";
+    // }
+    
+    contract C is A {
+        // This is the correct way to override inherited state variables.
+        constructor() {
+            name = "Contract C";
+        }
+    
+        // C.getName returns "Contract C"
+    }
+  }
+
+  Calling Parent Contracts {
+    Parent contracts can be called directly, or by using the keyword super.
+    
+    By using the keyword super, all of the immediate parent contracts will be called.
+  }
+}
+
+Visibility {
+  Functions and state variables have to declare whether they are accessible by other contracts.
+  
+  Functions can be declared as
+  
+  public - any contract and account can call
+  private - only inside the contract that defines the function
+  internal- only inside contract that inherits an internal function
+  external - only other contracts and accounts can call
+  State variables can be declared as public, private, or internal but not external.
+
+  // Inherited contracts do not have access to private functions
+    // and state variables.
+}
+
+Interface {
+  You can interact with other contracts by declaring an Interface.
+  
+  Interface
+  
+  cannot have any functions implemented
+  can inherit from other interfaces
+  all declared functions must be external
+  cannot declare a constructor
+  cannot declare state variables
+
+}
+
+Payable {
+  Functions and addresses declared payable can receive ether into the contract.
+
+}
+
+Sending Ether (transfer, send, call) {
+  transfer (2300 gas, throws error)
+  send (2300 gas, returns bool)
+  call (forward all gas or set gas, returns bool)
+
+  A contract receiving Ether must have at least one of the functions below
+  
+  receive() external payable
+  fallback() external payable
+
+  receive() is called if msg.data is empty, otherwise fallback() is called.
+  
+  Which method should you use?
+  call in combination with re-entrancy guard is the recommended method to use after December 2019.
+  
+  Guard against re-entrancy by
+  
+  making all state changes before calling other contracts
+  using re-entrancy guard modifier
+
+  // Function to receive Ether. msg.data must be empty
+  receive() external payable {}
+
+  // Fallback function is called when msg.data is not empty
+  fallback() external payable {}
+
 }
