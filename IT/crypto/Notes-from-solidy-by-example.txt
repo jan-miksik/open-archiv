@@ -1,291 +1,453 @@
-Primitive Data Types {
-  // Default values
-  // Unassigned variables have a default value
-  bool public defaultBoo; // false
-  uint public defaultUint; // 0
-  int public defaultInt; // 0
-  address public defaultAddr; // 0x0000000000000000000000000000000000000000
-  
-  'uint' stands for unsigned integer, meaning non negative integers
-  uint8, uint16, uint32, uint64, uint128, uint256
-  ?? unit10
-  Negative numbers are allowed for 'int' types.
-  'int' is same as int256
-  'uint' is an alias for uint256
-}
-
-Variables {
-  There are 3 types of variables in Solidity
-  
-  - local (uint i)
-  memory
-  declared inside a function
-  not stored on the blockchain
-  - state (string public text, uint public num)
-  declared outside a function
-  stored on the blockchain
-  - global (block.timestamp; msg.sender;)
-  (provides information about the blockchain)
-
-  Constants {
-    Constants are variables that cannot be modified.
-    Their value is hard coded and using constants can save gas cost.
-    $ uint public constant MY_UINT = 123;
+#Data Types 
+{
+  Primitive Data Types {
+    // Default values
+    // Unassigned variables have a default value
+    bool public defaultBoo; // false
+    uint public defaultUint; // 0
+    int public defaultInt; // 0
+    address public defaultAddr; // 0x0000000000000000000000000000000000000000
+    
+    'uint' stands for unsigned integer, meaning non negative integers
+    uint8, uint16, uint32, uint64, uint128, uint256
+    ?? unit10
+    Negative numbers are allowed for 'int' types.
+    'int' is same as int256
+    'uint' is an alias for uint256
   }
   
-  Immutable {
-    Immutable variables are like constants. 
-    Values of immutable variables can be set inside the constructor but cannot be modified afterwards.
-    // coding convention to uppercase constant variables
-    $ address public immutable MY_ADDRESS;
+  Variables {
+    There are 3 types of variables in Solidity
+    
+    - local (uint i)
+    memory
+    declared inside a function
+    not stored on the blockchain
+    - state (string public text, uint public num)
+    declared outside a function
+    stored on the blockchain
+    - global (block.timestamp; msg.sender;)
+    (provides information about the blockchain)
+  
+    Constants {
+      Constants are variables that cannot be modified.
+      Their value is hard coded and using constants can save gas cost.
+      $ uint public constant MY_UINT = 123;
+    }
+    
+    Immutable {
+      Immutable variables are like constants. 
+      Values of immutable variables can be set inside the constructor but cannot be modified afterwards.
+      // coding convention to uppercase constant variables
+      $ address public immutable MY_ADDRESS;
+    }
+  }
+  
+  Enum {
+    Solidity supports enumerables and they are useful to model choice and keep track of state.
+  
+    Enums can be declared outside of a contract.
+  
+    enum Status {
+      Pending,
+      Shipped,
+      Accepted,
+      Rejected,
+      Canceled
+    }
+    // Default value is the first element listed in
+  }
+  
+  Structs {
+    You can define your own type by creating a struct.
+    
+    They are useful for grouping together related data.
+    
+    Structs can be declared outside of a contract and imported in another contract.
+  
+    struct Todo {
+      string text;
+      bool completed;
+    }
+  
+    // 3 ways to initialize a struct
+    // - calling it like a function
+    todos.push(Todo(_text, false));
+  
+    // key value mapping
+    todos.push(Todo({text: _text, completed: false}));
+  
+    // initialize an empty struct and then update it
+    Todo memory todo;
+    todo.text = _text;
+    // todo.completed initialized to false
+  
+    todos.push(todo);
+  
+    $// Solidity automatically created a getter for 'todos' so
+    // you don't actually need this function.
+  
+  }
+  
+  Data Locations - Storage, Memory and Calldata {
+    Variables are declared as either storage, memory or calldata to explicitly specify the location of the data.
+  
+    storage - variable is a state variable (store on blockchain)
+    memory - variable is in memory and it exists while a function is being called
+    calldata - special data location that contains function arguments
+  
+  }
+  
+  Array {
+    Array can have a compile-time fixed size or a dynamic size.
+  
+    // Several ways to initialize an array
+    uint[] public arr;
+    uint[] public arr2 = [1, 2, 3];
+    // Fixed sized array, all elements initialize to 0
+    uint[10] public myFixedSizeArr;
+  
+    return arr[i];
+    arr.push(i);
+    // Remove last element from array
+    arr.pop();
+    arr.length;
+    delete arr[index];
+  
+    // create array in memory, only fixed size can be created
+    uint[] memory a = new uint[](5);
+  
+    // Deleting an element creates a gap in the array.
+    // One trick to keep the array compact is to
+    // move the last element into the place to delete.
+    arr[index] = arr[arr.length - 1];
+    // Remove the last element
+    arr.pop();
+  }
+
+  Interface {
+    You can interact with other contracts by declaring an Interface.
+    
+    Interface
+    
+    cannot have any functions implemented
+    can inherit from other interfaces
+    all declared functions must be external
+    cannot declare a constructor
+    cannot declare state variables
+  
+  }
+
+  Errors {
+    An error will undo all changes made to the state during a transaction.
+  
+    You can throw an error by calling require, revert or assert.
+  
+    require is used to validate inputs and conditions before execution.
+    revert is similar to require.
+  
+    assert is used to check for code that should never be false. Failing assertion probably means that there is a bug.
+  
+    function withdraw(uint _amount) public {
+      uint oldBalance = balance;
+  
+      // balance - _amount does not underflow if balance >= _amount
+      require(balance >= _amount, "Underflow");
+  
+      if (balance < _amount) {
+          revert("Underflow");
+      }
+  
+      balance -= _amount;
+  
+      assert(balance <= oldBalance);
+    }
+  
   }
 }
+
+
+
+
+
+
+
+
 
 Ether and Wei {
   Similar to how one dollar is equal to 100 cent, one ether is equal to 10to18 wei.
 }
 
-Gas {
-  transaction price = `gas spent` * `gas price amount of ether`
-  + 
-  {
-    How much ether do you need to pay for a transaction?
-    You pay , where
+$Gas {
+  basics {
+    transaction price = `gas spent` * `gas price amount of ether`
+    + 
+    {
+      Unspent gas will be refunded.
     
-    gas is a unit of computation
-    gas spent is the total amount of gas used in a transaction
-    gas price is how much ether you are willing to pay per gas
-  
-    Unspent gas will be refunded.
-  
-    There are 2 upper bounds to the amount of gas you can spend
-  
-    gas limit (max amount of gas you're willing to use for your transaction, set by you)
-    block gas limit (max amount of gas allowed in a block, set by the network)
-  }
-
-  // Using up all of the gas that you send causes your transaction to fail.
-    // State changes are undone.
-    // Gas spent are not refunded.
-    function forever() public {
-        // Here we run a loop until all of the gas are spent
-        // and the transaction fails
-        while (true) {
-            i += 1;
-        }
+      There are 2 upper bounds to the amount of gas you can spend
+    
+      gas limit (max amount of gas you're willing to use for your transaction, set by you)
+      block gas limit (max amount of gas allowed in a block, set by the network)
     }
-}
-
-If / Else {
-  Solidity supports conditional statements if, else if and else.
-  also ternary operator
-  return _x < 10 ? 1 : 2;
-}
-
-For and While Loop {
-  Solidity supports for, while, and do while loops.
   
-  Don't write loops that are unbounded as this can hit the gas limit, causing your transaction to fail.
-  
-  For the reason above, while and do while loops are rarely used.
-}
-
-Mapping {
-  Maps are created with the syntax mapping(keyType => valueType).
-  The keyType can be any built-in value type, bytes, string, or any contract.
-
-  valueType can be any type including another mapping or an array.
-
-  Mappings are not iterable.
-
-  // Mapping always returns a value.
-  // If the value was never set, it will return the default value.
-  return myMap[_addr];
-
-  // Update the value at this address
-  myMap[_addr] = _i;
-
-  // Reset the value to the default value.
-  delete myMap[_addr];
-
-  // Nested mapping (mapping from address to another mapping)
-    mapping(address => mapping(uint => bool)) public nested;
-
-    return nested[_addr1][_i];
-
-}
-
-Array {
-  Array can have a compile-time fixed size or a dynamic size.
-
-  // Several ways to initialize an array
-  uint[] public arr;
-  uint[] public arr2 = [1, 2, 3];
-  // Fixed sized array, all elements initialize to 0
-  uint[10] public myFixedSizeArr;
-
-  return arr[i];
-  arr.push(i);
-  // Remove last element from array
-  arr.pop();
-  arr.length;
-  delete arr[index];
-
-  // create array in memory, only fixed size can be created
-  uint[] memory a = new uint[](5);
-
-  // Deleting an element creates a gap in the array.
-  // One trick to keep the array compact is to
-  // move the last element into the place to delete.
-  arr[index] = arr[arr.length - 1];
-  // Remove the last element
-  arr.pop();
-}
-
-Enum {
-  Solidity supports enumerables and they are useful to model choice and keep track of state.
-
-  Enums can be declared outside of a contract.
-
-  enum Status {
-    Pending,
-    Shipped,
-    Accepted,
-    Rejected,
-    Canceled
-  }
-  // Default value is the first element listed in
-}
-
-Structs {
-  You can define your own type by creating a struct.
-  
-  They are useful for grouping together related data.
-  
-  Structs can be declared outside of a contract and imported in another contract.
-
-  struct Todo {
-    string text;
-    bool completed;
+    // Using up all of the gas that you send causes your transaction to fail.
+      // State changes are undone.
+      // Gas spent are not refunded.
+      function forever() public {
+          // Here we run a loop until all of the gas are spent
+          // and the transaction fails
+          while (true) {
+              i += 1;
+          }
+      }
   }
 
-  // 3 ways to initialize a struct
-  // - calling it like a function
-  todos.push(Todo(_text, false));
+  Gas Saving Techniques {
+    Some gas saving techniques.
 
-  // key value mapping
-  todos.push(Todo({text: _text, completed: false}));
-
-  // initialize an empty struct and then update it
-  Todo memory todo;
-  todo.text = _text;
-  // todo.completed initialized to false
-
-  todos.push(todo);
-
-  $// Solidity automatically created a getter for 'todos' so
-  // you don't actually need this function.
-
-}
-
-Data Locations - Storage, Memory and Calldata {
-  Variables are declared as either storage, memory or calldata to explicitly specify the location of the data.
-
-  storage - variable is a state variable (store on blockchain)
-  memory - variable is in memory and it exists while a function is being called
-  calldata - special data location that contains function arguments
-
-}
-
-Function {
-  There are several ways to return outputs from a function.
-  
-  Public functions cannot accept certain data types as inputs or outputs
-
-  // Functions can return multiple values.
-  // Return values can be assigned to their name.
-  // In this case the return statement can be omitted.
-
-  // Can use array for input
-    function arrayInput(uint[] memory _arr) public {}
-
-  // Can use array for output
-  uint[] public arr;
-
-  function arrayOutput() public view returns (uint[] memory) {
-      return arr;
-  
+    Replacing memory with calldata
+    Loading state variable to memory
+    Replace for loop i++ with ++i
+    Caching array elements
+    Short circuit
   }
+}
 
+Sending Ether (transfer, send, call) {
+  transfer (2300 gas, throws error)
+  send (2300 gas, returns bool)
+  call (forward all gas or set gas, returns bool)
+
+  A contract receiving Ether must have at least one of the functions below
   
-  View and Pure Functions {
-    Getter functions can be declared view or pure.
+  receive() external payable
+  fallback() external payable
+
+  receive() is called if msg.data is empty, otherwise fallback() is called.
+  
+  Which method should you use?
+  call in combination with re-entrancy guard is the recommended method to use after December 2019.
+  
+  Guard against re-entrancy by
+  
+  making all state changes before calling other contracts
+  using re-entrancy guard modifier
+
+  // Function to receive Ether. msg.data must be empty
+  receive() external payable {}
+
+  // Fallback function is called when msg.data is not empty
+  fallback() external payable {}
+
+  Fallback {
+    fallback is a function that does not take any arguments and does not return anything.
     
-    View function declares that no state will be changed.
+    It is executed either when
     
-    Pure function declares that no state variable will be changed or read.
+    a function that does not exist is called or
+    Ether is sent directly to a contract but receive() does not exist or msg.data is not empty
+    fallback has a 2300 gas limit when called by transfer or send.
+
+    // Fallback function must be declared as external.
   }
-}
 
-Errors {
-  An error will undo all changes made to the state during a transaction.
+  Call {
+    call is a low level function to interact with other contracts.
+  }
 
-  You can throw an error by calling require, revert or assert.
+  Delegatecall {
+    delegatecall is a low level function similar to call.
 
-  require is used to validate inputs and conditions before execution.
-  revert is similar to require.
-
-  assert is used to check for code that should never be false. Failing assertion probably means that there is a bug.
-
-  function withdraw(uint _amount) public {
-    uint oldBalance = balance;
-
-    // balance - _amount does not underflow if balance >= _amount
-    require(balance >= _amount, "Underflow");
-
-    if (balance < _amount) {
-        revert("Underflow");
+    function setVars(address _contract, uint _num) public payable {
+      // A's storage is set, B is not modified.
+      (bool success, bytes memory data) = _contract.delegatecall(
+          abi.encodeWithSignature("setVars(uint256) "", _num)
+      );
     }
-
-    balance -= _amount;
-
-    assert(balance <= oldBalance);
   }
 
 }
 
-Function Modifier {
-  Modifiers are code that can be run before and / or after a function call.
-  
-  Modifiers can be used to:
-  
-  Restrict access
-  Validate inputs
-  Guard against reentrancy hack
+Payable {
+  Functions and addresses declared payable can receive ether into the contract.
+}
 
-  modifier onlyOwner() {
-    require(msg.sender == owner, "Not owner");
-    // Underscore is a special character only used inside
-    // a function modifier and it tells Solidity to
-    // execute the rest of the code.
-    _;
+
+
+
+
+
+#Functions ... 
+{
+  Function {
+    There are several ways to return outputs from a function.
+    
+    Public functions cannot accept certain data types as inputs or outputs
+  
+    // Functions can return multiple values.
+    // Return values can be assigned to their name.
+    // In this case the return statement can be omitted.
+  
+    // Can use array for input
+      function arrayInput(uint[] memory _arr) public {}
+  
+    // Can use array for output
+    uint[] public arr;
+  
+    function arrayOutput() public view returns (uint[] memory) {
+        return arr;
+    
+    }
+  
+    
+    View and Pure Functions {
+      Getter functions can be declared view or pure.
+      
+      View function declares that no state will be changed.
+      
+      Pure function declares that no state variable will be changed or read.
+    }
+  }
+  
+  If / Else {
+    Solidity supports conditional statements if, else if and else.
+    also ternary operator
+    return _x < 10 ? 1 : 2;
+  }
+  
+  For and While Loop {
+    Solidity supports for, while, and do while loops.
+    
+    Don't write loops that are unbounded as this can hit the gas limit, causing your transaction to fail.
+    
+    For the reason above, while and do while loops are rarely used.
+  }
+  
+  Mapping {
+    Maps are created with the syntax mapping(keyType => valueType).
+    The keyType can be any built-in value type, bytes, string, or any contract.
+  
+    valueType can be any type including another mapping or an array.
+  
+    Mappings are not iterable.
+  
+    // Mapping always returns a value.
+    // If the value was never set, it will return the default value.
+    return myMap[_addr];
+  
+    // Update the value at this address
+    myMap[_addr] = _i;
+  
+    // Reset the value to the default value.
+    delete myMap[_addr];
+  
+    // Nested mapping (mapping from address to another mapping)
+      mapping(address => mapping(uint => bool)) public nested;
+  
+      return nested[_addr1][_i];
+  
+  }
+
+  Iterable Mapping {
+    
+  }
+  
+  Function Modifier {
+    Modifiers are code that can be run before and / or after a function call.
+    
+    Modifiers can be used to:
+    
+    Restrict access
+    Validate inputs
+    Guard against reentrancy hack
+  
+    modifier onlyOwner() {
+      require(msg.sender == owner, "Not owner");
+      // Underscore is a special character only used inside
+      // a function modifier and it tells Solidity to
+      // execute the rest of the code.
+      _;
+    }
+  }
+  
+  Try Catch {
+    try / catch can only catch errors from external function calls and contract creation.
+  
+    function tryCatchExternalCall(uint _i) public {
+      try foo.myFunc(_i) returns (string memory result) {
+          emit Log(result);
+      } catch {
+          emit Log("external call failed");
+      }
+    }
+  }
+  
+  Function Selector {
+    When a function is called, the first 4 bytes of calldata specifies which function to call.
+  
+    This 4 bytes is called a function selector.
+  }
+  
+  Calling Other Contract {
+    Contract can call other contracts in 2 ways.
+    
+    The easiest way to is to just call it, like A.foo(x, y, z).
+    
+    Another way to call other contracts is to use the low-level call
+  
+    contract Caller {
+      function setX(Callee _callee, uint _x) public {
+          uint x = _callee.setX(_x);
+      }
+  
+      function setXFromAddress(address _addr, uint _x) public {
+          Callee callee = Callee(_addr);
+          callee.setX(_x);
+      }
+  
+      function setXandSendEther(Callee _callee, uint _x) public payable {
+          (uint x, uint value) = _callee.setXandSendEther{value: msg.value}(_x);
+      }
+    }
+  }
+  
+  Contract that Creates other Contracts {
+    Contracts can be created by other contracts using the new keyword. Since 0.8.0, new keyword supports create2 feature by specifying salt options.
+  
+    Car car = (new Car){value: msg.value, salt: _salt}(_owner, _model);
+  }
+  
+  Event {
+    Events
+    Events allow logging to the Ethereum blockchain. Some use cases for events are:
+  
+    Listening for events and updating user interface
+    A cheap form of storage
+  
+    / Event declaration
+    // Up to 3 parameters can be indexed.
+    // Indexed parameters helps you filter the logs by the indexed parameter
+    event Log(address indexed sender, string message);
+  
+    emit Log(msg.sender, "Hello World!");
   }
 }
 
-Event {
-  Events
-  Events allow logging to the Ethereum blockchain. Some use cases for events are:
 
-  Listening for events and updating user interface
-  A cheap form of storage
 
-  / Event declaration
-  // Up to 3 parameters can be indexed.
-  // Indexed parameters helps you filter the logs by the indexed parameter
-  event Log(address indexed sender, string message);
 
-  emit Log(msg.sender, "Hello World!");
-}
+
+
+
+
+
+
+
+
+
+
+
 
 Constructor {
   A constructor is an optional function that is executed upon contract creation.
@@ -371,48 +533,54 @@ Visibility {
     // and state variables.
 }
 
-Interface {
-  You can interact with other contracts by declaring an Interface.
+Import {
+  You can import local and external files in Solidity.
+}
+
+Library {
+  Libraries are similar to contracts, but you can't declare any state variable and you can't send ether.
   
-  Interface
+  A library is embedded into the contract if all library functions are internal.
   
-  cannot have any functions implemented
-  can inherit from other interfaces
-  all declared functions must be external
-  cannot declare a constructor
-  cannot declare state variables
+  Otherwise the library must be deployed and then linked before the contract is deployed.
+
+  // Array function to delete element at index and re-organize the array
+  // so that their are no gaps between the elements.
+  library Array {
+      function remove(uint[] storage arr, uint index) public {
+          // Move the last element into the place to delete
+          require(arr.length > 0, "Can't remove from empty array");
+          arr[index] = arr[arr.length - 1];
+          arr.pop();
+      }
+  }
+}
+
+
+
+
+
+Low level
+ABI Decode {
+  abi.encode encodes data into bytes.
+  
+  abi.decode decodes bytes back into data.
+}
+
+Hashing with Keccak256 {
+  keccak256 computes the Keccak-256 hash of the input.
+  keccak256(abi.encodePacked(_text, _num, _addr)
+}
+
+Verifying Signature {
+  Messages can be signed off chain and then verified on chain using a smart contract.
+  https://solidity-by-example.org/signature/
+}
+
+Bitwise Operators {
 
 }
 
-Payable {
-  Functions and addresses declared payable can receive ether into the contract.
-
-}
-
-Sending Ether (transfer, send, call) {
-  transfer (2300 gas, throws error)
-  send (2300 gas, returns bool)
-  call (forward all gas or set gas, returns bool)
-
-  A contract receiving Ether must have at least one of the functions below
-  
-  receive() external payable
-  fallback() external payable
-
-  receive() is called if msg.data is empty, otherwise fallback() is called.
-  
-  Which method should you use?
-  call in combination with re-entrancy guard is the recommended method to use after December 2019.
-  
-  Guard against re-entrancy by
-  
-  making all state changes before calling other contracts
-  using re-entrancy guard modifier
-
-  // Function to receive Ether. msg.data must be empty
-  receive() external payable {}
-
-  // Fallback function is called when msg.data is not empty
-  fallback() external payable {}
-
+Multi-Sig Wallet {
+  https://solidity-by-example.org/app/multi-sig-wallet/
 }
