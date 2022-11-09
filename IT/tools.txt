@@ -1,0 +1,111 @@
+PassBolt
+
+
+--Search Engines
+DuckDuckGo
+
+--Encrypted Email
+ProtonMail
+Skiff
+
+--Anonymous Mail Forwarding
+Anonaddy
+
+--Virtual Phone Numbers
+Silent.link
+
+--Team Collaboration Platforms
+Rocket.Chat
+Element
+Mattermost - lot of integrations
+
+--Browser Extensions
+Netcraft Extension
+
+--Mobile Apps
+SuperFreezZ ( speed up your phone, and prolong battery life)
+Cryptomator (Encrypts files and folders client-side,)
+
+--Online Tools
+';--have i been pwned?
+10 Minute Mail
+
+--Virtual Private Networks
+Mullvad
+ProtonVPN
+IVPN
+
+--DNS
+CloudFlare
+
+--Firewalls
+OpenSnitch
+
+--Ad Blockers
+Pi-Hole
+
+--Network Analysis
+OONI
+Proxy Checker
+
+--Intrusion Detection
+Zeek
+
+--Cloud Hosting
+Njalla
+Orange Website
+
+--Digital Notes
+Standard Notes
+?Cryptee
+
+--Cloud Productivity Suites
+Disroot
+Skiff Pages
+
+--Encrypted Cloud Storage
+Cryptomator (s a cross-platform, open source encryption app)
+Internxt
+FileN
+
+--Browser Sync
+XBrowserSync
+
+--Video Conference Calls
+Jitsi
+
+--Data Erasers
+shred 
+
+--Video Search Engines
+Petey Vid
+
+--Proxy Sites
+Invidious - Privacy-focused, open source alternative frontend for YouTube.
+Bibliogram (Instagram)
+
+--Crypto Exchanges
+LocalBitcoins
+AtomicDEX
+
+--Mobile Operating Systems
+GrapheneOS
+
+--Desktop Operating Systems
+Qubes OS
+
+
+Look at
+https://pwn-xyz.slack.com/archives/C03GW3A01R7/p1667818199719979
+
+
+
+Med Man
+
+---crypto apps security
+Revoke cash - revoking approvals from crypto assets
+Fire - 
+?tornado cash?
+Zether: A Privacy Coin on Ethereum
+https://tokensniffer.com/ - contract scam detector
+https://rekt.news/
