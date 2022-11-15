@@ -95,17 +95,33 @@ GrapheneOS
 Qubes OS
 
 
-Look at
-https://pwn-xyz.slack.com/archives/C03GW3A01R7/p1667818199719979
+https://radicle.xyz/
 
 
 
 Med Man
 
----crypto apps security
-Revoke cash - revoking approvals from crypto assets
-Fire - 
-?tornado cash?
+--------------crypto apps security------------------
+
+
+##********** operation with assets ##**********
 Zether: A Privacy Coin on Ethereum
+
+#mixers
+?tornado cash?
+
+#revoke approvals
+Revoke cash - revoking approvals from crypto assets
+
+Fire - browser extension, for check transaction before execution
+
+
+
+##********** analytics ##***********
+
+#block explorers
+https://ethereum.org/en/developers/docs/data-and-analytics/block-explorers/
+
 https://tokensniffer.com/ - contract scam detector
+
 https://rekt.news/
