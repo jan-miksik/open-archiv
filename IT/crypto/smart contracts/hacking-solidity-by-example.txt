@@ -1,0 +1,131 @@
+Re-Entrancy {
+  Vulnerability
+  Let's say that contract A calls contract B.
+  
+  Reentracy exploit allows B to call back into A before A finishes execution.
+}
+
+Arithmetic Overflow and Underflow {
+  Vulnerability
+  Solidity < 0.8
+  Integers in Solidity overflow / underflow without any errors
+  
+  Solidity >= 0.8
+  Default behaviour of Solidity 0.8 for overflow / underflow is to throw an error.
+}
+
+Self Destruct {
+  Contracts can be deleted from the blockchain by calling selfdestruct.
+  
+  selfdestruct sends all remaining Ether stored in the contract to a designated address.
+  
+  Vulnerability
+  A malicious contract can use selfdestruct to force sending Ether to any contract.
+}
+
+Accessing Private Data {
+  Vulnerability
+  All data on a smart contract can be read.
+  
+  Let's see how we can read private data. In the process you will learn how Solidity stores state variables.
+}
+
+Delegatecall {
+  Vulnerability
+  delegatecall is tricky to use and wrong usage or incorrect understanding can lead to devastating results.
+  
+  You must keep 2 things in mind when using delegatecall
+  
+  1.delegatecall preserves context (storage, caller, etc...)
+  2.storage layout must be the same for the contract calling delegatecall and the contract getting called
+}
+
+Source of Randomness {
+  Vulnerability
+  blockhash and block.timestamp are not reliable sources for randomness.
+
+  Preventative Techniques
+    Don't use blockhash and block.timestamp as source of randomness
+}
+
+
+Denial of Service {
+  Vulnerability
+  There are many ways to attack a smart contract to make it unusable.
+  
+  One exploit we introduce here is denial of service by making the function to send Ether fail.
+}
+
+Phishing with tx.origin {
+  What's the difference between msg.sender and tx.origin?
+  If contract A calls B, and B calls C, in C msg.sender is B and tx.origin is A.
+  
+  Vulnerability
+  A malicious contract can deceive the owner of a contract into calling a function that only the owner should be able to call.
+
+  Preventative Techniques
+  Use msg.sender instead of tx.origin
+}
+
+Hiding Malicious Code with External Contract {
+  Vulnerability
+  In Solidity any address can be casted into specific contract, even if the contract at the address is not the one being casted.
+  
+  This can be exploited to hide malicious code. Let's see how.
+
+  Preventative Techniques
+    Initialize a new contract inside the constructor
+    Make the address of external contract public so that the code of the external contract can be reviewed
+}
+
+
+Honeypot {
+  A honeypot is a trap to catch hackers.
+  
+  Vulnerability
+  Combining two exploits, reentrancy and hiding malicious code, we can build a contract
+  
+  that will catch malicious users.
+}
+
+
+Front Running {
+  Vulnerability
+  Transactions take some time before they are mined. An attacker can watch the transaction pool and send a transaction, have it included in a block before the original transaction. This mechanism can be abused to re-order transactions to the attacker's advantage.
+
+  Preventative Techniques
+    use commit-reveal scheme (https://medium.com/swlh/exploring-commit-reveal-schemes-on-ethereum-c4ff5a777db8)
+    use submarine send (https://libsubmarine.org/)
+}
+
+Block Timestamp Manipulation {
+  Vulnerability
+  block.timestamp can be manipulated by miners with the following constraints
+  
+  it cannot be stamped with an earlier time than its parent
+  it cannot be too far in the future
+
+  Preventative Techniques
+    Don't use block.timestamp for a source of entropy and random number
+}
+
+Signature Replay {
+  Signing messages off-chain and having a contract that requires that signature before executing a function is a useful technique.
+  
+  For example this technique is used to:
+  
+  reduce number of transaction on chain
+  gas-less transaction, called meta transaction
+  Vulnerability
+  Same signature can be used multiple times to execute a function. This can be harmful if the signer's intention was to approve a transaction once.
+
+  Preventative Techniques
+    Sign messages with nonce and address of the contract.
+}
+
+Bypass Contract Size Check {
+  Vulnerability
+  If an address is a contract then the size of code stored at the address will be greater than 0 right?
+  
+  Let's see how we can create a contract with code size returned by extcodesize equal to 0.
+}

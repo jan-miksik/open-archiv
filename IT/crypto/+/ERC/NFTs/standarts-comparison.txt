@@ -2,6 +2,7 @@ ERC 721
 -invented by The developers of CryptoKitties, Dapper Labs
 -from 2017
 -higher gas costs
+-more used for non-fungible tokens
 
 
 ERC 1155

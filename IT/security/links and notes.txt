@@ -1,3 +1,28 @@
+https://officercia.mirror.xyz/FvMKbibx7gDlufgZSkmYn77CI8HPBsVCeqUKmpXHr0k
+
+
+--Linux Defences
+BleachBit
+
+https://sectools.org/
+
+--Code Hosting
+SourceHut
+
+Wireshark 
+
+https://thenetworkstate.com/
+
+
+- tips from ETH Brno
+Urbit
+Urqba
+Holium.com
+
+
+
+
+
 - Cipher suite
 Why is Diffie-Hellman prefered against RSA?
 What is AES?
