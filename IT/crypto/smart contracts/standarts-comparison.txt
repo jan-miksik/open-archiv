@@ -1,0 +1,39 @@
+
+
+
+ERC721 vs ERC1155
+From what I read ERC1155 seems more optimazed(gas efficency), on the other hand ERC721 looks like golden standard for non-fungible assets and ownership is more obvious. 
+https://ethereum.stackexchange.com/questions/129117/why-do-people-like-use-erc721-to-public-nft-instead-of-erc1155
+
+Intendent collection should have
+
+1) only non-fungible NFT tokens
+2) Royalties with support for major marketplaces.
+3) Be secure and tested
+4) Limits for max supply and max nfts per address
+5) Has set metadata onchain except image which is uploaded on IPFS
+6) The price of mint is arbitrary, can be zero or more
+7) option to change royalties receiver
+
+
+Information what I found about each ERC
+
+ERC 721
+-invented by The developers of CryptoKitties, Dapper Labs
+-from 2017
+-higher gas costs
+-more used for non-fungible tokens
+-probably better support across platforms
+-better security and tracking of assets?
+-get info about ownership of asset
+
+ERC 1155
+-by Enjin
+-2019
+-semi-fungible
+-batch transfers
+-safe transfer
+-lower gas costs
+
+
+Which ERC would you suggest to use for this collection?
