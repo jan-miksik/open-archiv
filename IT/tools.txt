@@ -125,3 +125,27 @@ https://ethereum.org/en/developers/docs/data-and-analytics/block-explorers/
 https://tokensniffer.com/ - contract scam detector
 
 https://rekt.news/
+
+
+---block explorers---
+
+alerting services
+https://cryptocurrencyalerting.com/wallet-watch.html
+
+
+development
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
