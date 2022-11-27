@@ -1,0 +1,4 @@
+- echidna ---------------------------------
+$ docker run -it -v "$PWD":/src trailofbits/eth-security-toolbox
+
+$ echidna-test template.sol --contract TestToken
