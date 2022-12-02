@@ -1,0 +1,39 @@
+/Optimism
+-Optimism Foundation, Optimism Collective
+-ethereum developers
+-obecne vic transparentni, znama roadmap
+-single-round fraud proofs
+-Optimism Virtual Machine's (OVM) - jen Solidity
+-total-value-locked (TVL) 1.2B
+-fees v WETH
+-token OP
+
+
+/Arbitrum
+-Offchain Labs
+-soukroma spolecnost
+-muli-round fraud proofs
+-Arbitrum Virtual Machine (AVM) - EVM jazyky(Vyper, Solidity, Flint, YUL+, LLLL ...)
+-total-value-locked (TVL) 2.4B
+-fees v ETH
+
+
+https://l2fees.info/
+https://l2beat.com/scaling/tvl
+
+
+tree poznamky 2021/5 {
+  optimism pouziva single-round fraud proofs (drazsi na gas, zdroj potencialnich bezpecnostnich problemu, zavisle na L1 block limitu) vs arbitrum multi-round
+  arbitrum nevyhoda - potrebuje EVM -> AVM preklad (automaticky), pomalejsi
+  optimism muze mit velky problem pokud nastane hardfork ktery zmeni/odstrani nejaky opcode - re-executing vyprodukuje jiny state
+  oba projekty se snazi byt co nejvic podobne ethereum ekosystemu, tj. muzete pouzit tooling pro EVM (ale neni to tak snadne)
+  optimism pouziva weth, arbitrum ma nativni podporu eth
+  arbitrum bude mit v zakladu permission bridge jakehokoliv tokenu na L2, optimism jde cestou ze to nebude primo v zakladu
+  arbitrum se bude spoustet na mainnet na konci mesice (kvetna), optimism v cervenci
+  a jeste jedna vec - na arbitrum bude mozne vyuzit stejne adresy kontraktu jako pouzivaji na L1, coz se muze hodit pro smart-kontrakt penezenky atp.
+}
+
+
+Artbitrum vypada zatim jako technologicky dokonalejsi nez Optimism. 
+Optimism ma pro mne blizsi a zajimavejsi governance model. 
+Pokud by Optimism naplnil plany, ktere maji pro vyvoj, tak by se mohl dostat celkově dál než Arbitrum?
