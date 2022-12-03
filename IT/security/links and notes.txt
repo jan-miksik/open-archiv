@@ -20,6 +20,15 @@ Urqba
 Holium.com
 
 
+--tools smart contract testing-- {
+  Slither
+  VeriSol
+  firefly
+  KEVM
+  runtime verification
+}
+
+
 - bug hunting
 https://immunefi.com/bounty/immunefitimebound/
 

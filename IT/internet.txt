@@ -1,0 +1,30 @@
+Internet
+A - Address record
+MX - Mail exachange record
+CNAME - Canonical name record
+ALIAS - CNAME flattening record
+TXT - Text record
+NS - Name server record
+AAAA - IPv6 address record
+SRV - service record
+SOA
+PTR
+TLSA - TLS Authentication Record
+CAA - Certification Autohority Authorization
+DNSKEY
+
+ANAME and ALIAS are interchangeable terms
+
+CDN
+TTL
+
+HTTP
+HTTPS
+TCP
+UDP
+FTP
+
+IP
+
+DDOS
+perma-caching

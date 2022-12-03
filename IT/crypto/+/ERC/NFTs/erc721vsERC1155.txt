@@ -1,0 +1,5 @@
+Found answers for ERC721 vs ERC1155 {
+  There is one main thing that ERC-721 does that ERC-1155 doesn’t — you can ask a ERC-721 contract who the ownerOf(itemId) is, whereas on an ERC-1155 contract you can only check whether a specific account is the owner (by checking balanceOf(account, itemId)).
+
+  Having said that, most of the time the decision to use ERC-721 over ERC-1155 is because of ERC-721 enjoying (until now) better support across explorers, wallets, marketplaces, etc.
+}
