@@ -1,0 +1,231 @@
+Essential {
+
+  Template syntax {
+    https://vuejs.org/guide/essentials/application.html#app-configurations
+    register component so it is available in whole app
+    app.component('TodoDeleteButton', TodoDeleteButton)
+    
+    
+    Dynamically Binding Multiple Attributes
+    const objectOfAttrs = {
+      id: 'container',
+      class: 'wrapper'
+    }
+    <div v-bind="objectOfAttrs"></div>
+    
+    
+    Restricted Globals Access
+    explicitly define additional globals for all Vue expressions by adding them to `app.config.globalProperties`
+    
+    Dynamic Arguments
+    <a :[attributeName]="url"> ... </a>
+    
+    <a :[someAttr]="value"> ... </a>
+    The above will be converted to :[someattr] in in-DOM templates.
+  }
+
+  reactivity {
+    Limitations of reactive()
+    It only works for object types (objects, arrays, and collection types such as Map and Set). It cannot hold primitive types such as string, number or boolean.
+  
+    Since Vue's reactivity tracking works over property access, we must always keep the same reference to the reactive object. This means we can't easily "replace" a reactive object because the reactivity connection to the first reference is lost:
+  }
+
+  computed {
+    $Computed Caching vs. Methods
+    However, the difference is that computed properties are cached based on their reactive dependencies.
+
+    In comparison, a method invocation will always run the function whenever a re-render happens.
+
+    This also means the following computed property will never update, because Date.now() is not a reactive dependency:
+
+    $Writable Computed
+    const fullName = computed({
+      // getter
+      get() {
+        return firstName.value + ' ' + lastName.value
+      },
+      // setter
+      set(newValue) {
+        // Note: we are using destructuring assignment syntax here.
+        [firstName.value, lastName.value] = newValue.split(' ')
+      }
+    })
+
+    Getters should be side-effect free
+    -don't make async requests or mutate the DOM inside a computed getter!
+    -Avoid mutating computed value
+  }
+
+  list rendereing {
+
+    protoze blbnuly slozene zavorky {
+      const myObject = reactive({
+        title: 'How to do lists in Vue',
+        author: 'Jane Doe',
+        publishedAt: '2016-04-10'
+      })
+  
+      <li v-for="(value, key) in myObject">
+        {{ key }}: {{ value }}
+      </li>
+  
+      <li v-for="(value, key, index) in myObject">
+        {{ index }}. {{ key }}: {{ value }}
+      </li>
+  
+      - v-for with a Range
+      <span v-for="n in 10">{{ n }}</span>
+  
+      t's not recommended to use v-if and v-for on the same element due to implicit precedence. Refer to style guide for details.
+  
+  
+      When working with non-mutating methods, we should replace the old array with the new one:
+      `filter(), concat() and slice()`
+  
+      Be careful with reverse() and sort() in a computed property! These two methods will mutate the original array, which should be avoided in computed getters. Create a copy of the original array before calling these methods:
+
+    }
+  }
+
+  events {
+    Event Modifiers
+    .stop
+    .prevent
+    .self
+    .capture
+    .once
+    .passive
+
+    <!-- the click event's propagation will be stopped -->
+    <a @click.stop="doThis"></a>
+
+    <!-- the submit event will no longer reload the page -->
+    <form @submit.prevent="onSubmit"></form>
+
+    <!-- modifiers can be chained -->
+    <a @click.stop.prevent="doThat"></a>
+
+    <!-- just the modifier -->
+    <form @submit.prevent></form>
+
+    <!-- only trigger handler if event.target is the element itself -->
+    <!-- i.e. not from a child element -->
+    <div @click.self="doThat">...</div>
+    <!-- use capture mode when adding the event listener -->
+    <!-- i.e. an event targeting an inner element is handled here before being handled by that element -->
+    <div @click.capture="doThis">...</div>
+
+    <!-- the click event will be triggered at most once -->
+    <a @click.once="doThis"></a>
+
+    <!-- the scroll event's default behavior (scrolling) will happen -->
+    <!-- immediately, instead of waiting for `onScroll` to complete  -->
+    <!-- in case it contains `event.preventDefault()`                -->
+    <div @scroll.passive="onScroll">...</div>
+
+    The .passive modifier is typically used with touch event listeners for improving performance on mobile devices.
+
+
+    Key Aliases
+    .enter
+    .tab
+    .delete (captures both "Delete" and "Backspace" keys)
+    .esc
+    .space
+    .up
+    .down
+    .left
+    .right
+
+    System Modifier Keys#
+    You can use the following modifiers to trigger mouse or keyboard event listeners only when the corresponding modifier key is pressed:
+
+    .ctrl
+    .alt
+    .shift
+    .meta
+
+    .exact Modifier#
+    The .exact modifier allows control of the exact combination of system modifiers needed to trigger an event.
+    <!-- this will fire even if Alt or Shift is also pressed -->
+    <button @click.ctrl="onClick">A</button>
+
+    <!-- this will only fire when Ctrl and no other keys are pressed -->
+    <button @click.ctrl.exact="onCtrlClick">A</button>
+
+    <!-- this will only fire when no system modifiers are pressed -->
+    <button @click.exact="onClick">A</button>
+  }
+
+  form Bindings {
+    true-value and false-value are Vue-specific attributes that only work with v-model
+
+    Modifiers
+    .lazy
+    .number
+    .trim
+
+    <!-- synced after "change" instead of "input" -->
+    <input v-model.lazy="msg" />
+    <input v-model.number="age" />
+  }
+
+  watchers {
+    Do note that you can't watch a property of a reactive object like this:
+    const obj = reactive({ count: 0 })
+
+    // this won't work because we are passing a number to watch()
+    watch(obj.count, (count) => {
+      console.log(`count is: ${count}`)
+    })
+
+    // instead, use a getter:
+    watch(
+      () => obj.count,
+      (count) => {
+        console.log(`count is: ${count}`)
+      }
+    )
+
+
+    const url = ref('https://...')
+    const data = ref(null)
+
+    async function fetchData() {
+      const response = await fetch(url.value)
+      data.value = await response.json()
+    }
+
+    // fetch immediately
+    fetchData()
+    // ...then watch for url change
+    watch(url, fetchData)
+    This can be simplified with watchEffect(). watchEffect() allows us to perform a side effect immediately while automatically tracking the effect's reactive dependencies. The above example can be rewritten as:
+
+    js
+    watchEffect(async () => {
+      const response = await fetch(url.value)
+      data.value = await response.json()
+    })
+
+    If you want to access the DOM in a watcher callback after Vue has updated it, you need to specify the flush: 'post' option:
+    watch(source, callback, {
+      flush: 'post'
+    })
+    
+    watchEffect(callback, {
+      flush: 'post'
+    })
+
+    Post-flush watchEffect() also has a convenience alias, watchPostEffect():
+
+
+    const unwatch = watchEffect(() => {})
+
+    // ...later, when no longer needed
+    unwatch()
+  }
+
+
+}
