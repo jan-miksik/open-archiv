@@ -236,14 +236,14 @@ Components In-Depth {
     import MyComponent from './App.vue'
 
     app.component('MyComponent', MyComponent)
-  components {
-  parsing to lowercase <SomethingComponent/> -> <somethring-component></somethring-component>
-  Some HTML elements, such as <ul>, <ol>, <table> and <select> have restrictions on what elements can appear inside them, and some elements such as <li>, <tr>, and <option> can only appear inside certain other elements.
-  We can use the special is attribute as a workaround:
-  <table>
-    <tr is="vue:blog-post-row"></tr>
-  </table>
-  }
+    components {
+    parsing to lowercase <SomethingComponent/> -> <somethring-component></somethring-component>
+    Some HTML elements, such as <ul>, <ol>, <table> and <select> have restrictions on what elements can appear inside them, and some elements such as <li>, <tr>, and <option> can only appear inside certain other elements.
+    We can use the special is attribute as a workaround:
+    <table>
+      <tr is="vue:blog-post-row"></tr>
+    </table>
+    }
 
     can be chained
     app
@@ -256,7 +256,6 @@ Components In-Depth {
     Global registration makes dependency relationships less explicit in large applications.
 
   }
-
   Props {
 
     pure type annotations
@@ -274,5 +273,173 @@ Components In-Depth {
     <BlogPost :id="post.id" :title="post.title" />
 
     In most cases, the child should emit an event to let the parent perform the mutation.
+  registration {
+    locally registered components are not also available in descendant components
   }
+  }
+
+  events in depth {
+    When used on a component, v-model instead expands to this:
+    <CustomInput
+      :modelValue="searchText"
+      @update:modelValue="newValue => searchText = newValue"
+    />
+
+    Multiple v-model bindings
+    <UserName
+      v-model:first-name="first"
+      v-model:last-name="last"
+    />
+
+    <script setup>
+      defineProps({
+        firstName: String,
+        lastName: String
+      })
+
+      defineEmits(['update:firstName', 'update:lastName'])
+      </script>
+
+      <template>
+        <input
+          type="text"
+          :value="firstName"
+          @input="$emit('update:firstName', $event.target.value)"
+        />
+        <input
+          type="text"
+          :value="lastName"
+          @input="$emit('update:lastName', $event.target.value)"
+        />
+      </template>
+
+    custom modifiers https://vuejs.org/guide/components/events.html#usage-with-v-model
+  }
+
+  fallthroughAttributes {
+    Unlike props, fallthrough attributes preserve their original casing in JavaScript, so an attribute like foo-bar needs to be accessed as $attrs['foo-bar'].
+
+    <script setup>
+    import { useAttrs } from 'vue'
+
+    const attrs = useAttrs()
+    </script>
+  }
+
+  slots {
+    content {
+      <button type="submit">
+        <slot>
+          Submit <!-- fallback content -->
+        </slot>
+      </button>
+  
+      A <slot> outlet without name implicitly has the name "default".
+  
+      v-slot has a dedicated shorthand #, so <template v-slot:header> can be shortened to just <template #header>
+  
+      <!-- <MyComponent> template -->
+      <div>
+        <slot :text="greetingMessage" :count="1"></slot>
+      </div>
+  
+      <MyComponent v-slot="slotProps">
+        {{ slotProps.text }} {{ slotProps.count }}
+      </MyComponent>
+      https://vuejs.org/guide/components/slots.html#scoped-slots
+    }
+  }
+
+  provide/inject {
+    #To provide data to a component's descendants, use the provide() function:
+    <script setup>
+    import { provide } from 'vue'
+
+    provide(/* key */ 'message', /* value */ 'hello!')
+    </script>
+
+    #To inject data provided by an ancestor component, use the inject() function:
+    <script setup>
+    import { inject } from 'vue'
+
+    const message = inject('message')
+    </script>
+
+    // `value` will be "default value"
+    // if no data matching "message" was provided
+    const value = inject('message', 'default value')
+
+    When using reactive provide / inject values, it is recommended to keep any mutations to reactive state inside of the provider whenever possible.
+
+    There may be times when we need to update the data from an injector component. In such cases, we recommend providing a function that is responsible for mutating the state:
+    https://vuejs.org/guide/components/provide-inject.html#working-with-reactivity
+
+    https://vuejs.org/guide/components/provide-inject.html#working-with-symbol-keys
+  }
+}
+
+Reusability {
+  composables {
+    useFetch() takes a static URL string as input - so it performs the fetch only once and is then done. What if we want it to re-fetch whenever the URL changes? We can achieve that by also accepting refs as an argument:
+
+    export function useFetch(url) 
+
+    import { unref } from 'vue'
+
+    function useFeature(maybeRef) {
+      // if maybeRef is indeed a ref, its .value will be returned
+      // otherwise, maybeRef is returned as-is
+      const value = unref(maybeRef)
+    }
+  }
+
+  directives {
+    In <script setup>, any camelCase variable that starts with the v prefix can be used as a custom directive. In the example above, vFocus can be used in the template as v-focus.
+
+    In general, it is not recommended to use custom directives on components.
+  }
+
+  plugins {
+    example
+    // plugins/i18n.js
+    export default {
+      install: (app, options) => {
+        // inject a globally available $translate() method
+        app.config.globalProperties.$translate = (key) => {
+          // retrieve a nested property in `options`
+          // using `key` as the path
+          return key.split('.').reduce((o, i) => {
+            if (o) return o[i]
+          }, options)
+        }
+      }
+    }
+
+    import i18nPlugin from './plugins/i18n'
+
+    app.use(i18nPlugin, {
+      greetings: {
+        hello: 'Bonjour!'
+      }
+    })
+  }
+}
+
+Built-in-components {
+  transition {
+    <Transition name="fade">
+      ...
+    </Transition>
+
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 0.5s ease;
+    }
+
+    .fade-enter-from,
+    .fade-leave-to {
+      opacity: 0;
+    }
+  }
+
 }
