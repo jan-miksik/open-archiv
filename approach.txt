@@ -1,0 +1,44 @@
+Notes
+Sharing my usual proces when facing error or problem
+
+error
+-the error message is quite clear and just need to fix it
+-trying to carefuly read what is wirten in the error message
+-copy the message of error and search for it
+-go through the path from A, B ... to Z and maybe more preciasly locate the error - adding logs along the path
+-again read the error message
+-trying better formulation for searching
+-turn on and off parts which are maybe related to this error
+-take a break or do something else for a while -
+-again go througt the mentioned steps above
+
+
+-write down what is the problem about, what is probably behind it
+
+-trying to be angry
+-trying to be desperate
+-trying to laught that problem
+-trying to be sad
+-trying to be calm
+-swear for a while
+-put yourself to stres
+-do not care, maybe it just need time
+
+# read the error message
+# search
+# carefuly read the error message
+# investigate the path
+# turn on and off parts of code
+# different search formulation
+# take a break
+# again steps above
+# ask someone for help
+
+
+error message
+search
+search formulation
+break
+again
+ask
+

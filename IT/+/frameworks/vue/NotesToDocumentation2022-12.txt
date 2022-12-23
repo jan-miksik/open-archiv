@@ -426,6 +426,7 @@ Reusability {
 }
 
 Built-in-components {
+
   transition {
     <Transition name="fade">
       ...
@@ -440,6 +441,88 @@ Built-in-components {
     .fade-leave-to {
       opacity: 0;
     }
+
+    These will override the conventional class names. This is especially useful when you want to combine Vue's transition system with an existing CSS animation library, such as Animate.css:
+
+    <!-- assuming Animate.css is included on the page -->
+    <Transition
+      name="custom-classes"
+      enter-active-class="animate__animated animate__tada"
+      leave-active-class="animate__animated animate__bounceOutRight"
+    >
+      <p v-if="show">hello</p>
+    </Transition>
+
+    When using JavaScript-only transitions, it is usually a good idea to add the :css="false" prop. This explicitly tells Vue to skip auto CSS transition detection. Aside from being slightly more performant, this also prevents CSS rules from accidentally interfering with the transition:
+
+    <Transition
+      ...
+      :css="false"
+    >
+      ...
+    </Transition>
+
+    Performance Considerations#
+    You may notice that the animations shown above are mostly using properties like transform and opacity. These properties are efficient to animate because:
+
+    They do not affect the document layout during the animation, so they do not trigger expensive CSS layout calculation on every animation frame.
+
+    Most modern browsers can leverage GPU hardware acceleration when animating transform.
+
+    In comparison, properties like height or margin will trigger CSS layout, so they are much more expensive to animate, and should be used with caution. We can check resources like CSS-Triggers to see which properties will trigger layout if we animate them.
+
+    If you also want to apply a transition on the initial render of a node, you can add the appear prop:
+
+    template
+    <Transition appear>
+      ...
+    </Transition>
+
+    We may want the leaving element to be animated out first, and for the entering element to only be inserted after the leaving animation has finished.
+    <Transition mode="out-in">
+      ...
+    </Transition>
   }
 
+  KeepAlive {
+    <!-- Inactive components will be cached! -->
+    <KeepAlive>
+      <component :is="activeComponent" />
+    </KeepAlive>
+  }
+
+  Teleport {
+    <Teleport :disabled="isMobile">
+      ...
+    </Teleport>
+  }
+
+  Suspense {
+    <Suspense> is a built-in component for orchestrating async dependencies in a component tree.
+    If using <script setup>, the presence of top-level await expressions automatically makes the component an async dependency:
+    The <Suspense> component has two slots: #default and #fallback
+    <Suspense>
+      <!-- component with nested async dependencies -->
+      <Dashboard />
+
+      <!-- loading state via #fallback slot -->
+      <template #fallback>
+        Loading...
+      </template>
+    </Suspense>
+  }
+
+}
+
+Scaling Up {
+  https://sfc.vuejs.org/
+
+  For information on migrating from Vue CLI to Vite:
+  https://vuejs.org/guide/scaling-up/tooling.html#project-scaffolding
+  Vue CLI -> Vite Migration Guide from VueSchool.io
+  Tools / Plugins that help with auto migration
+
+  Linting
+  https://vuejs.org/guide/scaling-up/tooling.html#linting
+  npm install -D eslint eslint-plugin-vue, then follow eslint-plugin-vue's configuration guide.
 }
