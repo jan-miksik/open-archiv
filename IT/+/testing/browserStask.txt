@@ -1,0 +1,7 @@
+run on localhost {
+  bs-local.com:3000
+  http://192.168.0.104:3000/
+  ./BrowserStackLocal --key 2HphXvpZAevb9Myq2RBF --force-local
+  https://github.com/avidofood/vue-responsive-video-background-player
+  h5j#dURwe99V2$$qc
+}

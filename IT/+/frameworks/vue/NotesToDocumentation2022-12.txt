@@ -189,7 +189,7 @@ Essential {
     )
 
 
-    const url = ref('https://...')
+    `const url = ref('https://...')
     const data = ref(null)
 
     async function fetchData() {
@@ -200,14 +200,15 @@ Essential {
     // fetch immediately
     fetchData()
     // ...then watch for url change
-    watch(url, fetchData)
+    watch(url, fetchData)`
+
     This can be simplified with watchEffect(). watchEffect() allows us to perform a side effect immediately while automatically tracking the effect's reactive dependencies. The above example can be rewritten as:
 
     js
-    watchEffect(async () => {
+    `watchEffect(async () => {
       const response = await fetch(url.value)
       data.value = await response.json()
-    })
+    })`
 
     If you want to access the DOM in a watcher callback after Vue has updated it, you need to specify the flush: 'post' option:
     watch(source, callback, {
@@ -227,5 +228,43 @@ Essential {
     unwatch()
   }
 
+}
 
+Components In-Depth {
+  Component Registration {
+    $Global Registration
+    import MyComponent from './App.vue'
+
+    app.component('MyComponent', MyComponent)
+
+    can be chained
+    app
+    .component('ComponentA', ComponentA)
+    .component('ComponentB', ComponentB)
+    .component('ComponentC', ComponentC)
+
+    drawbacks
+    Global registration prevents build systems from removing unused components (a.k.a "tree-shaking")
+    Global registration makes dependency relationships less explicit in large applications.
+
+  }
+
+  Props {
+
+    pure type annotations
+    <script setup lang="ts">
+      defineProps<{
+        title?: string
+        likes?: number
+      }>()
+    </script>
+
+
+    The following template:
+    <BlogPost v-bind="post" />
+    Will be equivalent to:
+    <BlogPost :id="post.id" :title="post.title" />
+
+    In most cases, the child should emit an event to let the parent perform the mutation.
+  }
 }
