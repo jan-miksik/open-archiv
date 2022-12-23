@@ -227,5 +227,13 @@ Essential {
     unwatch()
   }
 
+  components {
+  parsing to lowercase <SomethingComponent/> -> <somethring-component></somethring-component>
+  Some HTML elements, such as <ul>, <ol>, <table> and <select> have restrictions on what elements can appear inside them, and some elements such as <li>, <tr>, and <option> can only appear inside certain other elements.
+  We can use the special is attribute as a workaround:
+  <table>
+    <tr is="vue:blog-post-row"></tr>
+  </table>
+  }
 
 }
