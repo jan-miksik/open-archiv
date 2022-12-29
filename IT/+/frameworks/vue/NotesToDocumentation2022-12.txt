@@ -670,3 +670,86 @@ typescript {
     </script>
   }
 }
+
+
+Extra Topics {
+
+  composition api {
+    Will Options API be deprecated? 
+    -No, we do not have any plan to do so.
+  }
+  
+  Reactivity in Depth {
+    -When you assign or destructure a reactive object's property to a local variable, the reactivity is "disconnected"
+  }
+
+  Rendering Mechanism {
+    
+  }
+
+  reactivity transform {
+    macro '$'
+
+    ref -> $ref
+    computed -> $computed
+    shallowRef -> $shallowRef
+    customRef -> $customRef
+    toRef -> $toRef
+
+    $$() {
+      As we can see, $$() is a macro that serves as an escape hint: reactive variables inside $$() will not get .value appended.
+  
+      Reactivity can also be lost if reactive variables are used directly in a returned expression:
+  
+      function useMouse() {
+        let x = $ref(0)
+        let y = $ref(0)
+      
+        // listen to mousemove...
+      
+        // doesn't work!
+        return {
+          x,
+          y
+        }
+      }
+  
+  
+      function useMouse() {
+        let x = $ref(0)
+        let y = $ref(0)
+      
+        // listen to mousemove...
+      
+        // fixed
+        return $$({
+          x,
+          y
+        })
+      }
+    }
+
+    typescript {
+      Since the macros are available globally, their types need to be explicitly referenced (e.g. in a env.d.ts file):
+      /// <reference types="vue/macros-global" />
+
+      When explicitly importing the macros from vue/macros, the type will work without declaring the globals.
+    }
+
+    Explicit Opt-in# 
+    {
+      Reactivity Transform is currently disabled by default and requires explicit opt-in. In addition, all of the following setups require vue@^3.2.25.
+      
+      // vite.config.js
+      export default {
+        plugins: [
+          vue({
+            reactivityTransform: true
+          })
+        ]
+      }
+      
+      https://vuejs.org/guide/extras/reactivity-transform.html#explicit-opt-in
+    }
+  }
+}
