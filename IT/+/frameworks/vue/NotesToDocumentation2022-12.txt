@@ -752,4 +752,21 @@ Extra Topics {
       https://vuejs.org/guide/extras/reactivity-transform.html#explicit-opt-in
     }
   }
+
+  Vue and Web Components {
+    The primary benefit of custom elements is that they can be used with any framework, or even without a framework. 
+    
+    it only accepts native slots syntax:
+    Scoped slots are not supported.
+    When passing named slots, use the slot attribute instead of the v-slot directive:
+
+    To build an actual application, we need quite a few additional capabilities which the platform does not cover:
+
+    A declarative and efficient templating system;
+
+    A reactive state management system that facilitates cross-component logic extraction and reuse;
+  }
+  Linting
+  https://vuejs.org/guide/scaling-up/tooling.html#linting
+  npm install -D eslint eslint-plugin-vue, then follow eslint-plugin-vue's configuration guide.
 }
