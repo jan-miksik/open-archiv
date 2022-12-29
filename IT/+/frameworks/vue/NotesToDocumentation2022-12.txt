@@ -22,13 +22,27 @@ Essential {
     
     <a :[someAttr]="value"> ... </a>
     The above will be converted to :[someattr] in in-DOM templates.
+    If your component has a someAttr property instead of someattr, your code won't work.
   }
 
   reactivity {
-    Limitations of reactive()
-    It only works for object types (objects, arrays, and collection types such as Map and Set). It cannot hold primitive types such as string, number or boolean.
+    - Limitations of reactive()
+    It cannot hold primitive types such as string, number
+    It only works for object types (objects, arrays, Map and Set)
   
     Since Vue's reactivity tracking works over property access, we must always keep the same reference to the reactive object. This means we can't easily "replace" a reactive object because the reactivity connection to the first reference is lost:
+    const state = reactive({ count: 0 })
+
+    // n is a local variable that is disconnected
+    // from state.count.
+    let n = state.count
+    // does not affect original state
+    n++
+
+    // count is also disconnected from state.count.
+    let { count } = state
+    // does not affect original state
+    count++
   }
 
   computed {
@@ -166,6 +180,14 @@ Essential {
     .number
     .trim
 
+    <input
+      type="checkbox"
+      v-model="toggle"
+      true-value="yes"
+      false-value="no" />
+
+    Here the toggle property's value will be set to 'yes' when the box is checked, and set to 'no' when unchecked.
+
     <!-- synced after "change" instead of "input" -->
     <input v-model.lazy="msg" />
     <input v-model.number="age" />
@@ -256,6 +278,7 @@ Components In-Depth {
     Global registration makes dependency relationships less explicit in large applications.
 
   }
+
   Props {
 
     pure type annotations
@@ -279,6 +302,8 @@ Components In-Depth {
   }
 
   events in depth {
+    <input v-model="searchText" />
+
     When used on a component, v-model instead expands to this:
     <CustomInput
       :modelValue="searchText"
@@ -380,23 +405,32 @@ Components In-Depth {
 
 Reusability {
   composables {
-    useFetch() takes a static URL string as input - so it performs the fetch only once and is then done. What if we want it to re-fetch whenever the URL changes? We can achieve that by also accepting refs as an argument:
-
+    
     export function useFetch(url) 
-
-    import { unref } from 'vue'
-
-    function useFeature(maybeRef) {
-      // if maybeRef is indeed a ref, its .value will be returned
-      // otherwise, maybeRef is returned as-is
-      const value = unref(maybeRef)
+    + 
+    {
+      useFetch() takes a static URL string as input - so it performs the fetch only once and is then done. What if we want it to re-fetch whenever the URL changes? We can achieve that by also accepting refs as an argument:
     }
+    
+    import { unref } from 'vue'
+    +
+    {
+      function useFeature(maybeRef) {
+        // if maybeRef is indeed a ref, its .value will be returned
+        // otherwise, maybeRef is returned as-is
+        const value = unref(maybeRef)
+      }
+    }
+
   }
 
   directives {
-    In <script setup>, any camelCase variable that starts with the v prefix can be used as a custom directive. In the example above, vFocus can be used in the template as v-focus.
-
+    own kind of v-if, v-show ...
+    ex. v-focus.
     In general, it is not recommended to use custom directives on components.
+    +{
+      In <script setup>, any camelCase variable that starts with the v prefix can be used as a custom directive. In the example above, vFocus can be used in the template as 
+    }
   }
 
   plugins {
@@ -431,18 +465,17 @@ Built-in-components {
     <Transition name="fade">
       ...
     </Transition>
-
-    .fade-enter-active,
-    .fade-leave-active {
-      transition: opacity 0.5s ease;
+    +{
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.5s ease;
+      }
+  
+      .fade-enter-from,
+      .fade-leave-to {
+        opacity: 0;
+      }
     }
-
-    .fade-enter-from,
-    .fade-leave-to {
-      opacity: 0;
-    }
-
-    These will override the conventional class names. This is especially useful when you want to combine Vue's transition system with an existing CSS animation library, such as Animate.css:
 
     <!-- assuming Animate.css is included on the page -->
     <Transition
@@ -453,35 +486,50 @@ Built-in-components {
       <p v-if="show">hello</p>
     </Transition>
 
-    When using JavaScript-only transitions, it is usually a good idea to add the :css="false" prop. This explicitly tells Vue to skip auto CSS transition detection. Aside from being slightly more performant, this also prevents CSS rules from accidentally interfering with the transition:
+    +{
+      These will override the conventional class names. This is especially useful when you want to combine Vue's transition system with an existing CSS animation library, such as Animate.css:
+    }
 
-    <Transition
-      ...
-      :css="false"
-    >
-      ...
-    </Transition>
+    :css="false" 
+    +{
+      When using JavaScript-only transitions, it is usually a good idea to add the :css="false" prop. This explicitly tells Vue to skip auto CSS transition detection. Aside from being slightly more performant, this also prevents CSS rules from accidentally interfering with the transition:
+      <Transition
+        ...
+        :css="false"
+      >
+        ...
+      </Transition>
+    }
 
-    Performance Considerations#
-    You may notice that the animations shown above are mostly using properties like transform and opacity. These properties are efficient to animate because:
+    effective 'transform' and 'opacity'. vs layout triggers 'height' or 'margin'
+    +{
+      Performance Considerations#
+      You may notice that the animations shown above are mostly using properties like transform and opacity. These properties are efficient to animate because:
+  
+      They do not affect the document layout during the animation, so they do not trigger expensive CSS layout calculation on every animation frame.
+  
+      Most modern browsers can leverage GPU hardware acceleration when animating transform.
+  
+      In comparison, properties like height or margin will trigger CSS layout, so they are much more expensive to animate, and should be used with caution. We can check resources like CSS-Triggers to see which properties will trigger layout if we animate them.
+    }
 
-    They do not affect the document layout during the animation, so they do not trigger expensive CSS layout calculation on every animation frame.
-
-    Most modern browsers can leverage GPU hardware acceleration when animating transform.
-
-    In comparison, properties like height or margin will trigger CSS layout, so they are much more expensive to animate, and should be used with caution. We can check resources like CSS-Triggers to see which properties will trigger layout if we animate them.
-
-    If you also want to apply a transition on the initial render of a node, you can add the appear prop:
-
-    template
     <Transition appear>
-      ...
-    </Transition>
+    +{
+      If you also want to apply a transition on the initial render of a node, you can add the appear prop:
+  
+      template
+      <Transition appear>
+        ...
+      </Transition>
+    }
 
-    We may want the leaving element to be animated out first, and for the entering element to only be inserted after the leaving animation has finished.
     <Transition mode="out-in">
-      ...
-    </Transition>
+    +{
+      We may want the leaving element to be animated out first, and for the entering element to only be inserted after the leaving animation has finished.
+      <Transition mode="out-in">
+        ...
+      </Transition>
+    }
   }
 
   KeepAlive {
@@ -498,31 +546,127 @@ Built-in-components {
   }
 
   Suspense {
-    <Suspense> is a built-in component for orchestrating async dependencies in a component tree.
-    If using <script setup>, the presence of top-level await expressions automatically makes the component an async dependency:
-    The <Suspense> component has two slots: #default and #fallback
-    <Suspense>
-      <!-- component with nested async dependencies -->
-      <Dashboard />
-
-      <!-- loading state via #fallback slot -->
-      <template #fallback>
-        Loading...
-      </template>
-    </Suspense>
+    has two slots: #default and #fallback
+    for async components, loading, error handling
+    +{
+      <Suspense> is a built-in component for orchestrating async dependencies in a component tree.
+      If using <script setup>, the presence of top-level await expressions automatically makes the component an async dependency:
+      The <Suspense> component has two slots: #default and #fallback
+      <Suspense>
+        <!-- component with nested async dependencies -->
+        <Dashboard />
+  
+        <!-- loading state via #fallback slot -->
+        <template #fallback>
+          Loading...
+        </template>
+      </Suspense>
+    }
   }
 
 }
 
 Scaling Up {
-  https://sfc.vuejs.org/
+  tooling {
+    https://sfc.vuejs.org/
+  
+    from Vue CLI to Vite
+    +{
+      For information on migrating from Vue CLI to Vite:
+      https://vuejs.org/guide/scaling-up/tooling.html#project-scaffolding
+      Vue CLI -> Vite Migration Guide from VueSchool.io
+      Tools / Plugins that help with auto migration
+    }
+  
+    Linting 
+    +{
+      https://vuejs.org/guide/scaling-up/tooling.html#linting
+      npm install -D eslint eslint-plugin-vue, then follow eslint-plugin-vue's configuration guide.
+    }
+  }
 
-  For information on migrating from Vue CLI to Vite:
-  https://vuejs.org/guide/scaling-up/tooling.html#project-scaffolding
-  Vue CLI -> Vite Migration Guide from VueSchool.io
-  Tools / Plugins that help with auto migration
+  testing {
+    https://vuejs.org/guide/scaling-up/testing.html#recommendation
+    Recommendation#
+    Vitest
 
-  Linting
-  https://vuejs.org/guide/scaling-up/tooling.html#linting
-  npm install -D eslint eslint-plugin-vue, then follow eslint-plugin-vue's configuration guide.
+    -test what a component does, not how it does it
+  }
+
+  SSR {
+    Why SSR
+    +Faster time-to-content
+    +Unified mental model?
+    +Better SEO
+    xxx
+    -can break Browser-specific code
+    -More involved build setup and deployment requirements
+    -More server-side load. Rendering a full app in Node.js
+  }
+}
+
+Best Practices {
+
+  Performance {
+
+    +{
+      -Optimize rendering and reduce the number of DOM mutations
+      -Measure and profile performance using tools such as PageSpeed Insights, WebPageTest, Chrome DevTools, and Vue DevTools
+    }
+
+    refer lodash-es over lodash 
+    +{
+      If using a build step, prefer dependencies that offer ES module formats and are tree-shaking friendly. For example, prefer lodash-es over lodash.
+    }
+
+    In general, the idea is keeping the props passed to child components as stable as possible.
+
+    v-once 
+    +{
+      is a built-in directive that can be used to render content that relies on runtime data but never needs to update. The entire sub-tree it is used on will be skipped for all future updates.
+    }
+
+    list virtualization
+    https://vuejs.org/guide/best-practices/performance.html#virtualize-large-lists
+
+    Avoid Unnecessary Component Abstractions
+  }
+
+  Accessibility {
+    https://vuejs.org/guide/best-practices/accessibility.html#resources
+  }
+
+  security {
+    Rule No.1: Never Use Non-trusted Templates
+
+    templates or render functions, content is automatically escaped {
+
+      <h1>{{ userProvidedString }}</h1>
+      '<script>alert("hi")</script>'
+      then it would be escaped to the following HTML:
+
+      template &lt;script&gt;alert(&quot;hi&quot;)&lt;/script&gt;
+    }
+
+    never mount Vue on nodes that may contain server-rendered and user-provided content.
+
+    no unsanitized, user-provided content {
+      The general rule is that if you allow unsanitized, user-provided content to be executed (as either HTML, JavaScript, or even CSS), you might be opening yourself up to attacks
+    }
+  }
+}
+
+typescript {
+  InstanceType {
+    <!-- App.vue -->
+    <script setup lang="ts">
+    import MyModal from './MyModal.vue'
+  
+    const modal = ref<InstanceType<typeof MyModal> | null>(null)
+  
+    const openModal = () => {
+      modal.value?.open()
+    }
+    </script>
+  }
 }
