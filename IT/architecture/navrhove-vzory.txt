@@ -1,0 +1,199 @@
+Factory {
+
+  Klíčové je oddělení konstrukce konkrétní instance do jiné třídy, čímž se původní třída neznečistí konstrukčním kódem.
+
+  Factory Method 
+  class Auto
+  {
+      constructor(znacka, model){
+          this.znacka = znacka;
+          this.model = model;
+      }
+  }
+  class TovarnaNaAuta
+  {
+      VytvorFelicii()
+      {
+          return new Auto("Škoda", "Felicia");
+      }
+  }
+
+
+
+  Factory 
+  class Auto
+  {
+      constructor(znacka, model){
+          this.znacka = znacka;
+          this.model = model;
+      }
+  
+      static Felicia()
+      {
+      return new Auto("Škoda", "Felicia");
+      }
+  }
+  Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/factory
+
+}
+
+Singleton (jedináček) {
+
+
+  #jen jedna instance
+
+  Singleton znamená jedináček, tedy instance, která nemá žádné sourozence.
+
+  Vzor je tvořen třídou, která se stará o to, aby její instance existovala jen jednou.
+
+  není ideální vzor pro předávání závislostí v aplikaci. 
+
+  Pro své problémy je dokonce součástí antipraktik STUPID. Lepším vyřešením závislostí je vzor Dependency Injection.
+
+  class Singleton
+  {
+    private Singleton() { }
+
+    public Databaze databaze = new Databaze('host', 'jmeno', 'heslo');
+
+    private static readonly Singleton instance = new Singleton();
+
+    public static Singleton vratInstanci()
+    {
+        return instance;
+    }
+  }
+
+  Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/singleton-navrhovy-vzor
+}
+
+Adapter (Wrapper){
+    #resi nekompatibilní rozhraní
+
+    se používá při práci s komponentou, která má nestabilní nebo s naší aplikací nekompatibilní rozhraní.
+}
+
+Fasada {
+    #jednotné rozhraní pro skupinu tříd
+
+    subsystému
+    Návrhový vzor Facade (fasáda) se používá k vytvoření jednotného rozhraní pro celou logickou skupinu tříd, které se tak sdruží do subsystému.
+
+}
+
+Proxy (zástupce) {
+
+    #zapouzdření aplikace
+
+    Virtual Proxy (virtuální zástupce)
+    Protection Proxy (ochranný zástupce)
+    Proxy patří mezi návrhové vzory uvedené v GoF. Jde tedy o "pravý" návrhový vzor. Většinou se používá pro
+    zapouzdření aplikace, ale lze ho použít i pro zlepšení funkčnosti (např. zefektivnění, zrychlení aplikace atd.). 
+    
+    Rozlišujeme čtyři zástupce:
+    vzdálený zástupce (remote proxy), 
+    virtuální zástupce (virtual proxy),
+    ochranný zástupce (protected proxy) a 
+    chytrý odkaz (smart reference).
+}
+
+Decorator (dekorátor) {
+
+    #upravuje a deleguje funkcionalitu na původní třídu
+
+    dekorátor velkou část funkcionality deleguje na původní třídu. Pro typickou aplikaci se tedy zpravidla vytvoří abstraktní třída, která pouze deleguje volání rozhraní na vnitřní objekt. Dekorátor poté podědí z této abstraktní třídy a přepíše pouze adekvátní metody:
+}
+
+Flyweight (muší váha) {
+    #jedna instance pro opkujici se casti - vnitrni stav
+    #zmeny pres parametry - vnejsi stav
+
+    Základní myšlenkou u tohoto návrhového vzoru je rozdělení třídy na dvě části. První část je společná pro všechny třídy a budeme jí dále říkat vnitřní stav objektu.
+
+    vnější stav objektu, který si objekt nepamatuje a musí jej získat.
+
+    Vnější stav (pozice vykreslení) je dodán až při samotném vykreslení a to parametrem. Pro uživatele to tedy znamená pouze naplnit list znaků a Text už sám jednotlivé znaky vykreslí. Pokud se nějaký znak opakuje, v programu bude pouze jedna instance (ale vložená na několika místech). To je princip flyweight.
+}
+
+
+
+- návrhové vzory chování
+
+Observer (pozorovatel) {
+    #zmena sledovaneho objektu ho spusti
+    Vzor se využívá v systémech, které jsou založené na zpracování
+    událostí.
+}
+
+Strategy (strategie) {
+    #zapouzdreni a snadnejsi vymena modulu
+    Občas bychom rádi, aby byl algoritmus jakýmsi zapouzdřeným modulem,
+který lze jednoduše vyměnit za jiný, aniž by si toho klient všiml. Se
+vzorem Strategy můžeme takovou změnu udělat dokonce i za běhu aplikace.
+
+Vzor Strategy je podobný, jako vzor Bridge,
+nicméně je určený pro chování, nikoli strukturu.
+}
+
+Template Method (šablonová metoda) {
+    #podvzorem vzoru Strategy, kostra algoritmu
+    Návrhový vzor Template Method definuje kostru algoritmu, tedy jeho
+    jednotlivé kroky. Potomci poté kroky implementují a představují
+    zaměnitelné algoritmy.
+
+    Vzor Template Method je v podstatě podvzorem vzoru Strategy .
+}
+
+Memento {
+    #ulozeni vnitriniho stavu, drzi zapouzdreni
+    Memento (památka) je jednoduchý návrhový vzor chování, který řeší
+uložení vnitřního stavu objektu, aniž by byl porušen princip
+zapouzdření. 
+algoritmu
+Vzor obsahuje následující třídy:
+
+
+	Originator - Třída, jejíž stav ukládáme. Umožňuje svůj
+	stav načíst z mementa nebo jej uložit do nového mementa a vrátit.
+
+	Memento - Reprezentace vnitřního stavu třídy
+	Originator. Pouze objekt držící stav bez další logiky.
+
+	Caretaker - Třída ukládá/načítá mementa z/do
+	originatoru, jedná se o manažer stavů.
+}
+
+Interpreter {
+
+}
+Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/interpreter
+
+Mediator {
+    #prostrednik, snizuje mnostvi vazeb mezi objekty
+
+    Návrhový vzor Mediator zavádí "prostředníka" mezi
+přímou komunikaci několika objektů. Tím snižuje počet vazeb mezi objekty
+a reguluje jejich odpovědnost
+
+Toto použití mediátoru je velmi
+podobné fasádám,
+ovšem s tím rozdílem, že fasáda často pouze deleguje na rozhraní nějaké
+již existující implementace, zatímco prostředník v sobě obsahuje logiku,
+kód potřebný pro zprostředkování komunikace.
+}
+Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/mediator
+
+Chain of responsibility {
+    #oddělení odesílatele požadavku od jeho příjemců, kterých může být více
+    
+    Chain of responsibility je návrhových vzor umožňující oddělení odesílatele požadavku od jeho příjemců, kterých může být více. 
+    Vytvořme si ukázku řetězu takových filtrů na požadavek na přijetí
+emailu, který nejprve poputuje spamfilterem, potom nějakým uživatelským
+filtrem, a teprve poté se potenciálně dostane k handleru, který jej vloží
+do příchozí pošty
+
+Composite -
+	Chain of responsibility lze aplikovat kromě lineárních struktur i na
+	struktury stromové, jejichž návrh řeší vzor Composite
+}
+Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/chain-of-responsibility
