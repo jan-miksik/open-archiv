@@ -1,0 +1,20 @@
+---wallet admin--- primary for testnets
+
+-list all assets in wallet
+functions 
+ -swipe all assets in wallet -- posible select assets and choose where to move these assets
+
+
+faucet x100s {
+  primary for testnets
+
+  ideas for tasks
+  create Faucet which return 100s of different tokens on goerli, + if they will be mirroring tokens on mainnet
+  gnosis safe
+  100s+ of ERC20
+  100s+ of ERC1155
+  100s+ of ERC721
+
+}
+
+
