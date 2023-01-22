@@ -1,0 +1,29 @@
+SSR - server side rendering {
+  nuxt.config.js
+
+  -Faster time-to-content
+  -Better SEO
+
+  - Node.js server required
+  
+  no access to "window" or "document"
+  -You can however use window or document by using the "beforeMount" or mounted hooks.
+  
+  
+  - mismatch 
+  {
+    One thing to be aware of when using SSR + client hydration is some special HTML structures that may be altered by the browser.
+  }
+  Hydration -- 
+  !!!hydration mismatch with cloudflare proxy
+
+}
+
+SSG - Static Site Generation
+
+target:static 
+
+
+SSR vs. SSG {
+  SSG can only be applied to pages consuming static data, i.e. data that is known at build time and does not change between deploys. Every time the data changes, a new deployment is needed.
+}
