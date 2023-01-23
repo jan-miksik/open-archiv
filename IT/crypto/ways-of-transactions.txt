@@ -1,0 +1,23 @@
+fiat
+
+hotovost
+kreditni karta
+bankovni ucet
+
+crypto
+ETH {
+  USDC
+  DAI
+}
+ETH-polygon {
+  USDC
+  DAI
+}
+
+BTC
+BTC-lighting
+LTC
+...
+
+
+ETH to BTC lighting
