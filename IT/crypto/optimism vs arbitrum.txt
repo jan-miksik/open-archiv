@@ -17,13 +17,14 @@
 -ethereum developers
 
 
+
+
 /Arbitrum
 
-
-
--soukroma spolecnost
-
--uzavrenejsi governence
+-uzavrenejsi governence {
+  -soukroma spolecnost
+  -Offchain Labs 
+}
 
 -privetivejsi tech stack oproti Optimism {
   -muli-round fraud proofs
@@ -31,12 +32,9 @@
   -fees v ETH
 }
 
--Offchain Labs
+
+
 https://l2fees.info/
-
--total-value-locked (TVL) 2.4B
-
-
 
 https://l2beat.com/scaling/tvl
 
