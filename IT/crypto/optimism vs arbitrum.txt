@@ -12,6 +12,7 @@
   -single-round fraud proofs
   -Optimism Virtual Machine's (OVM) - jen Solidity, muze byt problem pri hardforku L1
   -fees v WETH
+  -2mil. bug bounty
 }
 
 -ethereum developers
@@ -30,9 +31,12 @@
   -muli-round fraud proofs
   -Arbitrum Virtual Machine (AVM) - EVM jazyky(Vyper, Solidity, Flint, YUL+, LLLL ...)
   -fees v ETH
+  -2mil. bug bounty
 }
 
 
+optimistic rollups - correct by default, must to give prove about fraud, 
+zero-knowledge rollups - 
 
 https://l2fees.info/
 
