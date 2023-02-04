@@ -1,24 +1,43 @@
 /Optimism
--Optimism Foundation, Optimism Collective
--ethereum developers
--obecne vic transparentni, znama roadmap
--single-round fraud proofs
--Optimism Virtual Machine's (OVM) - jen Solidity
+
 -total-value-locked (TVL) 1.2B
--fees v WETH
--token OP
+
+-vetsi duraz na open-source and decentralizaci {
+  -Optimism Foundation, Optimism Collective
+  -obecne vic transparentni, znama roadmap
+  -token OP
+}
+
+-min privetivy tech stack oproti Arbitrum {
+  -single-round fraud proofs
+  -Optimism Virtual Machine's (OVM) - jen Solidity, muze byt problem pri hardforku L1
+  -fees v WETH
+}
+
+-ethereum developers
 
 
 /Arbitrum
--Offchain Labs
+
+
+
 -soukroma spolecnost
--muli-round fraud proofs
--Arbitrum Virtual Machine (AVM) - EVM jazyky(Vyper, Solidity, Flint, YUL+, LLLL ...)
--total-value-locked (TVL) 2.4B
--fees v ETH
 
+-uzavrenejsi governence
 
+-privetivejsi tech stack oproti Optimism {
+  -muli-round fraud proofs
+  -Arbitrum Virtual Machine (AVM) - EVM jazyky(Vyper, Solidity, Flint, YUL+, LLLL ...)
+  -fees v ETH
+}
+
+-Offchain Labs
 https://l2fees.info/
+
+-total-value-locked (TVL) 2.4B
+
+
+
 https://l2beat.com/scaling/tvl
 
 
