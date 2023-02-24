@@ -1,0 +1,20 @@
+##
+https://ethereum.org/en/developers/docs/smart-contracts/testing/
+
+##
+
+@audits
+-https://www.fiverr.com {
+  https://www.fiverr.com/search/gigs?query=smart%20contract%20audit&source=top-bar&acmpl=1&search_in=everywhere&search-autocomplete-original-term=smart%20contract&search-autocomplete-available=true&search-autocomplete-type=recent-gigs-suggest&search-autocomplete-position=0&ref_ctx_id=1682edf2aa6c7d0874d4bfd151881c97
+}
+
+
+@automated verification tools
+slighter - https://github.com/crytic/slither
+
+
+@tesitng frameworks
+
+
+@formal verification tools, frameworks
+

@@ -1,0 +1,37 @@
+?? {
+  invariants - nemenost
+  formal verification
+  Boogie - intermediate verification language
+  refutation
+  
+  reachability logic, 
+  temporal logic,
+
+  Hoare logic {
+    {P}c{Q}, where c is a program and P and Q are predicates on the state of the c (i.e., the program), formally described as preconditions and postconditions, respectively
+    -partial correctness or total correctness
+    "require" statements express a precondition or invariant and are often used to validate user inputs, while 
+    "assert" captures a postcondition necessary for safety
+  }
+
+  Trace-level properties {
+    By creating trace-level specifications, we assert the admissible execution paths (i.e., state transitions) for a smart contract. Using techniques, such as symbolic execution, we can formally verify that execution never follows a path not defined in the formal model.
+  }
+
+  Model checking {
+    Model checking uses state space exploration, which involves constructing all possible states of a smart contract and attempting to find reachable states that result in property violations. However, this can lead to an infinite number of states (known as the "state explosion problem"), hence model checkers rely on abstraction techniques to make efficient analysis of smart contracts possible.
+  }
+
+  Theorem proving {
+    Hard to undrestand -- ?too vague and abstract description?
+    The use of human effort in theorem proving makes it more expensive to use than model checking, which is fully automated.
+  }
+
+  high level - "model-oriented specification"
+
+  Symbolic execution {
+    If an error state is triggered during symbolic execution, then it is possible to generate a concrete value that triggers the error and reproduce the issue.
+    -satisfiability modulo theories (SMT) solver
+  }
+
+}
