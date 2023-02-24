@@ -1,6 +1,7 @@
 ##
 https://ethereum.org/en/developers/docs/smart-contracts/testing/
 
+https://www.youtube.com/watch?v=_-D-8rNraUE - hardhat tests exapmle for ERC721
 ##
 
 @audits
