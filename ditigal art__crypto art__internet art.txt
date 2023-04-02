@@ -13,6 +13,7 @@ at least part of the piece have to be accessible online
 -platforms (youtube, vimeo, soundcloud, spotify, twitch, reddit, tumblr, etc.)
 -crypto
 
+
 -nft
 -generativni umeni
 -mobile
