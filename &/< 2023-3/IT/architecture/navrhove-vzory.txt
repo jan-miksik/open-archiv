@@ -117,6 +117,12 @@ Flyweight (muší váha) {
 
 
 
+
+
+
+
+
+
 - návrhové vzory chování
 
 Observer (pozorovatel) {
@@ -165,8 +171,8 @@ Vzor obsahuje následující třídy:
 
 Interpreter {
 
+    Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/interpreter
 }
-Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/interpreter
 
 Mediator {
     #prostrednik, snizuje mnostvi vazeb mezi objekty
@@ -180,8 +186,8 @@ podobné fasádám,
 ovšem s tím rozdílem, že fasáda často pouze deleguje na rozhraní nějaké
 již existující implementace, zatímco prostředník v sobě obsahuje logiku,
 kód potřebný pro zprostředkování komunikace.
-}
 Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/mediator
+}
 
 Chain of responsibility {
     #oddělení odesílatele požadavku od jeho příjemců, kterých může být více
@@ -195,5 +201,5 @@ do příchozí pošty
 Composite -
 	Chain of responsibility lze aplikovat kromě lineárních struktur i na
 	struktury stromové, jejichž návrh řeší vzor Composite
+    Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/chain-of-responsibility
 }
-Zdroj: https://www.itnetwork.cz/navrh/navrhove-vzory/gof/chain-of-responsibility
