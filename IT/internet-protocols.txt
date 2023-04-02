@@ -1,5 +1,5 @@
 Internet
-A - Address record
+A - Ipv4 Address record
 MX - Mail exachange record
 CNAME - Canonical name record
 ALIAS - CNAME flattening record

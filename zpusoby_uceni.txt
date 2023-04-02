@@ -2,17 +2,18 @@
 ++ učit se míň mechanicky, snažit se zapojovat učivo do existujího systému ++
 
 
-A) skusit napsat vsechno co vim o latce, kterou se chci naučit
+) kriticky procházet látku kterou se chci naučit - proč, jak, kde, kdy, kdo,co, s kým, s čím
 
-B) někomu nebo vysvětlovat anebo udělat nahrávku, materiálu, který se chci naučit
+) skusit napsat vsechno co vim o latce, kterou se chci naučit
 
-C) nasat potenciální testy, k tomu co se chci naučit
+) někomu nebo vysvětlovat anebo udělat nahrávku, materiálu, který se chci naučit
 
-D) kriticky procházet látku kterou se chci naučit - proč, jak, kde, kdy, kdo,co, s kým, s čím
+) sestavovat učební látku do uceleného konceptu
 
-E) dělat si poznámky
+) nasat potenciální testy, k tomu co se chci naučit?
 
-F) sestavovat učební látku do uceleného konceptu
+) dělat si poznámky?
+
 
 --hledat analogie a metafory pro latku kterou se ucim
 
