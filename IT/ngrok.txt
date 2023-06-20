@@ -1,1 +1,17 @@
-ngrok http 3000
+$ ngrok http 3000
+
+
+'Invalid Host header' error ->
+$ ngrok http https://localhost:8080
+setup for vue 3
+file 'vue.config.js'
+
+module.exports = defineConfig({
+configureWebpack: {
+  devServer: {
+    # allowedHosts: ['.ngrok-free.app'], maybe not needed
+    https: true,
+  },
+},
+});
+
