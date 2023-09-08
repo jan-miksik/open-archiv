@@ -10,32 +10,33 @@ Kdo dela vylozene soucasny netart v poslednich 5 letech 2015+
 ???????????
 
 
+-- Digital art
+-- crypto art
 
 
 
-
-
-About Net art
-mainly in mid 1990. Some claims that net art died because of absorbtion by institutions.
-
-
--crypto art, or blockchain as part of piece
--internet art, net art
--digital media
--new media
-
-
-at least part of the piece have to be accessible online
--social media(facebook, instragram, twitter, discord, tiktok...)
--platforms (youtube, vimeo, soundcloud, spotify, twitch, reddit, tumblr, etc.)
--crypto
-
-
--nft
--generativni umeni
--mobile
--maps
--intervention 
+About Net art {
+  mainly in mid 1990. Some claims that net art died because of absorbtion by institutions.
+  
+  +
+  -crypto art, or blockchain as part of piece
+  -internet art, net art
+  -digital media
+  -new media
+  
+  
+  at least part of the piece have to be accessible online
+  -social media(facebook, instragram, twitter, discord, tiktok...)
+  -platforms (youtube, vimeo, soundcloud, spotify, twitch, reddit, tumblr, etc.)
+  -crypto
+  
+  
+  -nft
+  -generativni umeni
+  -mobile
+  -maps
+  -intervention 
+}
 
 
 
@@ -86,81 +87,84 @@ http://tetrageddon.com/
 
 
 
-- 1?
-https://mcachicago.org/Publications/Websites/I-Was-Raised-On-The-Internet
+- 1? 
+{
+  https://mcachicago.org/Publications/Websites/I-Was-Raised-On-The-Internet
+  
+  https://winners.webbyawards.com/winners/websites-and-mobile-sites/general-websites-and-mobile-sites/netart?years=0
+  
+  
+  ManadalaGaba - online tool for creating madalas
+  SculptGL - online for simple 3d scupturing
+  
+  
+  exonemo - Japanese, SEMBO Kensuke and AKAIWA Yae
+  http://exonemo.com/, metaverse petshop
+  
+  
+  
+  *Golan Levin (Terrapattern 2016, )
+  *compart
+  *monoskop
+  *UBERMORGEN
+  Vuk Cosic
+  Alexei Shulgin
+  
+  *Martin Wattenberg
+  *Mary Flanagan
+  *Jon Rafman
+  
+  *https://www.potatoland.org/
+  -created own web browser -> kind of chaotic
+  
+  -YOUNG-HAE CHANG HEAVY INDUSTRIES
+  text, music, philosophy, cultural critique, 
+  
+  Jesse Darling
+  
+  -https://www.nycmap.com/
+  
+  -MARC LAFIA & FANG-YU LIN, the battle of algiers 2006
+  -Heat hunting/ Heath Bunting - A terrorist - the status project 2008
+  -Shilpa Gupta - blessed bandwith 2003
+  -Elsa James - circle of blackness - part 1 - meet ann E. styles 2019
+  -Natalie bookchin & Jacqueline stevens - agoraxchange 2003
+  -Andy deck screening circle 2006
+  -Graham Hardwood - unconmfortable proximity 2001
+  -Susan Colins
+  Michael Mandiberg
+  Skawennati
+  Lorna Mills
+  Raquel Meyers
+  Daniel García Andujar
+  Casey Reas
+  
+  tom moody - digital art,
+  
+  Hito Stereyl
+  
+  Cary Peppermint, 
+  Prema Murthy, 
+  Ricardo Dominguez,
+  Adrianne Wortzel
+  Mark Amerika, 
+  Fakeshop, 
+  Ken Goldberg, 
+  etoy
+  ®™ark.
+  Dina Kelberman
+  Mark Tribe
+  Mez Breeze
+  Domenico Quaranta
+  Andrea Mayr
+  
+  
+  
+  
+  
+  Cecil B. Evans - videos, my
 
-https://winners.webbyawards.com/winners/websites-and-mobile-sites/general-websites-and-mobile-sites/netart?years=0
-
-
-ManadalaGaba - online tool for creating madalas
-SculptGL - online for simple 3d scupturing
-
-
-exonemo - Japanese, SEMBO Kensuke and AKAIWA Yae
-http://exonemo.com/, metaverse petshop
-
-
-
-*Golan Levin (Terrapattern 2016, )
-*compart
-*monoskop
-*UBERMORGEN
-Vuk Cosic
-Alexei Shulgin
-
-*Martin Wattenberg
-*Mary Flanagan
-*Jon Rafman
-
-*https://www.potatoland.org/
--created own web browser -> kind of chaotic
-
--YOUNG-HAE CHANG HEAVY INDUSTRIES
-text, music, philosophy, cultural critique, 
-
-Jesse Darling
-
--https://www.nycmap.com/
-
--MARC LAFIA & FANG-YU LIN, the battle of algiers 2006
--Heat hunting/ Heath Bunting - A terrorist - the status project 2008
--Shilpa Gupta - blessed bandwith 2003
--Elsa James - circle of blackness - part 1 - meet ann E. styles 2019
--Natalie bookchin & Jacqueline stevens - agoraxchange 2003
--Andy deck screening circle 2006
--Graham Hardwood - unconmfortable proximity 2001
--Susan Colins
-Michael Mandiberg
-Skawennati
-Lorna Mills
-Raquel Meyers
-Daniel García Andujar
-Casey Reas
-
-tom moody - digital art,
-
-Hito Stereyl
-
-Cary Peppermint, 
-Prema Murthy, 
-Ricardo Dominguez,
-Adrianne Wortzel
-Mark Amerika, 
-Fakeshop, 
-Ken Goldberg, 
-etoy
-®™ark.
-Dina Kelberman
-Mark Tribe
-Mez Breeze
-Domenico Quaranta
-Andrea Mayr
-
-
-
-
-
-Cecil B. Evans - videos, my
+}
 
 
 
@@ -197,45 +201,58 @@ Saint Denis
 ?Info Wars (film)
 
 
-#NFT artist more mainstream
-
-*Art Block
-
-**Rich Lord (art block, geometry)
-  Geometry Runners
-
-*Dmitri Cherniak (art block, generative blockchain art)
-  Ringers, sending out NFTs to random wallets - everyday in January
-
-*Tyler Hobbs (art block, generative blockchain art)
-  Fidenza, Incomplete Control
-
-Beeple (3d, Everydays)
-  Everydays: The First 5000 Days - sold for 69mil $
-
-
-
-?XCOPY (anonymous, https://xcopy.art/)
-  neon styling, nightmarish
+- NFT artist (more mainstream) 
+{
+  *Art Block
   
-*Matt DesLauriers (art block, landscapes, generative art)
-  Meridian
+  **Rich Lord (art block, geometry)
+    Geometry Runners
+  
+  *Dmitri Cherniak (art block, generative blockchain art)
+    Ringers, sending out NFTs to random wallets - everyday in January
+  
+  *Tyler Hobbs (art block, generative blockchain art)
+    Fidenza, Incomplete Control
+  
+  Beeple (3d, Everydays)
+    Everydays: The First 5000 Days - sold for 69mil $
+  
+  
+  
+  ?XCOPY (anonymous, https://xcopy.art/)
+    neon styling, nightmarish
+    
+  *Matt DesLauriers (art block, landscapes, generative art)
+    Meridian
+  
+  ?Hackatao
+    expressive and vibrant illustrations of female characters, also physical work
+  
+  *Snowfro (founder art block, )
+    Chromie Squiggles - logo of Art Blocks
+  
+  
+  
+  Monica Rizzolli (art block)
+  
+  Murakami
+  Damien Hirst
 
-?Hackatao
-  expressive and vibrant illustrations of female characters, also physical work
+  Rafaël Rozendaal (1980) {
+    visual artist who uses the internet as his canvas. Lives & works in New York.
+    digitalni geometricke obrazce,
+  }
 
-*Snowfro (founder art block, )
-  Chromie Squiggles - logo of Art Blocks
+  Jonas Lund https://jonaslund.com/ {
 
+  }
 
+}
 
-Monica Rizzolli (art block)
+NET ART {
+  Stanislav Abrahám - Circle is not line https://vimeo.com/45731362?login=true
+}
 
-Murakami
-Damien Hirst
-
-
-?
 
 
 
