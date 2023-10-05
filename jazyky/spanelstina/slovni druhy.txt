@@ -1,0 +1,398 @@
+podstatne jmena {
+  Gente - lidé
+  Tiempo - čas (také počasí)
+  Día - den
+  Hombre - muž
+  Mujer - žena
+  Mano - ruka
+  Cosa - věc
+  Año - rok
+  País - země (stát/národ)
+  Vida - život
+  Hora - hodina
+  Noche - noc
+  Agua - voda
+  Cabeza - hlava
+  Ojo - oko
+  Ciudad - město
+  Mundo - svět
+  Lugar - místo
+  Trabajo - práce (také místo práce)
+  Amigo - přítel
+  Niño - dítě/chlapec
+  Niña - dívka
+  Familia - rodina
+  Escuela - škola
+  Libro - kniha
+  Casa - dům
+  Calle - ulice
+  Coche - auto
+  Puerta - dveře
+  Ventana - okno
+  Boca - ústa
+  Pie - noha (část těla)
+  Amor - láska
+  Problema - problém
+  Sol - slunce
+  Luz - světlo
+  Tarde - odpoledne
+  Mañana - ráno (také znamená "zítra")
+  Silla - židle
+  Mesa - stůl
+  Mar - moře
+  Río - řeka
+  Montaña - hora
+  Cielo - obloha
+  Flor - květina
+  Pájaro - pták
+  Perro - pes
+  Gato - kočka
+  Agua - voda
+  Bosque - les
+  Aire - vzduch
+  Playa - pláž
+  Comida - jídlo
+  Bebida - nápoj
+  Ropa - oblečení
+  Zapato - bota
+  Bolso - kabelka/taška
+  Cabeza - hlava
+  Oído - ucho
+  Brazo - paže
+  Manzana - jablko
+  Naranja - pomeranč
+  Plátano - banán
+  Uva - hrozno
+  Verdura - zelenina
+  Pescado - ryba (jako jídlo)
+  Carne - maso
+  Queso - sýr
+  Huevo - vejce
+  Leche - mléko
+}
+
+
+pridavne jmena {
+  Bueno - dobrý
+  Malo - špatný
+  Grande - velký
+  Pequeño - malý
+  Largo - dlouhý
+  Corto - krátký
+  Alto - vysoký
+  Bajo - nízký
+  Nuevo - nový
+  Viejo - starý
+  Bonito - hezký
+  Feo - ošklivý
+  Joven - mladý
+  Rápido - rychlý
+  Lento - pomalý
+  Fuerte - silný
+  Débil - slabý
+  Caliente - horký
+  Frío - studený
+  Dulce - sladký
+  Amargo - hořký
+  Fácil - snadný
+  Difícil - obtížný
+  Rico - bohatý (také chutný)
+  Pobre - chudý
+  Claro - světlý/jasný
+  Oscuro - tmavý
+  Ancho - široký
+  Estrecho - úzký
+  Limpio - čistý
+  Sucio - špinavý
+  Caro - drahý
+  Barato - levný
+  Cercano - blízký
+  Lejano - vzdálený
+  Pesado - těžký
+  Ligero - lehký
+  Interesante - zajímavý
+  Aburrido - nudný
+  Feliz - šťastný
+  Triste - smutný
+  Entero - celý
+  Vacío - prázdný
+  Lleno - plný
+  Antiguo - starobylý
+  Moderno - moderní
+  Sano - zdravý
+  Enfermo - nemocný
+  Libre - svobodný
+  Ocupado - zaneprázdněný
+}
+
+
+zájmena {
+  Yo - já
+  Tú - ty (informální)
+  Él - on
+  Ella - ona
+  Usted - vy (formální)
+  Nosotros/Nosotras - my (mužský/ženský)
+  Vosotros/Vosotras - vy (mužský/ženský, hlavně ve Španělsku)
+  Ellos/Ellas - oni/ony
+  Ustedes - vy (množné číslo, hlavně v Latinské Americe)
+  Me - mě/mne
+  Te - tě/tebe
+  Lo/la - ho/ji (přímý objekt)
+  Nos - nás
+  Os - vás
+  Los/las - je/jich (přímý objekt)
+  Se - reflexivní zájmeno
+  Mi - můj
+  Tu - tvůj
+  Su - jeho/její/jejich/váš
+  Nuestro/nuestra - náš/naše
+  Vuestro/vuestra - váš/vaše (hlavně ve Španělsku)
+  Mis - moji
+  Tus - tvoji
+  Sus - jeho/její/jejich/vaši
+  Nuestros/nuestras - naši/naše
+  Vuestros/vuestras - vaši/vaše (hlavně ve Španělsku)
+  Este/esta - tento/tato
+  Estos/estas - tito/tito
+  Ese/esa - ten/ta (vzdálenější)
+  Esos/esas - ti/ty (vzdálenější)
+  Aquel/aquella - tamten/tamta (ještě vzdálenější)
+  Aquellos/aquellas - tamti/tamty (ještě vzdálenější)
+  Quien/quienes - kdo/kdo (v otázkách nebo vedlejších větách)
+  Cuyo/cuya - jehož/jejíž
+  Cuyos/cuyas - jejichž
+  Algo - něco
+  Nada - nic
+  Todo - vše
+  Todos/todas - všichni/všechny
+  Otro/otra - jiný/jiná
+  Varios/varias - několik
+  Mismo/misma - stejný/stejná
+  Tanto/tanta - tolik
+  Tantos/tantas - tolik (množné číslo)
+  Cual/cuales - který/které (v otázkách)
+  Donde - kde
+  Cualquier/cualquiera - jakýkoli/jakákoli
+  Ambos/ambas - oba/obě
+  Ninguno/ninguna - žádný/žádná
+  Mucho/mucha - mnoho/mnoho
+}
+
+
+číslovky {
+
+}
+
+slovesa {
+
+  koncovka -AR ex. [hablar - mluvit, trabajar -	pracovat, pensar - přemýšlet]
+  (o, as, a, amos, áis, an) => trabajar[trabajo, trabajas, trabaja, trabajamos, trabajáis, trabajan]
+
+  koncovka -ER ex. comer(jíst) correr(běžet) beber(pít)
+  (o, es, e, emos, éis, en) => comer[como, comes, come, comemos, coméis, comen]
+
+  koncovka -IR ex. vivir(žít) escribir(psát) abrir(otevřít) conducir(řídit)
+  (o, es, e, imos, ís, en) => vivir[vivo, vives, vive, vivimos, vivís, viven]
+
+  minulý čas - "haber" (pomocné sloveso):
+    (he, has, ha, hemos, habéis, han) {
+      Yo he hablado
+      Tú has hablado
+      Él/Ella/Usted ha hablado
+      Nosotros/Nosotras hemos hablado
+      Vosotros/Vosotras habéis hablado
+      Ellos/Ellas/Ustedes han hablado
+    }
+
+    -AR hablar → hablado (mluvit → mluvěno) ar -> ado
+    -ER comer → comido (jíst → jedeno) er -> ido
+    -IR vivir → vivido (žít → žito) ir -> ido
+
+
+  Být - Ser (soy, eres, es, somos, sois, son) -  (jsem, jsi, je, jsme, jste, jsou) #(trvalé stavy, identita, čas, původ)
+  Být - Estar (estoy, estás, está, estamos, estáis, están) #(dočasné stavy, umístění)
+  Mít - Tener (tengo, tienes, tiene, tenemos, tenéis, tienen) - (mám, máš, má, máme, máte, mají)
+  Dělat - Hacer (hago, haces, hace, hacemos, hacéis, hacen)
+  Říci - Decir (digo, dices, dice, decimos, decís, dicen)
+  Jít - Ir (voy, vas, va, vamos, vais, van)
+  Vidět - Ver (veo, ves, ve, vemos, veis, ven)
+  Dát - Dar (doy, das, da, damos, dais, dan)
+  Vědět - Saber (sé, sabes, sabe, sabemos, sabéis, saben)
+  Chtít - Querer (quiero, quieres, quiere, queremos, queréis, quieren)
+  Přijít - Venir (vengo, vienes, viene, venimos, venís, vienen)
+  Moci - Poder (puedo, puedes, puede, podemos, podéis, pueden)
+  Myslet - Pensar (pienso, piensas, piensa, pensamos, pensáis, piensan)
+  Conocer - znát, být obeznámen s (osoby, místa)
+  Comer - jíst
+  Beber (nebo "tomar" v některých regionech) - pít
+  Hablar - mluvit
+  Vivir - žít
+  Escribir - psát
+  Leer - číst
+
+  Ser - být (charakteristika, identita)
+  Estar - být (poloha, dočasný stav)
+  Tener - mít
+  Hacer - dělat
+  Decir - říci
+  Ir - jít
+  Ver - vidět
+  Dar - dát
+  Saber - vědět (fakta, informace)
+  Conocer - znát (osoby, místa)
+  Querer - chtít, milovat
+  Venir - přijít
+  Poder - moci
+  Pensar - myslet, plánovat
+  Comer - jíst
+  já jím - yo como
+  Beber - pít
+  Hablar - mluvit
+  já mluvím - yo hablo
+  Vivir - žít
+  Sentir - cítit
+  Trabajar - pracovat
+  Escribir - psát
+  Llamar - volat
+  Pasar - stát se, projít
+  Llegar - přijít, dorazit
+  Buscar - hledat
+  hledám - yo busco
+  Escuchar - poslouchat
+  Correr - běžet
+  tak já jdu - entonces yo voy
+  Leer - číst
+  Entender - rozumět
+  Pedir - žádat
+  Mirar - dívat se
+  na to jsem se díval - yo miraba
+  Gustar - líbit se
+  to se mi líbí - me gusta
+  to se mi líbilo - me gustaba
+  Comprar - koupit
+  Abrir - otevřít
+  otevírám - yo abro
+  Caminar - chodit, procházet se
+  Volver - vrátit se
+  Dormir - spát
+  Jugar - hrát (hry, sporty)
+  Saber - vědět
+  Cantar - zpívat
+  zpívám - yo canto
+  Bailar - tančit
+  Ayudar - pomáhat
+  chcete pomoct? - ¿quieren ayudar?
+  Aprender - učit se
+  učím se španělštinu pár týdnů - aprendo español desde hace unas semanas
+  Estar - být
+  Tomar - vzít, pít
+  tohle bych si vzal - tomaría esto
+  Necesitar - potřebovat
+  Usar - používat
+  Esperar - čekat, doufat
+  Mover - pohybovat
+  Viajar - cestovat
+  cestuji na lehko - viajo ligero
+
+  těžká otázka - pregunta difícil
+  těžká práce - trabajo duro
+  žádné překvapení, zhruba tak jak vypadám - ninguna sorpresa, más o menos como me ves
+}
+
+
+predlozky {
+  a - do, na, k
+  de - z, o
+  en - v, na
+  con - s
+  sin - bez
+  por - pro, kvůli
+  para - pro, za účelem
+  entre - mezi
+  sobre - o, nad
+  bajo - pod
+  hacia - směrem k
+  hasta - až do, do
+  tras - za, po
+  durante - během
+  según - podle
+  mediante - prostřednictvím
+  ante - před (umístění nebo situace)
+  contra - proti
+  excepto - kromě
+  salvo - kromě
+  menos - kromě
+  junto a - vedle
+  lejos de - daleko od
+  cerca de - blízko
+  dentro de - uvnitř
+  fuera de - mimo, vně
+  alrededor de - kolem
+  a través de - skrz
+  frente a - naproti
+  encima de - nad, na vrchu
+  debajo de - pod
+  antes de - před (časově)
+  después de - poté
+  al lado de - vedle
+  detrás de - za
+  delante de - před (umístění)
+  arriba - nahoře
+  abajo - dole
+  más de - více než
+  menos de - méně než
+  vía - přes, cestou
+  desde - od, od té doby
+  versus - proti (v kontextu soutěže)
+  a pesar de - navzdory
+  sin embargo - přesto
+  más allá de - za, mimo
+  acerca de - o, týkající se
+  en vez de - místo
+  junto con - spolu s
+  aparte de - kromě, mimo
+}
+
+
+spojky {
+
+  y - a
+  e - a (používá se před slovy začínajícími na "i" nebo "hi")
+  o - nebo
+  u - nebo (používá se před slovy začínajícími na "o" nebo "ho")
+  pero - ale
+  sino - ale (ve smyslu "naopak" nebo "místo toho")
+  porque - protože
+  ya que - protože, vzhledem k tomu
+  puesto que - protože, vzhledem k tomu
+  así que - takže
+  por lo tanto - proto
+  aunque - ačkoliv
+  sin embargo - nicméně, avšak
+  por eso - proto, z toho důvodu
+  mientras - zatímco
+  cuando - když
+  antes de que - předtím než
+  después de que - poté co
+  si - jestliže, pokud
+  a menos que - pokud ne, ledaže
+  a pesar de que - navzdory tomu, že
+  como - jak, jako
+  dado que - vzhledem k tomu, že
+  en cuanto - jakmile
+  hasta que - dokud
+  mientras que - zatímco
+  a fin de que - aby, za účelem
+
+}
+
+
+citoslovce {
+
+}
+
+
+
+jim tortilu - yo como una sopa
+otevíráš dveře - tú abres la puerta

@@ -1,0 +1,193 @@
+zájmena tázací {
+  kde - donde
+  kdy
+  kdo - quién - who?, whom?
+  co - que
+  proč - porque
+  jak - como
+  kam
+  kolik - quanto
+}
+
+předložky {
+  v, ve - en - in, on
+  na - a - to, at
+  k, ke - 
+  z, ze - de - from, of
+  o - sobre - about, concerning
+  s, se - con - with
+  pro - para - for
+  pod - bajo
+  nad - sobre
+  před - delante
+  za - detrás
+  mezi - entre
+  u - cerca
+  bez - sin
+  po - después
+  od - de - of, from
+  + 
+  {
+    proti
+    kolem
+    skrz
+    kvůli
+    během
+    mimo
+    vedle
+    okolo
+    přes
+    díky
+    proti
+    vůči
+    do
+    místo
+  }
+}
+
+
+sojky {
+  a - y - and
+  i - y - and
+  ani - ni - nor
+  ale - pero - but
+  nebo - o - or
+  proto - por eso - therefore
+  protože - porque - because
+  když - cuando - when
+  koho - cuyo - whose
+  který - que - that, which
+  +
+  {
+    pokud - si
+    ačkoli, ač - aunque
+    tedy - entonces
+    tudíž - por lo tanto
+    přesto - sin embargo
+    přestože - aunque
+    jakmile - tan pronto como
+    jelikož - ya que
+    zatímco - mientras
+    sotva - apenas
+    jak - como
+    než - antes de
+    buď ... anebo - ya sea ... o
+    či 
+    jakoby
+    třeba
+    ať (v imperativních větách)
+    byť (ve významu "i když")
+    dokud
+    jakž
+    poněvadž
+    takže
+  }
+}
+
+
+
+rodina a pribuzni {
+  familia - family
+  relación - relationship, relation
+  madre - mother
+}
+
+
+
+
+
+
+cas {
+  todavía - still, yet
+  aún - still, yet
+  tarde - afternoon, evening, pozdě
+  siglo - century, age
+  viejo - old, aged
+  segundo - second
+  ante - before, in the presence of
+  brzy - temprano
+  hned - enseguida
+  dříve - antes
+  později - luego
+  později - más tarde
+  později - más adelante
+  už - ya
+
+  sekunda - second
+  minuta - minuto
+  hodina - hora
+  den - día
+  mes - month
+  rok - año
+  století - siglo
+  století - siglos
+
+  pondělí - lunes
+  úterý - martes
+  středa - miércoles
+  čtvrtek - jueves
+  pátek - viernes
+  sobota - sábado
+  neděle - domingo
+
+  včera - ayer
+  dnes - hoy
+  zítra - mañana
+  pozítří - pasado mañana
+  předevčírem - anteayer
+  předvčera - anteayer
+  později - más tarde
+  potom - después
+  poté - después
+
+  leden - enero
+  únor - febrero
+  březen - marzo
+  duben - abril
+  květen - mayo
+  červen - junio
+  červenec - julio
+  srpen - agosto
+  září - septiembre
+  říjen - octubre
+  listopad - noviembre
+  prosinec - diciembre
+
+  jaro - primavera
+  léto - verano
+  podzim - otoño
+  zima - invierno
+  roční období - estación
+}
+
+
+
+
+
+
+
+
+pozice {
+  bajo - under, underneath
+}
+
+
+potreba {
+  necesitar - to need
+}
+
+bez 100% jistoty {
+  quizás - perhaps, maybe
+  posible - possible
+  bastante - rather, fairly, quite a bit (adv)
+}
+
+zmena {
+  convertir - to convert, change, become
+  cambiar - to change
+  formar - to form
+}
+
+barvy {
+  blanco - white
+}
