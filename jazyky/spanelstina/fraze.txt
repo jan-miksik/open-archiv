@@ -1,48 +1,88 @@
 Jaka je minimalni slovni zasoba a znalost pro zakladni dorozumneni?
 
 
+Jak se máš? - #Qué tal? [Ke Tal]
+Co se děje? - #¿Qué pasa? – What’s up?
+Jak to jde? - #¿Cómo te va? - How’re you doing?
+Ahoj (Užíváme pouze při setkání) - #Hola [Ola]
+velmi dobře, velmi špatně (Muy znamená velmi, fráze se dá tedy použít samostatně). - #Muy bien / Muy mal [muj bien, muj mal]
+Dobře, a ty? - #Bien, y tú? [bien, y tu]
+Dobré ráno - #Buenos Dias [Buenos Dias]
+Dobré odpoledne - #Buenos Tardes [Buenos Tárdes]
+Dobrý večer - #Buenos Noches [Buenos Nóčes]
+Ahoj (Používáme při loučení) - #Hasta Luegos / Adiós [Asta Luego, adios]
+Jak se jmenuješ? - #Cómo te llamas? [Komo te jamas] 
+Jak se řekne? - #Cómo se dice? [Komo se dýke] 
+Nevím, Nerozumím - #No sé/ No entiendo [No se/ No entiendo]
+Co znamená - #Qué significa? [Ke signyfíka]
+Můžete to zopakovat?- #Puede repetir? [Puede repetyr]
+Pomaleji, prosím - #Más despacio, por favor. [Mas despacio, por favor]
+Jmenuji se - #Me llamo .. [me jamo]
+Kdo je to? - #Quién es? [Kyjen es]
+Toto je .. (Este se používá v případě, že představujeme muže. Esta naopak, když představujeme ženu) - #Este /Esta es … [Este /Esta es]
+Odkud jsi? - #De dónde eres? [De donde eres]
+Jsem Čech /Jsem z České republiky - #Soy checo / Soy de la República Checa [Soj čeko/ Soj de la Repůblika Čeka]
+Kde jsi? - #Dónde eres? [Donde eres]
+Mluvíte anglicky? - #Habla usted inglés?
+Mohu platit kreditní kartou? - #Puedo pagar con tarjeta de credito? [Puedo pagar con tarcheta de kredito]
+
+byl jsem v - #he estado en
+viděl jsem - #he visto
+budu v - #estaré en
+
+Jsem tady napůl na dovolené a napůl napůl pracovně - #Estoy aquí mitad de vacaciones y mitad de trabajo
+
 
 Kde je obchod s mobilnimi telefony? Potřebuji SIM kartu. - #¿Dónde está la tienda de teléfonos móviles? Necesito una tarjeta SIM.
-Hola [Ola] = Ahoj (Užíváme pouze při setkání)
-Buenos Dias [Buenos Dias] = Dobré ráno
-
-Kde si mohu koupit SIM kartu? - ¿Dónde puedo comprar una tarjeta SIM? -
-Mohl byste mi to napsat? - ¿Podrías escribirlo?
-
-Qué tal? [Ke Tal] = Jak se máš?
-¿Qué pasa? – “What’s up?”
-¿Cómo te va? – “How’re you doing?”
-Muy bien / Muy mal [muj bien, muj mal] = velmi dobře, velmi špatně (Muy znamená velmi, fráze se dá tedy použít samostatně).
-Bien, y tú? [Muj bien, y tu] = Dobře, a ty?
-
-Cómo te llamas? [Komo te jamas] = Jak se jmenuješ?
-Cómo se dice? [Komo se dýke] = Jak se řekne …
-No sé/ No entiendo [No se/ No entiendo] = Nevím, Nerozumím
-Qué significa? [Ke signyfíka] = Co znamená …
-Puede repetir? [Puede repetyr] = Můžete to zopakovat?
-Más despacio, por favor. [Mas despacio, por favor] = Pomaleji, prosím
+Kde si mohu koupit SIM kartu? - #¿Dónde puedo comprar una tarjeta SIM?
+Mohl byste mi to napsat? - #¿Podrías escribirlo?
 
 
-
-seznameni {
-  pozdrav {    
-    Hola [Ola] = Ahoj (Užíváme pouze při setkání)
-    Buenos Dias [Buenos Dias] = Dobré ráno
-    Buenos Tardes [Buenos Tárdes] = Dobré odpoledne
-    Buenos Noches [Buenos Nóčes] = Dobrý večer
-    Hasta Luegos / Adiós [Asta Luego, adios] = Ahoj (Používáme při loučení)
-  }
+To zatím nemá cenu - #No vale la pena todavía 
+Je to docela velká kresba, minimum by mohlo být 500 dolarů - #Es un sorteo bastante grande, el mínimo podría ser quinientos dólares.
+Mluvíš o číslech, které mi vůbec nedávají smysl - #Estás hablando de números que no tienen sentido para mí.
+Kolik je tu asi průměrná mzda? - #¿Cuál es el salario promedio aquí?
 
 
-  Me llamo .. [me jamo] = Jmenuji se …
-  Tú eres Carlos, verdad? [Tu eres Karlos, verdad] = Ty jsi Karlos, že ano? (Bez využití slova verdad je také správně)
-  Quién es? [Kyjen es] = Kdo je to?
-  Este /Esta es … [Este /Esta es] = Toto je .. (Este se používá v případě, že představujeme muže. Esta naopak, když představujeme ženu)
+jsi zdravá? - #estás sana?
+zapomeň na mně - #olvídame
+zapomeň na to - #olvídalo
+Kolik je ti let? - #Cuantos años tienes? [kuantos anjos tienes]
+nevěřím ti - #no te creo
+to je moc - #eso es demasiado
+deset maximálně - #diez máximo
+uvidím potom - #lo veré después
+kdo jsi - #quién eres?
+už si pamatuji - #ya recuerdo
+nemluv na mně prosím tě - #no me hables por favor
+to je všechno - #eso es todo
+říkám jak mi to připadá - #digo cómo me parece
+dej mi svátek - #dame vacaciones
+Měl bych něco vědět? - #Debería saber algo?
+Je to bezpečné - #Es seguro?
+kolik za to - #cuánto por eso
+jsem unavaný - #estoy cansado
+dneska - #hoy
+kolik za cestu? - #cuánto por el viaje?
+přivádíš mě k šílenství. - #me estás volviendo loco.
+tam dneska nejdu - #no voy allí hoy
+zůstanu na Flavio Reyes - #me quedaré en Flavio Reyes
+tehle zabavě nerozumím - #no entiendo esta diversión
+jdeme - #vamos
+vy spolu chodíte? - #están saliendo juntos?
+vy jste pár? - #son una pareja?
 
-  De dónde eres? [De donde eres] = Odkud jsi?
-  Soy checo / Soy de la República Checa [Soj čeko/ Soj de la Repůblika Čeka] = Jsem Čech /Jsem z České republiky
-  Dónde eres? [Donde eres] = Kde jsi?
-}
+chci jíst - #quiero comer
+kde se tady dá vyprat oblečení - #donde se puede lavar la ropa
+mám hlad - #tengo hambre
+mám žízeň - #tengo sed
+Rád kreslím a sleduji umění. - #Me gusta dibujar y seguir el arte.
+
+Co tě baví? - #Qué te gusta?
+Co tě zajímá? - #Qué te interesa?
+Kolik bude stat ta cesta? - #Cuánto costará ese viaje?
+Kolik to bude stát? - #¿Cuánto va a costar?
+Neříkali jsme kdo bude platit hotel - #No dijimos quién paga el hotel
 
 
 v obchodě, restauraci {
@@ -93,30 +133,13 @@ být - ser - to be (norm) {
 
 
 
-
-
-
-Qué tal? [Ke Tal] = Jak se máš?
-¿Qué tal? – “How are you?”
-¿Qué pasa? – “What’s up?”
-¿Cómo te va? – “How’re you doing?”
-Cómo te llamas? [Komo te jamas] = Jak se jmenuješ?
-Me llamo .. [me jamo] = Jmenuji se …
-Dónde eres? [Donde eres] = Kde jsi?
-De dónde eres? [De donde eres] = Odkud jsi?
-
-
-
-
-Soy checo / Soy de la República Checa [Soj čeko/ Soj de la Repůblika Čeka] = Jsem Čech /Jsem z České republiky
-Puedo pagar con tarjeta de credito? [Puedo pagar con tarcheta de kredito] = Mohu platit kreditní kartou?
 mluvím trochu španělsky - #Yo habla poco española // habla poco española
 španělštinu se učím pár týdnů - #Yo aprendo español por unas semanas
 španělštinu studuji pár týdnů - #Yo estudio español por unas semanas
-Mluvíte anglicky? - #Habla usted inglés?
+
 Mluvíš anglicky? - #Hablas inglés?
 Mluvíš česky? - #¿Hablas checo?
-Kolik je ti let? - #Cuantos años tienes?
+
 žádné překvapení, je mi zhruba tolik na kolik vypadám - #ninguna sorpresa, tengo aproximadamente la edad que parezco
 
 ## bližší představení 
@@ -127,29 +150,25 @@ Kolik je ti let? - #Cuantos años tienes?
   Studoval jsem střední uměleckou školu a vysokou uměleckou školu. - #Estudié la escuela de arte secundaria y la escuela de arte superior.
   Potom jsem se začal učit programovat, protože mně to docela bavilo a potřeboval jsem peníze. - #Después empecé a aprender programar, porque me gustaba bastante y necesitaba dinero.
   Vyvíjím aplikaci pro peer to peer půjčky v cryptoměnách. - #Desarrollo una aplicación para préstamos peer to peer en criptomonedas.
-  Rád kreslím a sleduji umění. - #Me gusta dibujar y seguir el arte.
+  
   Dřív jsem používal hlavně akvarelové pastelky, teď požívám hlavně tablet na kreslení a tvoření. - #Antes usaba principalmente pasteles acuarelas, ahora uso principalmente una tableta para dibujar y crear.
 }
 
 jaké umění se ti libí? - #Qué arte te gusta?
 jaké umění sleduješ? - #Qué arte sigues?
-Co tě baví? - #Qué te gusta?
-Co tě zajímá? - #Qué te interesa?
+
 Můžu vidět jak to vypadá? - #Puedo ver cómo se ve?
 Co by jsi mi doporučil v tomto městě? - #Qué me recomiendas en esta ciudad?
 Na co si dát tady pozor? - #A qué debo prestar atención aquí?
 myslel jsem že na rovníku bude jiné počasí - #pensé que el clima sería diferente en el ecuador
 Dal bych si nějaké dobré vegetariáské jídlo - #Me gustaría comer algo de buena comida vegetariana
-chci jíst - #quiero comer
+
 mám mokré oblečení - #tengo ropa mojada
-kde se tady dá vyprat oblečení - #donde se puede lavar la ropa
-mám hlad - #tengo hambre
 dal bych si džus - #me gustaría tomar un jugo
-mám žízeň - #tengo sed
 dal bych si vodu - #me gustaría tomar agua
 Me gustaría un poco de agua. - #dal bych si trochu vody
 potřeboval bych nakoupi nějaké oblečení - #necesitaría comprar algo de ropa
-jsem unavaný - #estoy cansado
+
 jdu spát - #me voy a dormir
 jdu se umýt - #me voy a lavar
 jdu se osprchovat - #me voy a duchar
@@ -218,7 +237,10 @@ to jsem nevidel - #no lo vi
 pomoc - #ayuda
 pomozte mi prosím - #ayúdame por favor
 zlodej - #ladrón
-okradli mne - #me robaron
+okradli mne v quitu- #me robaron en quito
+
+para - #pro
+en - #v
 
 daval jsem si kapky sananga do oci - #me puse gotas de sananga en los ojos
 trochu to stipe a boli nekolik vterin - #duele y arde un poco durante unos segundos
@@ -253,9 +275,7 @@ zkouším mluvit španělsky několik týdnů - #estoy tratando de hablar españ
 bude živější - #será más animado
 kdy to tady bude živější? - #cuando será más animado aquí?
 byl jsem - #he estado
-vidím - #veo
 viděl jsem - #he visto
-
 kdo jsi? - #quién eres?
 co potřebuješ? - #qué necesitas?
 takhle jsem to nemyslel - #no lo quise decir así
@@ -265,7 +285,140 @@ jestli bude mít trpělivost s někým kdo se zatím učí španělštinu - #si 
 učím se španělsky - #estoy aprendiendo español
 učím se španělsky několik týdnů - #estoy aprendiendo español durante varias semanas
 ještě je dost chvil kdy nerozumím - #todavía hay muchos momentos en los que no entiendo
+jsem unaveny - #estoy cansado
+jdu domu - #me voy a casa
+jdu spát - #me voy a dormir
+jdu se umýt - #me voy a lavar
+mám mokré oblečení - #tengo ropa mojada
+máš kondom - #tienes un condón
+máš nějaký kondom - #tienes algún condón
+jak je to u vas s antikoncepci - #cómo es con la anticoncepción
+to stojí příliš moc - #eso es demasiado
+to je moc drahé - #eso es demasiado caro
+mám hlad - #tengo hambre
+mám žízeň - #tengo sed
+je to drahé - #es caro
+začíná se mit chtít spát - #empiezo a tener sueño
+je tady trochu nuda - #es un poco aburrido aquí
+to je ale nechutné - #eso es asqueroso
+jsi hloupá - #eres tonta
+jsi hloupý - #eres tonto
+vypadáš špinavě - #te ves sucio
+nedotýkej se mě - #no me toques
+pomozte mi prosím - #ayúdame por favor
+jsi prostitutka - #eres una prostituta
+mám přitlačit? - #debo presionar?
+kolik je ti let? - #cuántos años tienes?
+rychle než nás někdo chytí - #rápido antes de que alguien nos atrape
+jsi docela sympatická - #eres bastante agradable
+jsi docela hezká - #eres bastante bonita
+jsi hezká - #eres bonita
+jsi krásná - #eres hermosa
+všechny jste krásné - #todas sois hermosas
+moc se mi tu líbí - #me gusta mucho aquí
+potřebuji víc trénovat španělštinu - #necesito practicar más español
+co máte k pití? - #qué tienes para beber?
+je do hodně ředěné dalšími věcmi - #está muy diluido con otras cosas
+kam půjdeme? - #a dónde vamos?
+krev na moji noze - #sangre en mi pierna
+je to z krve na moji noze - #es de la sangre en mi pierna
+nemusíš jít dál se mnou, ten kousek už dojdu - #no tienes que seguir conmigo, puedo ir ese camino
+můžu se tě na něco zeptat? - #puedo preguntarte algo?
+jsi fajn, možná to co říkáš jsou na mně velké slova - #eres genial, tal vez lo que dices son palabras grandes para mí
+jsem unavený - #estoy cansado
+do je docela levne - #eso es bastante barato
+potom poletím do česka - #entonces volaré a la república checa
+někdy v budoucnu bych chtěl víc procestovat jižní ameriku - #algún día me gustaría viajar más por sudamérica
+mám jenom padesátikorunovou bankovku - #solo tengo un billete de cincuenta coronas
+byl jsem na - #he estado en
+tady jsem - #estoy aquí
+mám sázku s mojím kamarádem - #tengo una apuesta con mi amigo
+jdu před dům, za chvíli tam budu - #voy a la casa, estaré allí en un momento
+za dvě minuty jsem tam - #en dos minutos estoy allí
+za dvě minutz jsem před domem - #en dos minutos estoy en la casa
+jo, to mně zajímá - #sí, me interesa
+nehrozí nějaké nemoci? - #¿no hay riesgo de enfermedad?
+nemoci - #enfermedad
+je to dobtrý člověk - #es una buena persona
+jsi nádherná - #eres hermosa
+jsi úžasná - #eres increíble
+pořeboval bych si rozměnit 50 dolarovou bankovku - #necesitaría cambiar un billete de 50 dólares
+žádné nemoci? - #¿ninguna enfermedad?
+udržmeto lehké - #mantenlo ligero
+nevím, říká se že je hodně ředěné vším možným - #no sé, dicen que está muy diluido con todo tipo de cosas
 
+
+nechci kamarády, kterým musím vysvětlovat aby mi nebrali peníze - #no quiero amigos a los que tenga que explicarles que no me quiten dinero
+
+až něco budu chtít od tebe tak se ozvu - #cuando quiera algo de ti, te llamaré
+
+kokainový kluk mně docela naštval - #el chico de la cocaína me molestó bastante
+nechápu proč jsem si na něho nedával větší pozor - #no entiendo por qué no le presté más atención
+
+
+
+
+
+correo - #pošta
+unaveny - #cansado
+dneska - #hoy
+moc - #mucho
+příliš - #demasiado
+znám to - #lo sé
+znát - #saber
+conozco - #znám
+enteder - #rozumět
+zábava - #diversión
+sedmnáct - #diecisiete
+osmdesát - #ochenta
+devedesát - #noventa
+sto - #cien
+
+nádherná - #hermosa
+
+
+bratr - #hermano
+sestra - #hermana
+rozměnit - #cambiar
+daně - #impuestos
+stůl - #mesa
+židle - #silla
+postel - #cama
+kuchyň - #cocina
+koupelna - #baño
+pokoj - #habitación
+dům - #casa
+byt - #apartamento
+přízemí - #planta baja
+patro - #piso
+výtah - #ascensor
+schody - #escaleras
+vchod - #entrada
+východ - #salida
+okno - #ventana
+dveře - #puerta
+zámek - #cerradura
+heslo - #contraseña
+klíč - #llave
+noha - #pierna
+únava - #cansancio
+conoser - #znát
+znám - #conozco
+levne - #barato
+docela - #bastante
+Potom - #entonces
+jižní - #surlimpia - #čistý
+caro - #drahý
+severní - #norte
+východní - #este
+západní - #oeste
+eso - #to
+přitlač - #presiona
+pomoc - #ayuda
+zlodej - #ladrón
+limpia - #čistý
+caro - #drahý
+vidím - #veo
 kdy - #cuando
 kolik - #cuánto
 možná - #quizás
@@ -279,17 +432,17 @@ asi - #aproximadamente
 třeba - #tal vez
 takžě - #así que
 tak - #entonces
+sázka - #apuesta
 
 kolik dlužím - #cuánto debo
 musím jít - #tengo que ir
 musím - #tengo que
 nesmím - #no debo
 mohl bych - #podría
+nemusiš se mnou chodit, jak chceš - #no tienes que ir conmigo, como quieras
 
 
-
-
-
+myslim ze jo - #creo que sí
 myslet - #pensar
 myslím - #pienso 
 creo - #myslím
