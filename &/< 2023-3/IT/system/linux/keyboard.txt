@@ -38,3 +38,6 @@ $chmod +x xmodmap.sh
 remove mod4 = Super_L
 keycode 133 = 148
 
+
+linux mint version
+xmodmap -e "keycode 133 = Menu"
