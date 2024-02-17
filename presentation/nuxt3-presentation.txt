@@ -1,0 +1,29 @@
+NUXT 3
+
+playground
+https://nuxt.com/docs/examples
+
+
+-autoimport (vue things, components)
+base/input.vue -> <BaseInput /> 'autoprefix'
+https://nuxt.com/docs/examples/features/auto-imports
+
+
+-pages (baced in router)
+https://nuxt.com/docs/examples/routing/pages
+
+
+-layers (add components from other app or github repo)
+--!dependency
+
+-contribution
+-https://github.com/nuxt/nuxt/contribute
+
+
+-nuxt dev tools
+
+
+-many rendering options (SSR, Client side, )
+
+
++ other thing which i did not look on
