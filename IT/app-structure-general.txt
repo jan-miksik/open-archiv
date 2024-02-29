@@ -1,0 +1,61 @@
+-- layers
+A -UI component
+B -fuctions and variables which distribute data to UI component
+B2 -nested functions and variables which redistribute data to functions, variables and UI components in upper scope
+B-N -same as B2 just more nested
+C -connection to data source(API, database, )
+
+
+
+CRUD
+create
+read
+update
+delete
+
+
+
+about programming {
+  data -- storage, binds/links, cache
+  view -- web, mobil, pc
+  filter -- search, by category, by numbers, 
+  sort -- by numbers, alphabetical
+  CRUD - create read update delete
+
+  connection -- api
+}
+
+
+
+
+
+
+
+
+
+
+
+web3 the decentralized part
+blockchian
+ipfs
+Arweave 
+the graph
+
+they are usually slow and is hard to do anything else above scope of blockchain data
+
+the more centralized part
+RPC providers (alchemy, infura,)
+hosting of backends include nodes (AWS, GCP, Azure, heroku ...)
+hosting of FE and domains (cloudflare, domain providers)
+centralized intermediators - ipfs providers (pinata, fleek, ) - cloudflare
+internet providers
+internet infrustucture?
+dev inrustructure github, gitlab
+
+numbers
+around 8000 nodes
+around 1mil validators
+supply around 120mil ETH
+
+concerns
+70% of all nodes hosted are using a cloud provider
