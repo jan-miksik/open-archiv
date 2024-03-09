@@ -38,6 +38,8 @@ $chmod +x xmodmap.sh
 remove mod4 = Super_L
 keycode 133 = 148
 
-
+- remap ctrl+c and ctrl+v to one key
 linux mint version
+startup application(autokey + script bellow)
+
 xmodmap -e "keycode 133 = Menu"

@@ -1,0 +1,23 @@
+1. remap ctrl+c and ctrl+v to one key
+
+#setup keys for paste in app "autokey"
+
+#find free keycode with
+$ xev
+#in my case 148
+$ xmodmap -e "keycode 133 = 148"
+
+
+#to keep changes after restart, create file
+#create script "xmodmap.sh" with this content
+  #!/bin/bash
+  sleep 10
+
+  xmodmap -e "remove mod4 = Super_L"
+  xmodmap -e "keycode 133 = 148"
+
+
+2. linux mint version
+startup application(autokey + script bellow)
+
+xmodmap -e "keycode 133 = Menu"
