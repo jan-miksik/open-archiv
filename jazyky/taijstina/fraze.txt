@@ -1,4 +1,4 @@
-ahoj - sawaddee khap(m) / ka(f)
+ahoj - sawaddee khap(m) / kha(f)
 jak se máš - sabai dee mai? *
 mám se dobře - sabai dee
 jak se jmenuješ - khun chue arai? *
@@ -108,3 +108,45 @@ movie is nhang
 
 
 how to make millions before grandma dies
+
+
+ผม phǒm - I (when the speaker is male)
+ดิฉัน dì-chǎn - I (when the speaker is female)
+สวัสดี sà-wàt-dii - Hello.
+ค่ะ khâ - particle added at the end of the sentence or phrase in order to increase the level of politeness when the speaker is female
+ครับ khráp - particle added at the end of the sentence or phrase in order to increase the level of politeness when the speaker is a male
+คะ khá - a polite ending particle for female speakers for questions and requests
+ไหม mǎi - a particle indicating a yes/no question
+สบายดี sà-baai-dii - I'm fine.
+คุณ khun - you (polite)
+แล้ว láaeo already, and then, as for, later
+
+อะไร à-rai - what (an interrogative)
+ขอบคุณ khàawp-khun - Thank you.
+ไป bpai - to go
+จะ jà - will/to be going to
+ประเทศไทย bprà-thêet-thai - Thailand
+พรุ่งนี้ phrûng-níi - tomorrow
+คุณกำลังทำอะไรอยู่ khun gam-lang tham à-rai yùu. "What are you doing?"
+
+ชื่อ chûue - to name
+คุณชื่ออะไร khun chûue à-rai? - "What is your name?"
+ยินดีที่ได้รู้จัก yin-dii thîi dâai rúu-jàk - Nice to meet you.
+ขอโทษ khǎaw-thôot - Excuse me
+ช่วย...ได้ไหม? chûuai...dâai mǎi? - Could you please…?
+พูด phûut - to speak
+นะ ná - particle used to soften speech
+ช้าๆ cháa-cháa - slowly
+เช่นกัน chên-gan - me too
+ชื่ออะไร chûue à-rai - What is your name?
+
++
+ที่ thîi - at, in, to, that, which, place
+ไปติดต่อธุรกิจ bpai dtìt-dtàaw thú-rá-gìt - to go on a business trip
+เดินทางปลอดภัย dooen-thaang bplàawt-phai - have a safe trip
+
+aa - มา /maa/ (přijít) (Rovná výslovnost bez změny výšky tónu)
+ǎ - หมา /mǎa/ (pes) Hlas klesne na nízkou úroveň
+á - ม้า /máa/ (kůň) Hlas začíná vysoko a klesá dolů
+ǎ - ไหม /mǎi/ (hedvábí) Hlas je držen ve vysoké poloze
+à - ใหม่ /mài/ (nový) Hlas začíná nízko a stoupá nahoru
