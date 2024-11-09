@@ -1,152 +1,17 @@
-ahoj - sawaddee khap(m) / kha(f)
-jak se máš - sabai dee mai? *
-mám se dobře - sabai dee
-jak se jmenuješ - khun chue arai? *
-moje jméno je jan - chan chue jan *
-ty = khun
-rád tě poznávám - yindee tidai rujark *
-potěšení - yindee
-znát, vědět - rujark
-mně také - chen gan *
+##### TOP 10 #####
+ahoj - สวัสดี - sà-wàt-dii
 odkud jsi? - khun ma jark tinai?
-kde = tinai
-z - jark
-ja jsem z ceska - pom ma jark czechi
-promiň te - kor tod *
-děkuji - kop khun *
-není problém/to je v pořádku - mai bpen rai
+ja jsem z ceska - pom ma jark czechia
+jak se jmenuješ? - คุณชื่ออะไร - khun chûue à-rai? (ty jméno co?)
+moje jméno je jan - pom chue jan (já jméno jan)
+Rád tě poznávám. - ยินดีที่ได้รู้จัก - yin-dii thîi dâai rúu-jàk
+mám se dobře - สบายดี - sà-baai-dii
 co je to - Annee arai? *
-to - annee
-co - arai
-nevím - mai roo
-mai - ne
-nerozumím - mai kao jai *
+není problém/to je v pořádku - mai bpen rai
+děkuji - ขอบคุณ - khàawp-khun
+
+
+##### NEXT 100 #####1
+já také - เช่นกัน - chên-gan
+Omluvte mně - ขอโทษ - khǎaw-thôot
 mluvím trochu thajsky - pood thai dai nitnoy *
-mluvit - pood
-trochu - nitnoy
-moci, být schopný - dai
-mám hlad - pom hiew (m) / chan hiew (f)
-pom - ja (m)
-chan - ja (f)
-máte jídlo? mee ahaan mai? *
-mít - mee
-jídlo - ahaan
-jídlo je chutné - a-haan a-roi *
-a-roi - chutné
-jsem plný - pom im (m) / chan im (f) *
-chci - pom ow (m) / chan ow (f)
-nechci - pom mai ow (m) / chan mai ow (f)
-co chcete_ - ow mai? *
-chci toto - pom ow annee / chan ow annee *
-to se mi libi - pom chob annee *
-mít rád - chob
-to nemám rád - pom mai chob annee / chan mai chob annee *
-kam chom
-jsi zábavný - khun dta lok
-jsi nádherný - khun suay
-suay - nádherný
-jsi hezká/ý - khun lor *
-jsi pěkný - khun jai dee
-jsi sladký-roztomilý - khun na rak *
-kde je toaleta - hong naam yu tinai? *
-ano - chai
-kolik to je - annee tao rai? *
-
-
-
-1 - nueng
-2 - song
-3 - saam
-4 - see
-5 - haa
-6 - hoak
-7 - jed
-8 - bpat
-9 - gao
-10 - sip
-11 - sib ed
-12 - sib song
-...
-20 - yee sip
-21 - yee sip ed
-22 - yee sip song
-...
-30 - saam sip
-31 - saam sip ed
-40 - see sip
-...
-100 - nueng roi
-200 - song roi
-...
-1000 nueng phan
-2000 song phan
-...
-10,000 - nueng muen
-20,000 - song muen
-...
-100,000 - nueng saen
-200,000 - song saen
-1,000,000 - nueng laan
-
-
-
-where? - tee nhai
-what? - arai
-when? - meu rai
-how? - yang ngai
-where is this going? - tee ni bpai yang ngai?
-this place - tee ni
-
-tao lhai? - how much?
-this one - annee
-i want this one - aow an-nee khab
-i dont want - mai aow
-thank you - khob khun khab
-
-today is 5th - wan tee haa
-movie is nhang
-
-
-how to make millions before grandma dies
-
-
-ผม phǒm - I (when the speaker is male)
-ดิฉัน dì-chǎn - I (when the speaker is female)
-สวัสดี sà-wàt-dii - Hello.
-ค่ะ khâ - particle added at the end of the sentence or phrase in order to increase the level of politeness when the speaker is female
-ครับ khráp - particle added at the end of the sentence or phrase in order to increase the level of politeness when the speaker is a male
-คะ khá - a polite ending particle for female speakers for questions and requests
-ไหม mǎi - a particle indicating a yes/no question
-สบายดี sà-baai-dii - I'm fine.
-คุณ khun - you (polite)
-แล้ว láaeo already, and then, as for, later
-
-อะไร à-rai - what (an interrogative)
-ขอบคุณ khàawp-khun - Thank you.
-ไป bpai - to go
-จะ jà - will/to be going to
-ประเทศไทย bprà-thêet-thai - Thailand
-พรุ่งนี้ phrûng-níi - tomorrow
-คุณกำลังทำอะไรอยู่ khun gam-lang tham à-rai yùu. "What are you doing?"
-
-ชื่อ chûue - to name
-คุณชื่ออะไร khun chûue à-rai? - "What is your name?"
-ยินดีที่ได้รู้จัก yin-dii thîi dâai rúu-jàk - Nice to meet you.
-ขอโทษ khǎaw-thôot - Excuse me
-ช่วย...ได้ไหม? chûuai...dâai mǎi? - Could you please…?
-พูด phûut - to speak
-นะ ná - particle used to soften speech
-ช้าๆ cháa-cháa - slowly
-เช่นกัน chên-gan - me too
-ชื่ออะไร chûue à-rai - What is your name?
-
-+
-ที่ thîi - at, in, to, that, which, place
-ไปติดต่อธุรกิจ bpai dtìt-dtàaw thú-rá-gìt - to go on a business trip
-เดินทางปลอดภัย dooen-thaang bplàawt-phai - have a safe trip
-
-aa - มา /maa/ (přijít) (Rovná výslovnost bez změny výšky tónu)
-ǎ - หมา /mǎa/ (pes) Hlas klesne na nízkou úroveň
-á - ม้า /máa/ (kůň) Hlas začíná vysoko a klesá dolů
-ǎ - ไหม /mǎi/ (hedvábí) Hlas je držen ve vysoké poloze
-à - ใหม่ /mài/ (nový) Hlas začíná nízko a stoupá nahoru
