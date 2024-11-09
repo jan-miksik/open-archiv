@@ -1,6 +1,3 @@
-potěšení - yindee
-znát, vědět - rujark
-
 promiň te - kor tod *
 to - annee
 co - arai
@@ -13,40 +10,22 @@ pom - ja (m)
 chan - ja (f)
 ty = khun
 
-
 chci - pom ow (m) / chan ow (f)
 nechci - pom mai ow (m) / chan mai ow (f)
 co chcete? - ow mai? *
-chci toto - pom ow annee / chan ow annee *
+potěšení - yindee
+znát, vědět - rujark
 
 
-nerozumím - mai kao jai *
 mluvit - pood
 trochu - nitnoy
 moci, být schopný - dai
-mám hlad - pom hiew (m) / chan hiew (f)
-
-
-máte jídlo? mee ahaan mai? *
 mít - mee
 jídlo - ahaan
-jídlo je chutné - a-haan a-roi *
 a-roi - chutné
-jsem plný - pom im (m) / chan im (f) *
 
-
-to se mi libi - pom chob annee *
 mít rád - chob
-to nemám rád - pom mai chob annee / chan mai chob annee *
-jsi zábavný - khun dta lok
-jsi nádherný - khun suay
 suay - nádherný
-jsi hezká/ý - khun lor *
-jsi pěkný - khun jai dee
-jsi sladký-roztomilý - khun na rak *
-kde je toaleta - hong naam yu tinai? *
-
-
 
 where? - tee nhai
 what? - arai
@@ -55,10 +34,17 @@ how? - yang ngai
 where is this going? - tee ni bpai yang ngai?
 this place - tee ni
 
-tao lhai? - how much?
-this one - annee
-i want this one - aow an-nee khab
-i dont want - mai aow
+
+
+
+
+
+
+
+
+jsi pěkný - khun jai dee
+jsi sladký-roztomilý - khun na rak *
+
 thank you - khob khun khab
 
 today is 5th - wan tee haa
@@ -66,9 +52,6 @@ movie is nhang
 
 
 how to make millions before grandma dies
-
-
-
 
 
 
@@ -85,12 +68,12 @@ what (an interrogative) - อะไร - à-rai
 already, and then, as for, later - แล้ว - láaeo
 
 
-
 ไป bpai - to go
 จะ jà - will/to be going to
 ประเทศไทย bprà-thêet-thai - Thailand
 พรุ่งนี้ phrûng-níi - tomorrow
 to name - chûue - ชื่อ
+
 
 Could you please…? - chûuai...dâai mǎi? - ช่วย... ได้ไหม?
 to speak - phûut - พูด
